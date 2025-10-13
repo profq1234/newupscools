@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>UPSC Quizzes | upscools - Practice & Revision</title>
+    <meta name="description" content="Dedicated page for interactive UPSC CSE practice quizzes. Start the Indian Polity quiz instantly and test your knowledge for the Civil Services Exam (CSE) Prelims.">
+    <meta name="keywords" content="UPSC Quiz, IAS Quiz, CSE Practice, Polity Quiz, UPSC MCQs, Revision">
+    <link rel="canonical" href="https://www.upscools.com/quiz.html">
+    <link rel="icon" type="image/png" href="https://placehold.co/32x32/1e3a8a/facc15?text=Q">
+
+    <!-- Open Graph / Social Media Tags -->
+    <meta property="og:title" content="UPSC Quizzes | upscools">
+    <meta property="og:description" content="Dedicated page for interactive UPSC CSE practice quizzes. Start the Indian Polity quiz instantly.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Applying the Inter font to the whole document */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Simple animation for elements on scroll */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* --- Creative Animation for Hero Background --- */
+        .animated-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 0;
+        }
+
+        .animated-bg li {
+            position: absolute;
+            display: block;
+            list-style: none;
+            width: 20px;
+            height: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            animation: animate 25s linear infinite;
+            bottom: -150px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(168, 85, 247, 0.3), 0 0 20px rgba(168, 85, 247, 0.2);
+        }
+
+        .animated-bg li:nth-child(1) { left: 25%; width: 80px; height: 80px; animation-delay: 0s; background-color: rgba(168, 85, 247, 0.2); }
+        .animated-bg li:nth-child(2) { left: 10%; width: 20px; height: 20px; animation-delay: 2s; animation-duration: 12s; background-color: rgba(236, 72, 153, 0.2); }
+        .animated-bg li:nth-child(3) { left: 70%; width: 20px; height: 20px; animation-delay: 4s; background-color: rgba(250, 204, 21, 0.2); }
+        .animated-bg li:nth-child(4) { left: 40%; width: 60px; height: 60px; animation-delay: 0s; animation-duration: 18s; background-color: rgba(236, 72, 153, 0.2); }
+        .animated-bg li:nth-child(5) { left: 65%; width: 20px; height: 20px; animation-delay: 0s; background-color: rgba(168, 85, 247, 0.2); }
+        .animated-bg li:nth-child(6) { left: 75%; width: 110px; height: 110px; animation-delay: 3s; background-color: rgba(250, 204, 21, 0.15); }
+        .animated-bg li:nth-child(7) { left: 35%; width: 150px; height: 150px; animation-delay: 7s; background-color: rgba(168, 85, 247, 0.2); }
+        .animated-bg li:nth-child(8) { left: 50%; width: 25px; height: 25px; animation-delay: 15s; animation-duration: 45s; background-color: rgba(236, 72, 153, 0.2); }
+        .animated-bg li:nth-child(9) { left: 20%; width: 15px; height: 15px; animation-delay: 2s; animation-duration: 35s; background-color: rgba(250, 204, 21, 0.2); }
+        .animated-bg li:nth-child(10) { left: 85%; width: 150px; height: 150px; animation-delay: 0s; animation-duration: 11s; background-color: rgba(168, 85, 247, 0.2); }
+
+        @keyframes animate {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-1000px) rotate(720deg);
+                opacity: 0;
+            }
+        }
+
+        /* Styling for the Quiz options for better mobile touch target */
+        .quiz-option-btn {
+            display: block;
+            width: 100%;
+            text-align: left;
+            background-color: rgba(45, 55, 72, 0.6); /* dark gray 700 / 60 */
+            color: #ccc;
+            padding: 1rem;
+            margin-bottom: 0.75rem;
+            border-radius: 0.5rem;
+            transition: background-color 0.2s ease, transform 0.1s ease, border-color 0.2s ease;
+            font-size: 1rem;
+            font-weight: 500;
+            border: 2px solid transparent;
+        }
+
+        .quiz-option-btn:hover:not(:disabled) {
+            background-color: rgba(55, 65, 81, 0.8); /* darker hover */
+            transform: scale(1.01);
+            border-color: #facc15; /* yellow 400 hover glow */
+        }
+        .quiz-option-btn:disabled {
+            cursor: not-allowed;
+            opacity: 0.9;
+        }
+
+        /* Feedback styling */
+        .correct-answer {
+            background-color: rgba(16, 185, 129, 0.1); /* green 500/10 */
+            border-color: #10b981; /* green 500 */
+        }
+        .incorrect-answer {
+            background-color: rgba(239, 68, 68, 0.1); /* red 500/10 */
+            border-color: #ef4444; /* red 500 */
+        }
+    </style>
+</head>
+<body class="bg-blue-900 text-gray-200">
+
+    <!-- Animated Background -->
+    <ul class="animated-bg">
+        <li></li> <li></li> <li></li> <li></li> <li></li>
+        <li></li> <li></li> <li></li> <li></li> <li></li>
+    </ul>
+
+    <div class="relative z-10">
+        <!-- Header -->
+        <header id="header" class="bg-blue-900/80 backdrop-blur-sm shadow-md sticky top-0 z-50 transition-all duration-300 border-b border-blue-800">
+            <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+                <!-- Left side: Brand + new links -->
+                <div class="flex items-center space-x-4 md:space-x-8">
+                    <a href="index.html">
+                        <img src="https://placehold.co/384x96/1e3a8a/facc15?text=upscools&font=pacifico" alt="upscools Logo" class="h-10 md:h-12">
+                    </a>
+                    <div class="hidden sm:flex items-center space-x-4 md:space-x-6">
+                            <a href="#" class="text-yellow-400 font-bold transition-colors border-b-2 border-yellow-400">Quiz</a>
+                            <a href="index.html#blog" class="text-gray-300 hover:text-yellow-400 font-medium transition-colors">Blog</a>
+                    </div>
+                </div>
+
+                <!-- Right side: Original links + Auth buttons -->
+                <div class="hidden md:flex items-center">
+                    <!-- Main nav links -->
+                    <div class="flex items-center space-x-6">
+                        <a href="index.html#home" class="text-gray-300 hover:text-yellow-400 font-medium transition-colors">Home</a>
+                        <!-- Resources Dropdown (Simplified for Quiz page) -->
+                        <div class="relative group">
+                            <button class="flex items-center text-gray-300 hover:text-yellow-400 font-medium transition-colors">
+                                Resources
+                                <svg class="w-4 h-4 ml-1 transform group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </button>
+                            <div class="absolute -left-8 mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
+                                <a href="polity.html" class="block px-4 py-2 text-gray-700 hover:bg-purple-50 hover:text-purple-700 rounded-t-lg">Indian Polity</a>
+                                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-purple-50 hover:text-purple-700">Modern History</a>
+                                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-purple-50 hover:text-purple-700">Geography & Environment</a>
+                                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-purple-50 hover:text-purple-700">Indian Economy</a>
+                                <a href="index.html#resources" class="block px-4 py-2 text-gray-700 hover:bg-purple-50 rounded-b-lg border-t mt-1 pt-2 font-semibold text-purple-600">All Resources</a>
+                            </div>
+                        </div>
+                        <a href="index.html#about" class="text-gray-300 hover:text-yellow-400 font-medium transition-colors">About</a>
+                        <a href="index.html#contact" class="text-gray-300 hover:text-yellow-400 font-medium transition-colors">Contact</a>
+                    </div>
+                    <!-- Clock and Auth buttons -->
+                    <div class="flex items-center ml-6 pl-6 border-l border-gray-700 space-x-4">
+                        <span id="live-clock" class="text-sm text-gray-400 font-mono"></span>
+                        <a href="#signin" class="text-gray-300 hover:text-yellow-400 font-medium transition-colors">Sign In</a>
+                        <a href="#signup" class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-5 py-2 rounded-lg shadow-md hover:from-purple-600 hover:to-pink-600 transition-all font-medium">Sign Up</a>
+                    </div>
+                </div>
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden p-2 rounded-md text-gray-300 hover:bg-blue-800 focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </nav>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2 bg-blue-900/95">
+                <a href="index.html#home" class="block text-gray-300 hover:text-yellow-400 transition-colors py-2">Home</a>
+                    <a href="#" class="block text-yellow-400 font-bold transition-colors py-2 border-l-2 border-yellow-400 pl-2">Quiz</a>
+                    <a href="index.html#blog" class="block text-gray-300 hover:text-yellow-400 transition-colors py-2">Blog</a>
+                <!-- Mobile Courses/Resources Dropdown logic would go here -->
+                <a href="index.html#about" class="block text-gray-300 hover:text-yellow-400 transition-colors py-2">About</a>
+                <a href="index.html#contact" class="block text-gray-300 hover:text-yellow-400 transition-colors py-2">Contact</a>
+                <div class="border-t border-gray-700 pt-4 mt-2 space-y-2">
+                        <a href="#signin" class="block text-center text-gray-300 bg-blue-800 hover:bg-blue-700 py-2 rounded-lg">Sign In</a>
+                    <a href="#signup" class="block text-center bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-lg shadow-md hover:from-purple-600 hover:to-pink-600 transition-all">Sign Up</a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Quiz Hero Section -->
+            <section id="quiz-hero" class="relative text-white pt-20 pb-16 md:pt-28 md:pb-24 overflow-hidden">
+                <div class="container mx-auto px-6 text-center relative z-10">
+                    <div class="max-w-4xl mx-auto">
+                        <p class="text-xl md:text-2xl text-yellow-400 mb-4 font-medium fade-in-up">Prelims Practice Series</p>
+                        <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-6 text-yellow-300 fade-in-up" style="transition-delay: 150ms;">
+                            Interactive UPSC Quizzes
+                        </h1>
+                        <p class="text-lg md:text-xl text-blue-200 mb-8 fade-in-up" style="transition-delay: 300ms;">
+                            Test your mettle against UPSC-standard MCQs. Instant feedback, detailed explanations, and real-time progress tracking.
+                        </p>
+                        <!-- Main Start Button: Toggled by JavaScript -->
+                        <button id="start-polity-quiz-btn" class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-4 rounded-lg shadow-lg font-semibold text-lg hover:from-purple-600 hover:to-pink-600 transform hover:scale-105 transition-all focus:outline-none focus:ring-4 focus:ring-purple-500/50 fade-in-up" style="transition-delay: 450ms;">
+                            Start Indian Polity Quiz
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Main Quiz Interaction Area -->
+            <section id="quiz-section" class="py-16 md:py-20">
+                <div class="container mx-auto px-6 max-w-4xl">
+                    <div class="bg-gray-900/50 backdrop-blur-sm border border-gray-700 p-6 md:p-10 rounded-2xl shadow-2xl fade-in-up">
+                        <h2 id="quiz-title" class="text-2xl md:text-3xl font-bold text-white mb-6 text-center">
+                            Start Your Practice Session
+                        </h2>
+                        
+                        <!-- Quiz display area - Dynamic content loads here -->
+                        <div id="quiz-container" class="mt-6 text-white min-h-[300px] flex items-center justify-center">
+                            <!-- Initial content will be injected here by JS -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900/50 text-white">
+            <div class="container mx-auto px-6 py-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p>&copy; 2025 upscools. All Rights Reserved.</p>
+                    <div class="flex space-x-4 mt-4 md:mt-0">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors" aria-label="Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors" aria-label="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <!-- Custom Modal for Alerts (replacing alert()/prompt()) - Modernized Aesthetics -->
+    <div id="custom-modal" class="hidden fixed inset-0 bg-black/70 backdrop-blur-md z-50 flex items-center justify-center p-4">
+        <div class="bg-gray-900 border border-purple-700 rounded-xl p-6 md:p-8 shadow-2xl text-center max-w-sm w-full transform transition-all duration-300 scale-100">
+            <div class="text-purple-400 mb-3 mx-auto h-10 w-10 flex items-center justify-center rounded-full bg-purple-900/40 border border-purple-600">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.06 1.06l-.042.022M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25zm.75 4.5h-.008v-.008h.008v.008z" /></svg>
+            </div>
+            <h3 id="modal-title" class="text-2xl font-bold text-yellow-400 mb-3"></h3>
+            <p id="modal-message" class="text-gray-300 mb-6"></p>
+            <input type="number" id="modal-input" class="hidden w-full px-4 py-3 bg-gray-800 border border-gray-600 text-white placeholder-gray-500 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-purple-500 mb-6 transition-all" placeholder="Enter number (e.g., 5)" min="1">
+            <div class="flex justify-end space-x-3">
+                <button id="modal-cancel-btn" class="hidden bg-gray-700 text-white px-6 py-2 rounded-lg font-semibold hover:bg-gray-600 transition-all shadow-md">Cancel</button>
+                <button id="modal-confirm-btn" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-2 rounded-lg font-semibold hover:from-purple-700 hover:to-pink-700 transition-all shadow-lg">Confirm</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // --- Utility Functions for Custom Modal (Replacing prompt/alert) ---
+            const customModal = document.getElementById('custom-modal');
+            const modalTitle = document.getElementById('modal-title');
+            const modalMessage = document.getElementById('modal-message');
+            const modalInput = document.getElementById('modal-input');
+            const modalConfirmBtn = document.getElementById('modal-confirm-btn');
+            const modalCancelBtn = document.getElementById('modal-cancel-btn');
+
+            function showCustomModal(title, message, isInput = false, initialValue = '') {
+                return new Promise(resolve => {
+                    modalTitle.textContent = title;
+                    modalMessage.textContent = message;
+                    
+                    if (isInput) {
+                        modalInput.classList.remove('hidden');
+                        modalCancelBtn.classList.remove('hidden');
+                        modalInput.value = initialValue; // Set initial value
+                        modalInput.focus();
+                    } else {
+                        modalInput.classList.add('hidden');
+                        modalCancelBtn.classList.add('hidden');
+                    }
+                    
+                    customModal.classList.remove('hidden');
+
+                    const handleConfirm = () => {
+                        customModal.classList.add('hidden');
+                        modalConfirmBtn.removeEventListener('click', handleConfirm);
+                        modalCancelBtn.removeEventListener('click', handleCancel);
+                        // Resolve with input value if input is visible, otherwise resolve with true
+                        resolve(isInput ? modalInput.value : true);
+                    };
+
+                    const handleCancel = () => {
+                        customModal.classList.add('hidden');
+                        modalConfirmBtn.removeEventListener('click', handleConfirm);
+                        modalCancelBtn.removeEventListener('click', handleCancel);
+                        resolve(null); // Return null to indicate cancellation
+                    };
+                    
+                    // Clear previous listeners and attach new ones
+                    modalConfirmBtn.removeEventListener('click', handleConfirm);
+                    modalCancelBtn.removeEventListener('click', handleCancel);
+                    modalConfirmBtn.addEventListener('click', handleConfirm);
+                    modalCancelBtn.addEventListener('click', handleCancel);
+                    
+                    // Enable pressing Enter key to confirm when input is focused
+                    const handleKeydown = (e) => {
+                        if (e.key === 'Enter' && isInput) {
+                            handleConfirm();
+                            document.removeEventListener('keydown', handleKeydown);
+                        }
+                    };
+                    document.addEventListener('keydown', handleKeydown);
+                });
+            }
+
+            // --- Live Clock ---
+            const clockElement = document.getElementById('live-clock');
+            function updateClock() {
+                const now = new Date();
+                const timeString = now.toLocaleTimeString('en-IN', { hour12: false, timeZone: 'Asia/Kolkata' });
+                if (clockElement) clockElement.textContent = timeString + ' IST';
+            }
+            updateClock();
+            setInterval(updateClock, 1000);
+
+            // --- Mobile menu toggle ---
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+
+            // --- Scroll animations ---
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            document.querySelectorAll('.fade-in-up').forEach(element => {
+                observer.observe(element);
+            });
+
+
+            /* --- MAIN QUIZ LOGIC (Modified to use custom modal) --- */
+
+            const startBtn = document.getElementById("start-polity-quiz-btn");
+            const container = document.getElementById("quiz-container");
+            const quizTitle = document.getElementById("quiz-title");
+            let isQuizActive = false; // NEW STATE FLAG
+
+            // Initial Quiz State Message Function (Aesthetic Block)
+            function showInitialMessage() {
+                 isQuizActive = false; // Reset state
+                 startBtn.classList.remove('hidden'); // Show the main button
+                 
+                 // Updated HTML content for the initial block
+                 container.innerHTML = `
+                    <div class="max-w-md mx-auto p-6 md:p-8 bg-gray-800/80 border-t-4 border-yellow-500 rounded-xl shadow-lg transition-all duration-500 text-center">
+                        <div class="text-yellow-400 mb-3 mx-auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8 mx-auto"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Ready to Test Your Knowledge?</h3>
+                        <p class="text-gray-300 text-base">
+                            Click the <span class="text-purple-400 font-semibold cursor-pointer hover:underline transition-colors" id="start-quiz-text-link">Start Indian Polity Quiz button</span> above to load the questions and begin your practice session.
+                        </p>
+                        <p class="text-sm text-gray-500 mt-3">You can set the number of questions before starting.</p>
+                    </div>
+                 `;
+                 container.classList.add('flex', 'items-center', 'justify-center');
+                 quizTitle.textContent = "Start Your Practice Session";
+                 
+                 // Add listener to the new clickable text
+                 const textLink = document.getElementById('start-quiz-text-link');
+                 if (textLink) {
+                     textLink.addEventListener('click', () => {
+                          // Scroll up to the actual start button for better UX
+                         startBtn.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                     });
+                 }
+            }
+            
+            showInitialMessage(); // Display initial state on load
+
+            // Utility: shuffle array (Fisher-Yates)
+            function shuffle(arr) {
+                for (let i = arr.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [arr[i], arr[j]] = [arr[j], arr[i]];
+                }
+                return arr;
+            }
+
+            // Render helpers
+            function clearContainer() {
+                container.innerHTML = "";
+                container.classList.remove('flex', 'items-center', 'justify-center');
+            }
+
+            function showLoading() {
+                 clearContainer();
+                 container.innerHTML = '<div class="text-center"><div class="animate-spin rounded-full h-8 w-8 border-b-2 border-yellow-400 mx-auto mb-3"></div><p class="text-lg text-yellow-400">Loading Quiz Questions...</p></div>';
+                 container.classList.add('flex', 'items-center', 'justify-center');
+            }
+            
+            function quitQuiz() {
+                 showCustomModal("Quiz Ended", "You have ended the quiz session. Your progress was not saved.", false);
+                 showInitialMessage(); // This shows the main button again
+            }
+
+            // Main quiz start logic
+            startBtn.addEventListener("click", async function (e) {
+                e.preventDefault();
+
+                if (isQuizActive) return; // Prevent multiple starts if clicked fast
+
+                // 1. Ask for number of questions using custom modal
+                const raw = await showCustomModal(
+                    "Set Quiz Length",
+                    "How many questions would you like to attempt?",
+                    true, // isInput
+                    '5' // default value
+                );
+
+                if (raw === null || raw.trim() === '') {
+                    return;
+                }
+                
+                const num = parseInt(raw, 10);
+                if (isNaN(num) || num <= 0) {
+                    showCustomModal("Input Error", "Please enter a valid positive number.", false);
+                    return;
+                }
+
+                // --- HIDE THE MAIN START BUTTON & SET ACTIVE STATE ---
+                isQuizActive = true;
+                startBtn.classList.add('hidden'); 
+                // --------------------------------------------------------
+
+                // 2. Load quiz data
+                showLoading();
+                
+                let data;
+                try {
+                    const res = await fetch("quiz.json");
+                    if (!res.ok) throw new Error("Failed to fetch quiz.json");
+                    data = await res.json();
+                } catch (err) {
+                    console.error("Error fetching quiz data:", err);
+                    showCustomModal("Error", "Failed to load quiz questions. Ensure 'quiz.json' is available.", false);
+                    showInitialMessage();
+                    return;
+                }
+
+                const all = Array.isArray(data.questions) ? data.questions.slice() : [];
+                if (all.length === 0) {
+                    showCustomModal("Quiz Error", "No questions found in quiz data.", false);
+                    showInitialMessage();
+                    return;
+                }
+
+                const totalAvailable = all.length;
+                const take = Math.min(num, totalAvailable);
+
+                console.log(`[Quiz Debug] Total questions available: ${totalAvailable}`);
+                console.log(`[Quiz Debug] User requested: ${num} questions.`);
+                console.log(`[Quiz Debug] Final quiz length selected: ${take} questions.`);
+
+                // This line performs the random selection and limits the number of questions.
+                const chosen = shuffle(all).slice(0, take); 
+
+                // 3. Initialize quiz state
+                let index = 0;
+                let score = 0;
+                let userAnswers = new Array(chosen.length).fill(null);
+
+                quizTitle.textContent = data.title; // Update title to be specific
+
+                // 4. Start rendering
+                renderQuestion();
+
+                // --- Helper Functions for Rendering ---
+                function goToNextQuestion() {
+                    index++;
+                    if (index < chosen.length) {
+                        renderQuestion();
+                    } else {
+                        renderResult();
+                    }
+                }
+
+                function renderQuestion() {
+                    clearContainer();
+                    const q = chosen[index];
+
+                    // Header: progress
+                    const header = document.createElement("div");
+                    header.innerHTML = `
+                        <div class="flex justify-between items-center mb-4 pb-2 border-b border-gray-700">
+                            <span class="text-lg font-semibold text-yellow-400">Question ${index + 1} / ${chosen.length}</span>
+                            <span class="text-sm text-indigo-400">Score: ${score}</span>
+                        </div>
+                    `;
+                    container.appendChild(header);
+
+                    // Question Card
+                    const card = document.createElement("div");
+                    card.className = "bg-gray-800 p-6 md:p-8 rounded-xl shadow-inner";
+                    card.innerHTML = `
+                        <h2 class="text-xl md:text-2xl font-bold mb-6 text-white leading-relaxed">
+                            ${q.question}
+                        </h2>
+                        <div id="quiz-options" class="space-y-3"></div>
+                        <div id="quiz-feedback" class="mt-6 p-4 rounded-lg hidden"></div>
+                        <!-- IMPORTANT FIX: Removed nested divs for easier spacing control -->
+                        <div class="mt-6 flex justify-between items-center space-x-3" id="quiz-actions-bottom"></div>
+                    `;
+                    container.appendChild(card);
+
+                    const optionsDiv = document.getElementById("quiz-options");
+                    const feedbackDiv = document.getElementById("quiz-feedback");
+                    const actionsDiv = document.getElementById("quiz-actions-bottom");
+
+                    // Create option buttons
+                    q.options.forEach(opt => {
+                        const b = document.createElement("button");
+                        b.type = "button";
+                        b.className = "quiz-option-btn";
+                        b.textContent = opt;
+                        b.dataset.value = opt;
+                        b.onclick = () => selectOption(b, q, feedbackDiv, actionsDiv);
+                        
+                        // If user already answered, highlight and disable
+                        if (userAnswers[index] !== null) {
+                            b.disabled = true;
+                            if (opt === q.answer) {
+                                b.classList.add('correct-answer');
+                            } else if (opt === userAnswers[index]) {
+                                b.classList.add('incorrect-answer');
+                            }
+                        }
+                        optionsDiv.appendChild(b);
+                    });
+                    
+                    // --- Navigation Buttons (Appended directly to actionsDiv) ---
+                    
+                    // 1. Previous Button
+                    const prevBtn = document.createElement("button");
+                    prevBtn.textContent = "← Previous";
+                    prevBtn.className = "px-4 py-2 rounded-lg bg-gray-700 hover:bg-gray-600 font-semibold transition-colors disabled:opacity-50 text-sm";
+                    prevBtn.disabled = index === 0;
+                    prevBtn.onclick = () => { index--; renderQuestion(); };
+                    actionsDiv.appendChild(prevBtn);
+                    
+                    // 2. Skip Button (Visible if unanswered and not the last question)
+                    const skipBtn = document.createElement("button");
+                    skipBtn.id = "skip-btn";
+                    skipBtn.textContent = "Skip Question";
+                    skipBtn.className = "px-4 py-2 rounded-lg bg-yellow-600 hover:bg-yellow-700 font-semibold transition-colors shadow-md text-sm";
+                    skipBtn.onclick = goToNextQuestion;
+                    
+                    if (userAnswers[index] !== null || index + 1 >= chosen.length) {
+                         skipBtn.style.visibility = 'hidden';
+                    }
+                    actionsDiv.appendChild(skipBtn);
+                    
+                    // 3. Quit Button (Available everywhere)
+                    const quitBtn = document.createElement("button");
+                    quitBtn.textContent = "Quit Quiz";
+                    quitBtn.className = "px-4 py-2 rounded-lg bg-rose-600 hover:bg-rose-700 font-semibold transition-colors shadow-md text-sm ml-auto"; // Use ml-auto for spacing
+                    quitBtn.onclick = quitQuiz;
+                    actionsDiv.appendChild(quitBtn);
+
+                    // 4. Next/Finish Button (Hidden until answered)
+                    const nextBtn = document.createElement("button");
+                    nextBtn.id = "next-finish-btn"; // Assign ID for reliable selection
+                    nextBtn.textContent = (index + 1 < chosen.length) ? "Next →" : "Finish Quiz";
+                    nextBtn.className = "px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 font-semibold transition-colors shadow-lg";
+                    nextBtn.onclick = goToNextQuestion;
+                    
+                    // Use visibility to maintain layout spacing
+                    if (userAnswers[index] === null) {
+                        nextBtn.style.visibility = 'hidden'; 
+                    }
+                    actionsDiv.appendChild(nextBtn);
+                    
+                    // Show feedback immediately if question was already answered
+                    if (userAnswers[index] !== null) {
+                        showFeedback(q, userAnswers[index], feedbackDiv, actionsDiv);
+                    }
+                }
+
+                function selectOption(buttonElem, q, feedbackDiv, actionsDiv) {
+                    // Disable all option buttons immediately
+                    const opts = container.querySelectorAll(".quiz-option-btn");
+                    opts.forEach(b => b.disabled = true);
+
+                    const selected = buttonElem.dataset.value;
+                    const correct = q.answer;
+                    
+                    // Only increase score if the answer hasn't been recorded yet
+                    if (userAnswers[index] === null) {
+                         let isCorrect = selected === correct;
+                         if (isCorrect) {
+                            score++;
+                         }
+                    }
+                    userAnswers[index] = selected; // Store the user's answer
+
+                    showFeedback(q, selected, feedbackDiv, actionsDiv);
+                }
+
+                function showFeedback(q, selected, feedbackDiv, actionsDiv) {
+                    const isCorrect = selected === q.answer;
+                    
+                    // Highlight selected and correct buttons
+                    const opts = container.querySelectorAll(".quiz-option-btn");
+                    opts.forEach(b => {
+                        const val = b.dataset.value;
+                        if (val === q.answer) {
+                            b.classList.add('correct-answer');
+                        } else if (val === selected && !isCorrect) {
+                            b.classList.add('incorrect-answer');
+                        }
+                        b.disabled = true;
+                    });
+
+                    feedbackDiv.classList.remove('hidden');
+                    feedbackDiv.className = isCorrect 
+                        ? 'mt-6 p-4 rounded-lg bg-green-900/40 border border-green-500 text-green-300' 
+                        : 'mt-6 p-4 rounded-lg bg-red-900/40 border border-red-500 text-red-300';
+
+                    feedbackDiv.innerHTML = `
+                        <div class="font-bold mb-2">${isCorrect ? '✅ Correct Answer!' : '❌ Incorrect Answer.'}</div>
+                        ${!isCorrect ? `<p class="text-sm">The correct answer was: <span class="text-yellow-400 font-semibold">${q.answer}</span></p>` : ''}
+                        <p class="mt-3 text-sm italic">${q.explanation || 'No detailed explanation available.'}</p>
+                    `;
+                    
+                    // FIX: Show Next/Finish button using its ID
+                    const nextBtn = document.getElementById("next-finish-btn");
+                    if (nextBtn) {
+                        nextBtn.style.visibility = 'visible';
+                    }
+                    
+                    // Hide Skip button once answered
+                    const skipBtn = document.getElementById("skip-btn");
+                    if(skipBtn) {
+                        skipBtn.style.visibility = 'hidden';
+                    }
+                }
+
+
+                function renderResult() {
+                    clearContainer();
+                    const answeredCount = userAnswers.filter(a => a !== null).length;
+                    const percentage = chosen.length > 0 ? ((score / chosen.length) * 100).toFixed(1) : 0;
+                    const isPass = percentage >= 60; // Example pass mark (60%)
+                    
+                    const out = document.createElement("div");
+                    out.className = "bg-gray-800 p-8 rounded-xl text-center shadow-2xl";
+                    out.innerHTML = `
+                        <h2 class="text-3xl font-extrabold mb-4 ${isPass ? 'text-green-400' : 'text-yellow-400'}">
+                            ${isPass ? '🌟 Excellent Work! Quiz Completed' : '📚 Good Effort! Quiz Completed'}
+                        </h2>
+                        <div class="mb-6 text-xl text-white">
+                            Correct Answers: <span class="${isPass ? 'text-green-400' : 'text-red-400'} font-bold">${score} / ${chosen.length}</span>
+                        </div>
+                         <div class="mb-6 text-xl text-white">
+                            Attempted: <span class="text-indigo-400 font-bold">${answeredCount} / ${chosen.length}</span>
+                        </div>
+                        <div class="mb-8 text-2xl font-bold">
+                            Accuracy: <span class="${isPass ? 'text-green-400' : 'text-red-400'}">${percentage}%</span>
+                        </div>
+                        <div class="space-x-4 flex justify-center flex-wrap">
+                            <button id="retryBtn" class="px-6 py-3 rounded-lg bg-purple-600 text-white font-semibold hover:bg-purple-700 transition-all shadow-md m-2">Restart Quiz</button>
+                            <button id="reviewBtn" class="px-6 py-3 rounded-lg bg-gray-700 text-white font-semibold hover:bg-gray-600 transition-all shadow-md m-2">Review All Questions</button>
+                            <a href="index.html#resources" class="px-6 py-3 rounded-lg bg-yellow-600 text-white font-semibold hover:bg-yellow-700 transition-all shadow-md m-2">View Resources</a>
+                        </div>
+                        <div id="reviewArea" class="mt-8 text-left border-t border-gray-700 pt-6"></div>
+                    `;
+                    container.appendChild(out);
+                    
+                    quizTitle.textContent = "Quiz Results";
+                    
+                    // --- SHOW THE MAIN START BUTTON AGAIN ---
+                    isQuizActive = false;
+                    startBtn.classList.remove('hidden'); 
+                    // ----------------------------------------
+
+                    document.getElementById("retryBtn").onclick = () => {
+                        // Restart the process by simulating a click on the main button
+                        startBtn.click();
+                    };
+
+                    document.getElementById("reviewBtn").onclick = () => {
+                        showReview();
+                    };
+
+                    function showReview() {
+                        const area = document.getElementById("reviewArea");
+                        area.innerHTML = `<h3 class="text-xl font-bold mb-4 text-white">Detailed Review</h3>`;
+                        
+                        chosen.forEach((qItem, i) => {
+                            const userAnswer = userAnswers[i];
+                            const isCorrect = userAnswer === qItem.answer;
+                            
+                            const qDiv = document.createElement("div");
+                            qDiv.className = `mb-4 p-4 rounded-lg shadow-lg ${isCorrect ? 'bg-green-900/30' : 'bg-red-900/30'} border ${isCorrect ? 'border-green-700' : 'border-red-700'}`;
+                            
+                            qDiv.innerHTML = `
+                                <div class="font-bold mb-2 text-white">Q${i + 1}. ${qItem.question}</div>
+                                <div class="text-sm">
+                                    <span class="font-semibold ${isCorrect ? 'text-green-400' : 'text-red-400'}">Your Answer:</span> ${userAnswer || '<span class="italic">Skipped/Unanswered</span>'}
+                                </div>
+                                ${!isCorrect ? `<div class="text-sm mt-1">
+                                    <span class="font-semibold text-yellow-400">Correct Answer:</span> ${qItem.answer}
+                                </div>` : ''}
+                                <div class="mt-3 text-gray-300 text-sm border-t border-gray-700 pt-3">
+                                    <span class="font-semibold text-indigo-300">Explanation:</span> ${qItem.explanation || "No explanation provided."}
+                                </div>
+                            `;
+                            area.appendChild(qDiv);
+                        });
+                        
+                        // Scroll to review area
+                        area.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }
+            });
+        });
+        
+    </script>
+</body>
+</html>

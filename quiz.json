@@ -1,0 +1,606 @@
+{
+  "title": "Indian Polity & Governance Quiz",
+  "category": "UPSC Prelims",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of the following statements regarding the powers of the Legislature in British India is/ are correct?\n\n1. The Indian Councils Act of 1861 empowered the legislature to discuss and vote upon selected items of the budget for the first time.\n2. The members were allowed to ask supplementary questions for the first time by the Indian Councils Act, 1909.\n3. The Government of India Act of 1919 gave the legislators the right to move adjournment motions and raise urgent issues of public interest.",
+      "options": [
+        "A. 1 and 2 only",
+        "B. 2 and 3 only",
+        "C. 1 and 3 only",
+        "D. 1, 2 and 3"
+      ],
+      "answer": "B. 2 and 3 only",
+      "explanation": "Statement 1 is incorrect: The Indian Councils Act of 1861 did not grant the legislature the power to vote on the budget.\n\nStatement 2 is correct: The Indian Councils Act of 1909 (Morley-Minto Reforms) allowed members to ask supplementary questions for the first time.\n\nStatement 3 is correct: The Government of India Act of 1919 gave legislators the right to move adjournment motions to discuss urgent matters of public interest."
+    },
+    {
+      "id": 2,
+      "question": "Which one of the following options is correct with reference to Evolution of civil services in India?",
+      "options": [
+        "A. Wellesley was the first to bring into existence and organize the civil services in India.",
+        "B. Cornwallis set up the Fort William college for training of new recruits.",
+        "C. Aitchison committee recommended for a Public Service Commission to be immediately established.",
+        "D. Lee commission recommended 50:50 parity between the Europeans and the Indians in direct recruitment of ICS."
+      ],
+      "answer": "D. Lee commission recommended 50:50 parity between the Europeans and the Indians in direct recruitment of ICS.",
+      "explanation": "Option 'A' is incorrect because Cornwallis, not Wellesley, first organized the civil services.\n\nOption 'B' is incorrect because Wellesley, not Cornwallis, set up the Fort William college in 1800 for training.\n\nOption 'C' is incorrect because the Lee Commission, not the Aitchison Committee, recommended the immediate establishment of a Public Service Commission.\n\nOption 'D' is correct as the Lee Commission (1924) recommended that a 50:50 parity in direct recruitment to the ICS between Europeans and Indians be reached within 15 years."
+    },
+    {
+      "id": 3,
+      "question": "Consider the following statements with reference to the Indian Independence Act of 1947:\n\n1. The Act made the Constituent Assembly of India a fully sovereign body.\n2. It made the Constituent Assembly the first Parliament of free India.\n3. The office of the Governor-General of India was abolished by the Act.\n\nHow many statements given above are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. All three",
+        "D. None"
+      ],
+      "answer": "B. Only two",
+      "explanation": "Statement 1 is correct: The Act granted the Constituent Assembly full sovereign power to frame any constitution.\n\nStatement 2 is correct: The Assembly also acted as a legislative body, becoming the first Parliament of free India.\n\nStatement 3 is incorrect: The Act abolished the office of the Viceroy but provided for a Governor-General for each dominion."
+    },
+    {
+      "id": 4,
+      "question": "With reference to the Government of India Act of 1935, consider the following statements:\n\n1. The Act provided for establishment of India as a federation of the British provinces and princely states.\n2. The Act introduced bicameralism in the British provinces.\n3. The Act designated the Governor-General of India as a nominal head of the State.\n\nHow many statements given above are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. All three",
+        "D. None"
+      ],
+      "answer": "A. Only one",
+      "explanation": "Statement 1 is incorrect: The proposed All-India Federation never came into being as the princely states did not join it.\n\nStatement 2 is correct: The 1935 Act introduced bicameralism in six of the eleven provinces.\n\nStatement 3 is incorrect: The Governor-General was designated as a nominal head of state by the Indian Independence Act of 1947, not the 1935 Act."
+    },
+    {
+      "id": 5,
+      "question": "With reference to the Regulating Act of 1773, consider the following statements:\n\n1. It made the governors of Bengal, Bombay and Madras presidencies independent of one another.\n2. It provided for the establishment of High Courts at Calcutta, Bombay and Madras.\n3. It recognized, for the first time, the political and administrative functions of the company.\n\nHow many statements given above are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. All three",
+        "D. None"
+      ],
+      "answer": "A. Only one",
+      "explanation": "Statement 1 is incorrect: The Act made the governors of Bombay and Madras subordinate to the Governor-General of Bengal.\n\nStatement 2 is incorrect: The Act established a Supreme Court at Calcutta in 1774, not High Courts in the three presidencies.\n\nStatement 3 is correct: The Regulating Act of 1773 was the first step by the British Parliament to regulate the company's affairs and recognized its political and administrative functions."
+    },
+    {
+      "id": 6,
+      "question": "In the context of British rule in India, consider the following statements regarding the Amending Act of 1781:\n\n1. It exempted the servants of the company from the jurisdiction of the Supreme Court for their official actions.\n2. It excluded the revenue matters from the jurisdiction of the Supreme Court.\n3. It required the courts to administer a uniform law for the people of all religions and communities.\n\nHow many statements given above are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. All three",
+        "D. None"
+      ],
+      "answer": "B. Only two",
+      "explanation": "Statement 1 is correct: The Amending Act of 1781 exempted company servants from the Supreme Court's jurisdiction for their official actions.\n\nStatement 2 is correct: The Act also excluded revenue matters from the jurisdiction of the Supreme Court.\n\nStatement 3 is incorrect: The Act required courts to apply the personal laws of the defendants (e.g., Hindu law for Hindus, Mohammedan law for Muslims), not a uniform law."
+    },
+    {
+      "id": 7,
+      "question": "With reference to the Pitt's India Act of 1784, consider the following:\n\n1. It created the Board of Control to manage the commercial affairs.\n2. It empowered the Court of Directors to supervise and direct all operations of the civil and military government.\n\nWhich of the statements given above is/are correct?",
+      "options": [
+        "A. 1 only",
+        "B. 2 only",
+        "C. Both 1 and 2",
+        "D. Neither 1 nor 2"
+      ],
+      "answer": "D. Neither 1 nor 2",
+      "explanation": "Statement 1 is incorrect: The Act created the Board of Control to manage political affairs, while the Court of Directors managed commercial affairs.\n\nStatement 2 is incorrect: The Board of Control, not the Court of Directors, was empowered to supervise the civil and military government."
+    },
+    {
+      "id": 8,
+      "question": "The constitutional position of British territories in India was explicitly defined in which of the following act?",
+      "options": [
+        "A. The charter act of 1813",
+        "B. The Regulating act of 1773",
+        "C. The Pitts India act of 1784",
+        "D. The charter act of 1833"
+      ],
+      "answer": "A. The charter act of 1813",
+      "explanation": "The Charter Act of 1813 was the first act to explicitly define the constitutional position of British territories in India by asserting the sovereignty of the British Crown over the company's territories."
+    },
+    {
+      "id": 9,
+      "question": "Consider the following statements:\n\n1. Charter Act of 1813 ended all the commercial activities of the East India Company.\n2. Charter Act of 1833 created Government of India having authority over the entire territorial area possessed by the British in India.\n3. Charter Act of 1833 separated the legislative and executive functions of the Governor-General's council.\n\nHow many statements given above are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. All three",
+        "D. None"
+      ],
+      "answer": "A. Only one",
+      "explanation": "Statement 1 is incorrect: The 1813 Act only ended the company's trade monopoly, not all its commercial activities; it continued trade in tea and with China.\n\nStatement 2 is correct: The Charter Act of 1833 created the Government of India and made the Governor-General of Bengal the Governor-General of India.\n\nStatement 3 is incorrect: The legislative and executive functions of the Governor-General's council were separated by the Charter Act of 1853."
+    },
+    {
+      "id": 10,
+      "question": "Which of the following statements is/are correct regarding the Charter Act 1853?\n\n1. It introduced local representation in the Indian Legislative Council for the first time.\n2. For the first time, it authorized the Local Governments in India to impose taxes on persons.\n3. The Act provided for an open competition system of selection and recruitment of civil servants.\n\nSelect the correct answer using the code given below:",
+      "options": [
+        "A. 1 only",
+        "B. 2 and 3",
+        "C. 1 and 2",
+        "D. 1 and 3"
+      ],
+      "answer": "D. 1 and 3",
+      "explanation": "Statement 1 is correct: The Charter Act of 1853 introduced local representation in the Indian (Central) Legislative Council for the first time.\n\nStatement 2 is incorrect: The authority for local governments to impose taxes was granted by the Charter Act of 1813.\n\nStatement 3 is correct: The Act of 1853 provided for an open competition system for the recruitment of civil servants, making it accessible to Indians."
+    },
+    {
+      "id": 11,
+      "question": "Which of the following provisions of the Government of India Act of 1919, were similar to the actual practices adopted by the Constitution of independent India with some changes?\n\n1. Direct elections to the central legislative councils.\n2. Division of powers in Federal, Provincial and the Concurrent List.\n3. Bicameral legislature.\n4. Dyarchy at the Central government.\n\nSelect the correct answer using the code given below:",
+      "options": [
+        "A. 1 and 3 only",
+        "B. 2 and 4 only",
+        "C. 1, 2 and 3 only",
+        "D. 3 and 4 only"
+      ],
+      "answer": "A. 1 and 3 only",
+      "explanation": "Statement 1 is correct: The GoI Act, 1919 introduced direct elections, a practice adopted by the Constitution of independent India.\n\nStatement 2 is incorrect: The division of powers into three lists was a feature of the GoI Act, 1935, not the 1919 Act.\n\nStatement 3 is correct: The GoI Act, 1919 introduced bicameralism, which was also adopted in independent India's Constitution.\n\nStatement 4 is incorrect: Dyarchy at the Centre was provided for by the GoI Act, 1935, not the 1919 Act."
+    },
+    {
+      "id": 12,
+      "question": "With reference to the Government of India Act of 1935, consider the following statements:\n\n1. It provided for the adoption of the dyarchy at the Centre.\n2. It abolished the Council of India, established by the Government of India Act of 1858.\n3. It provided for the separate electorates for depressed classes, women and labour.\n\nHow many statements given above are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. All three",
+        "D. None"
+      ],
+      "answer": "C. All three",
+      "explanation": "Statement 1 is correct: The Act provided for dyarchy at the Centre, although this provision never came into operation.\n\nStatement 2 is correct: The Act abolished the Council of India, which was established by the GoI Act of 1858 to assist the Secretary of State for India.\n\nStatement 3 is correct: The Act extended the principle of communal representation by providing separate electorates for depressed classes (Scheduled Castes), women, and labour (workers)."
+    },
+    {
+      "id": 13,
+      "question": "The \"Instrument of Instructions\" contained in the Government of India Act 1935 have been incorporated in the Constitution of India in the year 1950 as",
+      "options": [
+        "A. Fundamental Rights",
+        "B. Directive Principles of State Policy",
+        "C. Extent of executive power of State",
+        "D. Conduct of business of the Government of India"
+      ],
+      "answer": "B. Directive Principles of State Policy",
+      "explanation": "The 'Instrument of Instructions' from the Government of India Act, 1935, which contained instructions to the Governor-General and Governors, were incorporated into the Constitution of India as the Directive Principles of State Policy (DPSP)."
+    },
+    {
+      "id": 14,
+      "question": "In the federation established by the Government of India Act of 1935 residuary Power was given to the",
+      "options": [
+        "A. Federal Legislature",
+        "B. Governor-General",
+        "C. Provincial Legislature",
+        "D. Provincial Governors"
+      ],
+      "answer": "B. Governor-General",
+      "explanation": "The Government of India Act of 1935 divided powers between the Centre and the provinces using three lists: Federal, Provincial, and Concurrent. The residuary powers, i.e., the power to legislate on subjects not mentioned in any of the three lists, were vested in the Governor-General."
+    },
+    {
+      "id": 15,
+      "question": "With reference to the interim government formed in 1946, consider the following statements:\n\n1. The members of the interim Government were members of the Viceroy's Executive Council.\n2. Jawaharlal Nehru was designated as the President of the Council.\n\nWhich of the statements given above is/are incorrect?",
+      "options": [
+        "A. 1 only",
+        "B. 2 only",
+        "C. Both 1 and 2",
+        "D. Neither 1 nor 2"
+      ],
+      "answer": "B. 2 only",
+      "explanation": "Statement 1 is correct: The members of the interim government did serve as members of the Viceroy's Executive Council.\n\nStatement 2 is incorrect: The Viceroy continued to be the head (President) of the Executive Council. Jawaharlal Nehru was designated as the Vice-President of the Council."
+    },
+    {
+      "id": 16,
+      "question": "Consider the following statements with reference to Acts and Commissions during the British rule:\n\n1. Indian Councils Act of 1833 provided for nomination of Indians as non-official members of legislative council.\n2. India Council Act of 1892 enlarged the functions of the Legislative Councils and gave them powers to discuss the Budget.\n3. The Simon Commission recommended the extension of responsible Government in the provinces.\n\nHow many statements given above are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. All three",
+        "D. None"
+      ],
+      "answer": "B. Only two",
+      "explanation": "Statement 1 is incorrect: It was the Indian Councils Act of 1861, not 1833, that provided for the nomination of some Indians as non-official members of the Viceroy's expanded council.\n\nStatement 2 is correct: The Indian Councils Act of 1892 increased the functions of legislative councils, giving them the power to discuss the budget and address questions to the executive.\n\nStatement 3 is correct: The Simon Commission (1930) recommended the extension of responsible government in the provinces, among other reforms."
+    },
+    {
+      "id": 17,
+      "question": "Consider the following statements regarding Indian Independence Act of 1947:\n\n1. It deprived the Viceroy of India of legislative powers and retained the office merely as a ceremonial position.\n2. It allowed the princely states either to join India or Pakistan but denied the right to remain independent.\n3. It discontinued the appointment to civil services by the secretary of state for India.\n4. It abolished the office of secretary of state for India.\n\nHow many statements given above are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. Only three",
+        "D. All four"
+      ],
+      "answer": "B. Only two",
+      "explanation": "Statement 1 is incorrect: The Act abolished the office of Viceroy and provided for a Governor-General for each dominion, giving legislative powers to the Constituent Assemblies.\n\nStatement 2 is incorrect: The Act granted princely states the freedom to join either India or Pakistan or to remain independent.\n\nStatement 3 is correct: The Act discontinued appointments to the civil services by the Secretary of State for India.\n\nStatement 4 is correct: The Act abolished the office of the Secretary of State for India and transferred his functions to the Secretary of State for Commonwealth Affairs."
+    },
+    {
+      "id": 18,
+      "question": "Which of the following advocated for universal adult franchise during pre-independence period in India?\n\n1. The Constitution of India Bill, 1895\n2. Nehru report, 1928\n3. Government of India act, 1919\n4. Lucknow pact, 1916\n\nSelect the correct answer using the code given below:",
+      "options": [
+        "A. 3 and 4 only",
+        "B. 1, 2 and 4 only",
+        "C. 2, 3 and 4 only",
+        "D. 1 and 2 only"
+      ],
+      "answer": "D. 1 and 2 only",
+      "explanation": "Statement 1 is correct: The Constitution of India Bill, 1895 was one of the earliest efforts advocating for universal adult franchise.\n\nStatement 2 is correct: The Nehru Report of 1928 explicitly recommended voting rights for every person aged 21 and above.\n\nStatement 3 is incorrect: The Government of India Act, 1919 provided for a limited franchise based on property, tax, or education.\n\nStatement 4 is incorrect: The Lucknow Pact of 1916 called for a 'broad' franchise but did not advocate for universal adult franchise."
+    },
+    {
+      "id": 19,
+      "question": "With reference to the difference between East India Company Rule and British Crown Rule in India, consider the following statements:\n\n1. While local government did not have any financial powers under East India Company rule, they were given power to impose taxes under Crown rule.\n2. While East India Company rule completely excluded Indians from civil services, Crown rule paved the way for their recruitment in administration.\n\nWhich of the statements given above is/are correct?",
+      "options": [
+        "A. 1 only",
+        "B. 2 only",
+        "C. Both 1 and 2",
+        "D. Neither 1 nor 2"
+      ],
+      "answer": "D. Neither 1 nor 2",
+      "explanation": "Statement 1 is incorrect: Local governments were authorized to impose taxes under the Company Rule itself, specifically by the Charter Act of 1813.\n\nStatement 2 is incorrect: Indians were not completely excluded from civil services under Company Rule. The Charter Act of 1853 introduced an open competition system for civil services, making it accessible to Indians."
+    },
+    {
+      "id": 20,
+      "question": "With reference to the Charter Act of 1813, consider the following statements:\n\n1. It granted permission to the Christian missionaries to come to India and engage in religious proselytization.\n2. It extended the trade monopoly of the company in India for another ten years.\n3. It set aside Rs.1 Lakh every year on the education of Indians.\n\nHow many statements given above are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. All three",
+        "D. None"
+      ],
+      "answer": "B. Only two",
+      "explanation": "Statement 1 is correct: The Act permitted Christian missionaries to come to India for the purpose of religious proselytization.\n\nStatement 2 is incorrect: The Act abolished the Company's trade monopoly in India, except for the trade in tea and trade with China.\n\nStatement 3 is correct: The Act allocated a sum of Rs. 1 lakh annually for the promotion of education among Indians."
+    },
+    {
+      "id": 21,
+      "question": "With reference to the history of constitutional legislation in Modern India, what was meant by the term Communal Award?",
+      "options": [
+        "A. Offer of the British to create different states for all different religious communities at the time of independence.",
+        "B. Award announced by the British to recognize efforts of individuals to reduce communal tensions during non-cooperation movement.",
+        "C. Privileges in the form of large share in government services awarded by the British to communities who were loyal to them.",
+        "D. A separate electorate awarded to members of different communities after the Second Round Table Conference."
+      ],
+      "answer": "D. A separate electorate awarded to members of different communities after the Second Round Table Conference.",
+      "explanation": "The Communal Award, announced by British Prime Minister Ramsay MacDonald in 1932, was a scheme of representation for minorities. It extended the system of separate electorates (previously for Muslims, Sikhs, etc.) to the 'Depressed Classes' (now known as Dalits)."
+    },
+    {
+      "id": 22,
+      "question": "With reference to the comparison between the Government of India Act, 1919 and the Government of India Act, 1935, consider the following statements:\n\n1. Both the Acts provided for the establishment of Dyarchy, but at different levels of federal polity.\n2. While the Act of 1919 provided for indirect elections, the Act of 1935 provided for direct elections to the central legislature.\n3. While the Act of 1919 introduced Bicameralism at the Centre, the Act of 1935 introduced it in selected Provinces as well.\n\nHow many of the above given statements are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. All three",
+        "D. None"
+      ],
+      "answer": "B. Only two",
+      "explanation": "Statement 1 is correct: The 1919 Act introduced Dyarchy at the provincial level, while the 1935 Act introduced it at the central level.\n\nStatement 2 is incorrect: Both the 1919 and 1935 Acts provided for direct elections, though the franchise was limited.\n\nStatement 3 is correct: The 1919 Act introduced a bicameral legislature at the Centre, and the 1935 Act extended this feature to six provinces."
+    },
+    {
+      "id": 23,
+      "question": "Consider the following statements:\n\n1. The Act dropped the title of Emperor of India from the royal titles of the King of England.\n2. The Act ended the British rule in India and declared India as an independent and sovereign state.\n3. The Act provided for the appointment of some civil servants by the Secretary of State for India.\n\nHow many of the above given statements are correct about the Indian Independence Act of 1947?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. All three",
+        "D. None"
+      ],
+      "answer": "B. Only two",
+      "explanation": "Statement 1 is correct: The Indian Independence Act of 1947 dropped the title 'Emperor of India' from the royal titles of the British King.\n\nStatement 2 is correct: The Act formally ended British rule and declared India an independent and sovereign state from August 15, 1947.\n\nStatement 3 is incorrect: The Act abolished the office of the Secretary of State for India and discontinued appointments to the civil services by this office."
+    },
+    {
+      "id": 24,
+      "question": "Which of the following elements were introduced for the first time in British India by the Government of India Act, 1919?\n\n1. Dyarchy at provinces\n2. Bicameralism\n3. Communal representation in legislature\n4. Association of Indians with the Viceroy's executive council\n5. Allowing Provincial Councils to determine on women's voting rights\n\nSelect the correct answer using the code given below:",
+      "options": [
+        "A. 1 and 2 only",
+        "B. 1, 3 and 4 only",
+        "C. 1, 2 and 5 only",
+        "D. 2, 3, 4 and 5 only"
+      ],
+      "answer": "C. 1, 2 and 5 only",
+      "explanation": "Statement 1 is correct: The 1919 Act introduced dyarchy (dual rule) in the provinces.\n\nStatement 2 is correct: The Act introduced a bicameral legislature at the Centre for the first time.\n\nStatement 3 is incorrect: Communal representation was introduced by the Indian Councils Act of 1909.\n\nStatement 4 is incorrect: The association of Indians with the Viceroy's executive council was first allowed by the Indian Councils Act of 1909.\n\nStatement 5 is correct: The 1919 Act allowed provincial councils to decide if women could vote, based on certain criteria."
+    },
+    {
+      "id": 25,
+      "question": "\"This act made the Governor-General of Bengal as the Governor-General of India. It deprived the Governors of Bombay and Madras of their legislative powers. It attempted to introduce a system of open competition for selection of civil servants.\"\n\nWhich one of the following acts is being described in the above given paragraph?",
+      "options": [
+        "A. Charter Act of 1833",
+        "B. Indian Councils Act of 1861",
+        "C. Government of India Act of 1858",
+        "D. Government of India Act of 1919"
+      ],
+      "answer": "A. Charter Act of 1833",
+      "explanation": "The paragraph describes the key features of the Charter Act of 1833. It centralized administration by making the Governor-General of Bengal the Governor-General of India, took away legislative powers from the presidencies of Bombay and Madras, and made the first attempt to introduce an open competition for civil services."
+    },
+    {
+      "id": 26,
+      "question": "With reference to 'Indian Council Act of 1861', consider the following statements:\n\n1. It restored the legislative powers to the Bombay and Madras Presidencies.\n2. It established a 15-member Council of India to assist the secretary of state for India.\n3. It ended the system of double government by abolishing the Board of Control and Court of Directors.\n4. It empowered the Viceroy to issue ordinances without the concurrence of the legislative council.\n\nHow many of the above given statements are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. Only three",
+        "D. All four"
+      ],
+      "answer": "B. Only two",
+      "explanation": "Statement 1 is correct: The 1861 Act restored legislative powers to the Bombay and Madras Presidencies, initiating a process of decentralization.\n\nStatement 2 is incorrect: The 15-member Council of India was established by the Government of India Act of 1858.\n\nStatement 3 is incorrect: The system of double government was ended by the Government of India Act of 1858.\n\nStatement 4 is correct: The Act empowered the Viceroy to issue ordinances during an emergency without the legislative council's concurrence."
+    },
+    {
+      "id": 27,
+      "question": "The Government of India Act of 1935 had provision of establishing an All-India Federation.\nIn this context, how this act differentiated Indian Princely States from the Governor's Provinces?\n\n1. Indian Princely states were mandatorily needed to join Indian federation whereas it was voluntary in case of Governor's Provinces.\n2. Unlike Princely States, in case of Governor's Provinces the federal authority was extended to only legislative matters and not to executive matters.\n\nWhich of the statements given above is/are correct?",
+      "options": [
+        "A. 1 only",
+        "B. 2 only",
+        "C. Both 1 and 2",
+        "D. Neither 1 nor 2"
+      ],
+      "answer": "D. Neither 1 nor 2",
+      "explanation": "Statement 1 is incorrect: Accession to the federation was compulsory for the Governor's Provinces but voluntary for the Princely States.\n\nStatement 2 is incorrect: In the case of Governor's Provinces, federal authority extended to both legislative and executive matters. For Princely States, the extent of federal authority was defined by their individual Instrument of Accession."
+    },
+    {
+      "id": 28,
+      "question": "Which of the following functions were performed by the Constituent Assembly of India?\n\n1. Ratified India's Commonwealth membership.\n2. Elected first President of India.\n3. Appointed India's first Prime Minister till the formation of new parliament in 1952.\n\nSelect the correct answer using the code given below:",
+      "options": [
+        "A. 1 only",
+        "B. 1 and 2 only",
+        "C. 2 and 3 only",
+        "D. 1, 2 and 3"
+      ],
+      "answer": "B. 1 and 2 only",
+      "explanation": "Statement 1 is correct: The Constituent Assembly ratified India's membership of the Commonwealth in May 1949.\n\nStatement 2 is correct: It elected Dr. Rajendra Prasad as the first President of India on January 24, 1950.\n\nStatement 3 is incorrect: Jawaharlal Nehru was sworn in as the first Prime Minister by the Governor-General, Lord Mountbatten; he was not appointed by the Constituent Assembly."
+    },
+    {
+      "id": 29,
+      "question": "Consider the following statements:\n\n1. The Constituent Assembly of India was formed under the scheme formulated by the Cripps Mission.\n2. The Constituent assembly generally followed the policy of consensus and accommodation with respect to drafting of the Constitution.\n\nWhich of the statements given above is/are correct?",
+      "options": [
+        "A. 1 only",
+        "B. 2 only",
+        "C. Both 1 and 2",
+        "D. Neither 1 nor 2"
+      ],
+      "answer": "B. 2 only",
+      "explanation": "Statement 1 is incorrect: The Constituent Assembly was formed in November 1946 based on the scheme proposed by the Cabinet Mission Plan, not the Cripps Mission.\n\nStatement 2 is correct: The drafting of the Constitution was largely marked by a process of consensus-building and accommodation among the members of the Constituent Assembly."
+    },
+    {
+      "id": 30,
+      "question": "Which among the following provisions of the Constitution came into force on the date of adoption of the Constitution?\n\n1. Superintendence, direction and control of elections to be vested in the Election Commission of India.\n2. Proclamation of the National Emergency.\n3. Citizenship at the commencement of the Constitution.\n4. There shall be a Council of Ministers with the Prime Minister at the head to aid and advise the President.\n\nSelect the correct answer using the code given below:",
+      "options": [
+        "A. 1, 3 and 4 only",
+        "B. 1, 2 and 4 only",
+        "C. 1 and 3 only",
+        "D. 2, 3 and 4 only"
+      ],
+      "answer": "C. 1 and 3 only",
+      "explanation": "On the date of adoption, November 26, 1949, certain provisions came into immediate force. These included provisions related to citizenship (Article 5, 6, 7, etc.) and the Election Commission (Article 324).\n\nProvisions for National Emergency (Article 352) and the Council of Ministers (Article 74) came into force on January 26, 1950, the date of commencement of the Constitution."
+    },
+    {
+      "id": 31,
+      "question": "The demand for Constituent Assembly was accepted for the first time by the British Government through",
+      "options": [
+        "A. Wavell plan",
+        "B. Simon Commission",
+        "C. Gandhi Irwin Pact",
+        "D. August Offer"
+      ],
+      "answer": "D. August Offer",
+      "explanation": "While the Indian National Congress first officially demanded a Constituent Assembly in 1935, this demand was accepted in principle for the first time by the British Government through the 'August Offer' of 1940."
+    },
+    {
+      "id": 32,
+      "question": "Consider the following statements:\n\n1. Daman and Diu were acquired by India from the Portuguese by police action.\n2. Sikkim was added to India through referendum.\n3. Puducherry was administered by India as an 'acquired territory' till 1962.\n\nHow many statements given above are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. All three",
+        "D. None"
+      ],
+      "answer": "C. All three",
+      "explanation": "Statement 1 is correct: Goa, Daman and Diu were acquired from the Portuguese via police action in 1961.\n\nStatement 2 is correct: Sikkim formally became a part of India in 1975 after a referendum in which the population voted to abolish the monarchy and join India.\n\nStatement 3 is correct: After being handed over by the French in 1954, Puducherry was administered as an 'acquired territory' until it was made a union territory in 1962."
+    },
+    {
+      "id": 33,
+      "question": "In July 1946, the Indian National Congress appointed an 'Experts Committee'.\nWith reference to this Experts Committee of Congress, consider the following statements:\n\n1. It was appointed to prepare material for the Constituent Assembly.\n2. It recommended the draft of the Objectives Resolution.\n3. Krishna Kriplani was the chairman of this committee.\n\nHow many statements given above are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. All three",
+        "D. None"
+      ],
+      "answer": "B. Only two",
+      "explanation": "Statement 1 is correct: The Experts Committee was appointed by the Congress Party to prepare material for the upcoming Constituent Assembly.\n\nStatement 2 is correct: The committee's recommendations included a 'Declaration of Objectives', which was the first version of what later became the Objectives Resolution.\n\nStatement 3 is incorrect: Jawaharlal Nehru was the chairman of the committee. Krishna Kripalani was co-opted as a member and convener."
+    },
+    {
+      "id": 34,
+      "question": "With reference to the Communal Award, consider the following statements:\n\n1. It was introduced on the recommendations of Simon Commission.\n2. It introduced separate electorates for Sikhs, Indian Christians, and Anglo-Indians for the first time.\n3. It led to the signing of Poona Pact which gave reserved seats to the depressed classes.\n\nHow many statements given above are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. All three",
+        "D. None"
+      ],
+      "answer": "A. Only one",
+      "explanation": "Statement 1 is incorrect: The Communal Award was based on the findings of the Indian Franchise (Lothian) Committee, not the Simon Commission.\n\nStatement 2 is incorrect: Separate electorates for Sikhs, Indian Christians, and Anglo-Indians were introduced by the Government of India Act, 1919. The Communal Award extended this to the depressed classes.\n\nStatement 3 is correct: Mahatma Gandhi's fast unto death in protest of the award led to the Poona Pact, which replaced separate electorates for the depressed classes with a system of reserved seats."
+    },
+    {
+      "id": 35,
+      "question": "With reference to the composition of India's Constituent Assembly, consider the following statements:\n\n1. It was constituted on the basis of recommendations of the Cabinet Mission.\n2. Members from the Princely States were drawn through nomination.\n3. Seats were reserved for various minorities but there was no separate electorate.\n\nHow many of the above given statements are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. All three",
+        "D. None"
+      ],
+      "answer": "B. Only two",
+      "explanation": "Statement 1 is correct: The Constituent Assembly was formed in November 1946 based on the scheme of the Cabinet Mission Plan.\n\nStatement 2 is correct: The Assembly was partly elected (from British Provinces) and partly nominated (by the heads of Princely States).\n\nStatement 3 is incorrect: While seats were allocated to communities (Muslims, Sikhs, General), the representatives were elected by the members of that community only, which is a form of separate electorate."
+    },
+    {
+      "id": 36,
+      "question": "Which of the following are the valid criticisms of constituent assembly of India?\n\n1. Members are not directly elected by people\n2. Nonfunctional as a legislative body\n3. Lack of representation to legal professionals\n4. Dominated by single political party\n\nSelect the correct answer using the code given below:",
+      "options": [
+        "A. 1 only",
+        "B. 1 and 4 only",
+        "C. 1, 2 and 3 only",
+        "D. 2, 3 and 4 only"
+      ],
+      "answer": "B. 1 and 4 only",
+      "explanation": "Statement 1 is a valid criticism: The members were indirectly elected by provincial assemblies, not directly by the people based on universal adult franchise.\n\nStatement 2 is not a valid criticism: The Assembly also functioned as the first parliament (Dominion Legislature) and enacted ordinary laws.\n\nStatement 3 is not a valid criticism: The Assembly was, in fact, criticized for being dominated by lawyers and politicians.\n\nStatement 4 is a valid criticism: The Assembly was dominated by the Indian National Congress, which held a large majority of the seats."
+    },
+    {
+      "id": 37,
+      "question": "Consider the following pairs regarding the various committees of the Constituent Assembly and their Chairpersons:\n\n1. Union Powers Committee: Jawaharlal Nehru\n2. Provincial Constitution Committee: Dr. B.R. Ambedkar\n3. Union Constitution Committee: Dr. Rajendra Prasad\n4. Minorities sub-committee: J.B. Kriplani\n\nHow many pairs given above are correctly matched?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. Only three",
+        "D. All four"
+      ],
+      "answer": "A. Only one",
+      "explanation": "Pair 1 is correctly matched: The Union Powers Committee was headed by Jawaharlal Nehru.\n\nPair 2 is incorrectly matched: The Provincial Constitution Committee was headed by Sardar Patel.\n\nPair 3 is incorrectly matched: The Union Constitution Committee was headed by Jawaharlal Nehru.\n\nPair 4 is incorrectly matched: The Minorities Sub-Committee was headed by H.C. Mukherjee."
+    },
+    {
+      "id": 38,
+      "question": "Which of the following statements with reference to the Constituent Assembly of newly independent India is correct?",
+      "options": [
+        "A. BR Ambedkar was the Chief Draftsman of Constitution in the Assembly.",
+        "B. None of the members of the Assembly were Women.",
+        "C. The Assembly adopted the Elephant as its symbol/seal.",
+        "D. S Varadachari was the legal advisor to the Assembly."
+      ],
+      "answer": "C. The Assembly adopted the Elephant as its symbol/seal.",
+      "explanation": "Option A is incorrect: S.N. Mukherjee was the chief draftsman of the constitution in the Constituent Assembly. Dr. B.R. Ambedkar was the Chairman of the Drafting Committee.\n\nOption B is incorrect: There were 15 women members in the Constituent Assembly.\n\nOption C is correct: The elephant was adopted as the symbol (seal) of the Constituent Assembly.\n\nOption D is incorrect: Sir B.N. Rau was appointed as the Constitutional (legal) advisor to the Assembly."
+    },
+    {
+      "id": 39,
+      "question": "Consider the following pairs with reference to the First Cabinet of Independent India (1947):\n\n1. Jawaharlal Nehru: Home Affairs\n2. Sardar Vallabhbhai Patel: Information and Broadcasting\n3. Rajkumari Amrit Kaur: Health\n4. Dr. Rajendra Prasad: Education\n\nHow many of the above given pairs is/ are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. Only three",
+        "D. All four"
+      ],
+      "answer": "B. Only two",
+      "explanation": "Pair 1 is incorrect: Jawaharlal Nehru was the Prime Minister and handled External Affairs & Commonwealth Relations; Sardar Vallabhbhai Patel handled Home Affairs.\n\nPair 2 is correct: Sardar Vallabhbhai Patel was in charge of Home, Information and Broadcasting, and States.\n\nPair 3 is correct: Rajkumari Amrit Kaur held the Health portfolio.\n\nPair 4 is incorrect: Dr. Rajendra Prasad was the Minister for Food and Agriculture; Maulana Abul Kalam Azad was the Education Minister."
+    },
+    {
+      "id": 40,
+      "question": "The Constituent Assembly appointed a number of committees to deal with different tasks of constitution-making.\nIn this context, consider the following committees:\n\n1. Rules of Procedure Committee\n2. Steering Committee\n3. Finance and Staff Committee\n4. Ad-hoc Committee on the National Flag\n\nHow many of the above given committees were headed by Dr. Rajendra Prasad?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. Only three",
+        "D. All four"
+      ],
+      "answer": "D. All four",
+      "explanation": "Dr. Rajendra Prasad, who was the President of the Constituent Assembly, was the chairman of all four of the committees listed:\n\n1. Rules of Procedure Committee\n2. Steering Committee\n3. Finance and Staff Committee\n4. Ad-hoc Committee on the National Flag"
+    },
+    {
+      "id": 41,
+      "question": "With reference to 'Composition of Constituent Assembly of India', consider the following statements:\n\n1. Each British Indian province and princely state were allotted fixed one seat in the constituent assembly.\n2. The seats allocated to each British province were to be divided among the Muslims, Sikhs and General.\n3. The members from chief commissioners' provinces were represented in the constituent assembly.\n\nHow many of the above given statements are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. All three",
+        "D. None"
+      ],
+      "answer": "B. Only two",
+      "explanation": "Statement 1 is incorrect: Seats were allotted in proportion to the respective population of each province and princely state, roughly one seat for every million people.\n\nStatement 2 is correct: Seats in each British province were divided among the three principal communities—Muslims, Sikhs, and General (all except Muslims and Sikhs).\n\nStatement 3 is correct: The four chief commissioners' provinces (Delhi, Ajmer-Merwara, Coorg, and British Baluchistan) were also represented in the Assembly."
+    },
+    {
+      "id": 42,
+      "question": "Provisions related to which of the following topics of the Constitution of India came into force on 26th November 1949?\n\n1. Provisional Parliament\n2. Citizenship\n3. Directive Principles of State Policy\n4. Elections\n5. Planning Commission\n6. Fundamental Rights\n\nSelect the correct answer using the codes given below:",
+      "options": [
+        "A. 1, 2, 3 and 5 only",
+        "B. 1, 2 and 4 only",
+        "C. 2, 3, 4 and 6 only",
+        "D. 1, 2, 3, 4, 5 and 6"
+      ],
+      "answer": "B. 1, 2 and 4 only",
+      "explanation": "Some provisions of the Constitution came into force on November 26, 1949, the date of adoption. These included provisions pertaining to:\n\n1. Provisional Parliament\n2. Citizenship\n4. Elections\n\nThe major part of the Constitution, including Fundamental Rights and Directive Principles, came into force on January 26, 1950. The Planning Commission was an extra-constitutional body established later."
+    },
+    {
+      "id": 43,
+      "question": "Consider the following statements:\n\n1. Communist Party of India did not win any seats in the elections to the Constituent Assembly of India.\n2. Unionist Party won the second highest number of seats, after Indian National Congress, in the elections to the Constituent Assembly of India.\n\nWhich of the statements given above is/are correct?",
+      "options": [
+        "A. 1 only",
+        "B. 2 only",
+        "C. Both 1 and 2",
+        "D. Neither 1 nor 2"
+      ],
+      "answer": "D. Neither 1 nor 2",
+      "explanation": "Statement 1 is incorrect: The Communist Party of India won one seat in the Constituent Assembly elections.\n\nStatement 2 is incorrect: The Muslim League won the second-highest number of seats (73) after the Indian National Congress (208). The Unionist Party won only one seat."
+    },
+    {
+      "id": 44,
+      "question": "With reference to the 'Objectives Resolution', introduced in the first session of the Constituent Assembly, consider the following statements:\n\n1. It declared India as an Independent Sovereign Republic.\n2. It provided adequate safeguards for minorities and depressed classes.\n3. It guaranteed to people of India, the equality of status of opportunity.\n\nHow many of the above given statements are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. All three",
+        "D. None"
+      ],
+      "answer": "C. All three",
+      "explanation": "All three statements are correct. The Objectives Resolution, moved by Jawaharlal Nehru, laid down the philosophical foundations of the Constitution.\n\n1. It declared India's resolve to be an Independent Sovereign Republic.\n2. It included provisions for adequate safeguards for minorities, backward and tribal areas, and other depressed classes.\n3. It guaranteed justice, equality of status and opportunity, and various freedoms to all citizens."
+    },
+    {
+      "id": 45,
+      "question": "With reference to 'Constituent Assembly', consider the following statements:\n\n1. The assembly was empowered to alter any law made by the British Parliament in relation to India.\n2. The members of the Muslim League from the Indian Dominion never entered the Assembly.\n3. Both H.C. Mukherjee and V.T. Krishnamachari were elected as the Vice-Presidents of the Assembly.\n4. Dr Sachchidanand Sinha acted as the chairperson of the assembly whenever it met as the legislative body.\n\nHow many of the above given statements are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. Only three",
+        "D. All four"
+      ],
+      "answer": "B. Only two",
+      "explanation": "Statement 1 is correct: The Indian Independence Act of 1947 made the Assembly a sovereign body, with the power to alter or abrogate any British law concerning India.\n\nStatement 2 is incorrect: After the partition plan was accepted, members of the Muslim League from the areas that remained in India did enter the Assembly.\n\nStatement 3 is correct: The Assembly had two Vice-Presidents, H.C. Mukherjee and V.T. Krishnamachari.\n\nStatement 4 is incorrect: When the Assembly met as a legislative body, it was chaired by G.V. Mavlankar. Dr. Rajendra Prasad chaired it when it met as a constituent body. Dr. Sachchidanand Sinha was the temporary President of the first meeting."
+    },
+    {
+      "id": 46,
+      "question": "Arrange the following events in the chronological order of their occurrence:\n\n1. Adoption of National anthem\n2. Ratification of Commonwealth membership\n3. Adoption of National Flag in its present form\n4. Adoption of National Emblem\n\nSelect the correct answer using the codes given below:",
+      "options": [
+        "A. 1-2-4-3",
+        "B. 3-2-1-4",
+        "C. 1-3-2-4",
+        "D. 3-4-1-2"
+      ],
+      "answer": "B. 3-2-1-4",
+      "explanation": "The correct chronological order is:\n\n3. Adoption of National Flag: July 22, 1947\n2. Ratification of Commonwealth membership: May 1949\n1. Adoption of National Anthem: January 24, 1950\n4. Adoption of National Emblem: January 26, 1950"
+    },
+    {
+      "id": 47,
+      "question": "With reference to the 'Objectives Resolution, 1946', consider the following statements:\n\n1. It served as the inspiration for Preamble in the constitution.\n2. It envisioned Popular Sovereignty for the independent Indian nation.\n3. It provided for vesting of residuary powers with the provinces.\n\nHow many of the above given statements are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. All three",
+        "D. None"
+      ],
+      "answer": "C. All three",
+      "explanation": "Statement 1 is correct: The modified version of the Objectives Resolution forms the Preamble of the present Constitution.\n\nStatement 2 is correct: It declared that all power and authority of sovereign, independent India, its constituent parts and organs of government, are derived from the people.\n\nStatement 3 is correct: The resolution proposed a federal structure where the residuary powers would be vested in the autonomous units (provinces)."
+    },
+    {
+      "id": 48,
+      "question": "With reference to the system of checks and balances in the constitution, which of the following statements is correct?",
+      "options": [
+        "A. It enables the legislature to hold more power over the executive and the judiciary.",
+        "B. It is antithetical to the concept of division of powers in a political structure.",
+        "C. Article 13 is an example of the system of checks and balances in India.",
+        "D. Single party majority in the parliament strengthens the system of checks and balances."
+      ],
+      "answer": "C. Article 13 is an example of the system of checks and balances in India.",
+      "explanation": "Option A is incorrect: Checks and balances aim to prevent any one branch from becoming too powerful, not to empower the legislature over others.\n\nOption B is incorrect: It is related to the separation of powers, ensuring that different branches can limit each other's power.\n\nOption C is correct: Article 13, which provides for judicial review, allows the judiciary to strike down laws made by the legislature that are unconstitutional, serving as a check on legislative power.\n\nOption D is incorrect: A single-party majority often weakens the system of checks and balances as the executive can dominate the legislature."
+    },
+    {
+      "id": 49,
+      "question": "Which of the following features of constitution of India has been borrowed from Government of India Act, 1935?",
+      "options": [
+        "A. Fundamental rights, independence of judiciary, judicial review, impeachment of the president.",
+        "B. Federal Scheme, Office of governor, Judiciary, Public Service Commissions, Emergency provisions.",
+        "C. Concurrent List, freedom of trade, commerce and inter-course, and joint sitting of the two Houses of Parliament.",
+        "D. Parliamentary government, Rule of Law, legislative procedure, single citizenship, cabinet system, prerogative writs."
+      ],
+      "answer": "B. Federal Scheme, Office of governor, Judiciary, Public Service Commissions, Emergency provisions.",
+      "explanation": "Option A features are borrowed from the US Constitution.\n\nOption B lists features borrowed from the Government of India Act, 1935.\n\nOption C features are borrowed from the Australian Constitution.\n\nOption D features are borrowed from the British Constitution."
+    },
+    {
+      "id": 50,
+      "question": "'The people of India hold the power to freely conduct the affairs of the nation-state. India is an independent state and there is no authority above it.'\n\nWhich of the following term best defines this attribute of India as a nation-state?",
+      "options": [
+        "A. Sovereignty",
+        "B. Secularism",
+        "C. Republic",
+        "D. Democracy"
+      ],
+      "answer": "A. Sovereignty",
+      "explanation": "The term 'Sovereignty' implies that India is an independent state with no authority above it. It is free to conduct its own internal and external affairs."
+    }
+  ]
+}
