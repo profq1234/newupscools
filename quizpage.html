@@ -118,11 +118,35 @@
             border-color: #ef4444; /* red 500 */
         }
         
-        /* NEW --- Style for a selected, but not yet graded, option */
         .selected-option {
              border-color: #a78bfa; /* violet-400 */
              background-color: rgba(99, 102, 241, 0.3); /* indigo-500/30 */
              box-shadow: 0 0 10px rgba(167, 139, 250, 0.3);
+        }
+        
+        /* --- Progress Bar Styling --- */
+        .progress-container {
+            width: 100%;
+            background-color: #374151; /* gray-700 */
+            border-radius: 9999px;
+            height: 1rem;
+            margin-bottom: 1.5rem;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.4);
+            display: flex;
+            align-items: center;
+            padding: 0.15rem;
+        }
+
+        .progress-bar {
+            height: 0.7rem;
+            width: 0%; /* Starts at 0 */
+            background: linear-gradient(to right, #a855f7, #facc15); /* purple-500 to yellow-400 */
+            border-radius: 9999px;
+            transition: width 0.4s ease-in-out;
+            text-align: center;
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 600;
         }
     </style>
 </head>
@@ -225,7 +249,7 @@
 
             <section id="quiz-section" class="py-16 md:py-20">
                 <div class="container mx-auto px-6 max-w-4xl">
-                    <div class="bg-gray-900/50 backdrop-blur-sm border border-gray-700 p-6 md:p-10 rounded-2xl shadow-2xl fade-in-up">
+                    <div class="bg-gray-800 backdrop-blur-sm border border-gray-700 p-6 md:p-10 rounded-2xl shadow-inner fade-in-up">
                         <h2 id="quiz-title" class="text-2xl md:text-3xl font-bold text-white mb-6 text-center">
                             Start Your Practice Session
                         </h2>
@@ -328,7 +352,7 @@
                 });
             }
             
-            // *** NEW: Custom Modal for Quiz Mode Selection ***
+            // *** Custom Modal for Quiz Mode Selection (Unchanged) ***
             function showQuizModeSelectorModal() {
                  return new Promise(resolve => {
                     const modalDiv = document.createElement('div');
@@ -399,7 +423,7 @@
             });
 
 
-            /* --- MAIN QUIZ LOGIC (Heavily Modified) --- */
+            /* --- MAIN QUIZ LOGIC --- */
 
             const startBtn = document.getElementById("start-polity-quiz-btn");
             const container = document.getElementById("quiz-container");
@@ -412,7 +436,7 @@
                  startBtn.classList.remove('hidden');
                  
                  container.innerHTML = `
-                    <div class="max-w-md mx-auto p-6 md:p-8 bg-gray-800/80 border-t-4 border-yellow-500 rounded-xl shadow-lg transition-all duration-500 text-center">
+                    <div class="max-w-md mx-auto p-6 md:p-8 bg-gray-900/50 border-t-4 border-yellow-500 rounded-xl shadow-lg transition-all duration-500 text-center">
                         <div class="text-yellow-400 mb-3 mx-auto">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8 mx-auto"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
                         </div>
@@ -455,22 +479,24 @@
                  container.classList.add('flex', 'items-center', 'justify-center');
             }
             
+            // --- MODIFIED: Added timer cleanup to quitQuiz ---
+            let timerInterval = null; // Moved to a higher scope
             function quitQuiz() {
+                 if (timerInterval) clearInterval(timerInterval);
                  showCustomModal("Quiz Ended", "You have ended the quiz session.", false);
                  showInitialMessage();
             }
 
-            // *** REFACTORED: startBtn now opens the mode selector ***
+            // *** startBtn event listener (Unchanged) ***
             startBtn.addEventListener("click", async function (e) {
                 e.preventDefault();
                 if (isQuizActive) return;
 
                 const mode = await showQuizModeSelectorModal();
                 
-                if (!mode) return; // User cancelled
+                if (!mode) return;
 
                 if (mode === 'number') {
-                    // This is the original flow for a random number of questions
                     const raw = await showCustomModal(
                         "Set Quiz Length",
                         "How many questions would you like to attempt?",
@@ -485,12 +511,11 @@
                     }
                     startQuiz(mode, num);
                 } else if (mode === 'all') {
-                    // This is the new flow for all questions
                     startQuiz(mode);
                 }
             });
 
-            // *** NEW: Main quiz logic is now in a dedicated function ***
+            // --- MODIFIED: Integrated timer logic into startQuiz ---
             async function startQuiz(mode, numQuestions = 0) {
                 isQuizActive = true;
                 startBtn.classList.add('hidden'); 
@@ -515,18 +540,25 @@
                     return;
                 }
 
-                // *** NEW: Choose questions based on selected mode ***
                 let chosenQuestions;
                 if (mode === 'all') {
-                    chosenQuestions = allQuestions; // All questions, in order
+                    chosenQuestions = allQuestions;
                 } else {
                     const totalAvailable = allQuestions.length;
                     const take = Math.min(numQuestions, totalAvailable);
-                    chosenQuestions = shuffle(allQuestions).slice(0, take); // Random subset
+                    chosenQuestions = shuffle(allQuestions).slice(0, take);
                 }
 
                 let index = 0;
                 let userAnswers = new Array(chosenQuestions.length).fill(null);
+                
+                // --- NEW: Timer start logic for Test Mode ---
+                if (mode === 'number') {
+                    // You can adjust the time per question here (in seconds)
+                    const timePerQuestion = 90; 
+                    const quizDuration = chosenQuestions.length * timePerQuestion;
+                    startTimer(quizDuration);
+                }
 
                 quizTitle.textContent = data.title;
                 
@@ -537,6 +569,26 @@
                     quizSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
 
+                function startTimer(duration) {
+                    let time = duration;
+                    timerInterval = setInterval(() => {
+                        const timerDisplay = document.getElementById('timer-display');
+                        if (!timerDisplay) return;
+
+                        const minutes = Math.floor(time / 60);
+                        let seconds = time % 60;
+                        seconds = seconds < 10 ? '0' + seconds : seconds;
+                        
+                        timerDisplay.textContent = `${minutes}:${seconds}`;
+
+                        if (--time < 0) {
+                            clearInterval(timerInterval);
+                            showCustomModal("Time's Up!", "The quiz has been submitted automatically.", false);
+                            renderResult();
+                        }
+                    }, 1000);
+                }
+
                 function goToNextQuestion() {
                     index++;
                     if (index < chosenQuestions.length) {
@@ -544,14 +596,16 @@
                     } else {
                         renderResult();
                     }
+                    container.parentElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
                 
                 function goToPreviousQuestion() {
-                    if (mode === 'all') return; // Previous button disabled in 'all' mode
+                    if (mode === 'all') return;
                     index--;
                     renderQuestion();
                 }
 
+                // --- MODIFIED: Added a span for the timer display ---
                 function renderQuestion() {
                     clearContainer();
                     const q = chosenQuestions[index];
@@ -560,26 +614,36 @@
                     header.innerHTML = `
                         <div class="flex justify-between items-center mb-4 pb-2 border-b border-gray-700">
                             <span class="text-lg font-semibold text-yellow-400">Question ${index + 1} / ${chosenQuestions.length}</span>
-                            <span class="text-sm text-indigo-400">${mode === 'all' ? 'Answer and see explanation' : 'Select your answer'}</span>
+                            <span id="timer-display" class="font-mono text-xl text-pink-400 ${mode === 'number' ? '' : 'hidden'}"></span>
                         </div>
                     `;
                     container.appendChild(header);
 
-                    const card = document.createElement("div");
-                    card.className = "bg-gray-800 p-6 md:p-8 rounded-xl shadow-inner";
-                    card.innerHTML = `
-                        <h2 class="text-xl md:text-2xl font-bold mb-6 text-white leading-relaxed whitespace-pre-line">
-                               ${q.question}
-                         </h2>
+                    const progressPercentage = ((index + 1) / chosenQuestions.length) * 100;
+                    const progressBarContainer = document.createElement("div");
+                    progressBarContainer.className = "progress-container";
+                    progressBarContainer.innerHTML = `<div class="progress-bar" style="width: ${progressPercentage}%;"></div>`;
+                    container.appendChild(progressBarContainer);
 
-                        <div id="quiz-options" class="space-y-3"></div>
-                        <div id="quiz-feedback" class="mt-6"></div>
-                        <div class="mt-6 flex justify-between items-center space-x-3" id="quiz-actions-bottom"></div>
-                    `;
-                    container.appendChild(card);
+                    const questionEl = document.createElement('h2');
+                    questionEl.className = "text-xl md:text-2xl font-bold mb-6 text-white leading-relaxed whitespace-pre-line";
+                    questionEl.textContent = q.question;
+                    container.appendChild(questionEl);
 
-                    const optionsDiv = document.getElementById("quiz-options");
-                    const actionsDiv = document.getElementById("quiz-actions-bottom");
+                    const optionsDiv = document.createElement('div');
+                    optionsDiv.id = "quiz-options";
+                    optionsDiv.className = "space-y-3";
+                    container.appendChild(optionsDiv);
+
+                    const feedbackDiv = document.createElement('div');
+                    feedbackDiv.id = "quiz-feedback";
+                    feedbackDiv.className = "mt-6";
+                    container.appendChild(feedbackDiv);
+                    
+                    const actionsDiv = document.createElement("div");
+                    actionsDiv.id = "quiz-actions-bottom";
+                    actionsDiv.className = "mt-8 flex justify-between items-center";
+                    container.appendChild(actionsDiv);
 
                     q.options.forEach(opt => {
                         const b = document.createElement("button");
@@ -595,45 +659,51 @@
                         optionsDiv.appendChild(b);
                     });
                     
+                    actionsDiv.innerHTML = `
+                        <div id="actions-left"></div>
+                        <div id="actions-right" class="flex items-center space-x-2 sm:space-x-3"></div>
+                    `;
+                    const leftActions = document.getElementById('actions-left');
+                    const rightActions = document.getElementById('actions-right');
+
                     const prevBtn = document.createElement("button");
                     prevBtn.textContent = "← Previous";
-                    prevBtn.className = `px-4 py-2 rounded-lg bg-gray-700 hover:bg-gray-600 font-semibold transition-colors disabled:opacity-50 text-sm ${mode === 'all' ? 'hidden' : ''}`;
+                    prevBtn.className = `px-4 py-2 text-sm rounded-lg bg-gray-700 hover:bg-gray-600 font-semibold transition-colors disabled:opacity-50 ${mode === 'all' ? 'hidden' : ''}`;
                     prevBtn.disabled = index === 0;
                     prevBtn.onclick = goToPreviousQuestion;
-                    actionsDiv.appendChild(prevBtn);
+                    leftActions.appendChild(prevBtn);
                     
                     const quitBtn = document.createElement("button");
-                    quitBtn.textContent = "Quit Quiz";
-                    quitBtn.className = "px-4 py-2 rounded-lg bg-rose-600 hover:bg-rose-700 font-semibold transition-colors shadow-md text-sm ml-auto";
+                    quitBtn.textContent = "Quit";
+                    quitBtn.className = "px-4 py-2 text-sm rounded-lg bg-rose-600 hover:bg-rose-700 font-semibold transition-colors shadow-md";
                     quitBtn.onclick = quitQuiz;
-                    actionsDiv.appendChild(quitBtn);
+                    rightActions.appendChild(quitBtn);
 
                     const nextBtn = document.createElement("button");
-                    nextBtn.id = "next-question-btn"; // Give it an ID for easy access
-                    nextBtn.textContent = (index + 1 < chosenQuestions.length) ? "Next →" : "Finish Quiz";
-                    nextBtn.className = "px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 font-semibold transition-colors shadow-lg";
+                    nextBtn.id = "next-question-btn";
+                    nextBtn.textContent = (index + 1 < chosenQuestions.length) ? "Next →" : "Finish";
+                    nextBtn.className = "px-5 py-2 text-base font-bold rounded-lg bg-indigo-600 hover:bg-indigo-500 transition-colors shadow-lg";
                     if (mode === 'all') {
-                        nextBtn.classList.add('hidden'); // Hide next button initially in 'all' mode
+                        nextBtn.classList.add('hidden');
                     }
                     nextBtn.onclick = goToNextQuestion;
-                    actionsDiv.appendChild(nextBtn);
+                    rightActions.appendChild(nextBtn);
                 }
                 
-                // *** REFACTORED: selectOption now handles both modes ***
+                // *** selectOption (Unchanged) ***
                 function selectOption(buttonElem) {
                     const selectedValue = buttonElem.dataset.value;
-                    userAnswers[index] = selectedValue; // Always store the answer
+                    userAnswers[index] = selectedValue;
 
                     const opts = container.querySelectorAll(".quiz-option-btn");
                     const q = chosenQuestions[index];
 
                     if (mode === 'all') {
-                        // INSTANT FEEDBACK LOGIC
                         const isCorrect = selectedValue === q.answer;
                         const feedbackDiv = document.getElementById("quiz-feedback");
                         
                         opts.forEach(b => {
-                            b.disabled = true; // Disable all options
+                            b.disabled = true;
                             if (b.dataset.value === q.answer) {
                                 b.classList.add('correct-answer');
                             } else if (b.dataset.value === selectedValue) {
@@ -644,16 +714,13 @@
                         feedbackDiv.innerHTML = `
                             <div class="p-4 rounded-lg ${isCorrect ? 'bg-green-900/40 border border-green-700' : 'bg-red-900/40 border border-red-700'}">
                                 <h4 class="font-bold text-lg ${isCorrect ? 'text-green-300' : 'text-red-300'}">${isCorrect ? 'Correct!' : 'Incorrect.'}</h4>
-                                <p class="mt-2 text-gray-300"><span class="font-semibold text-indigo-300">Explanation:</span> ${q.explanation || 'No explanation provided.'}</p>
+                                <p class="mt-2 text-gray-300 whitespace-pre-line"><span class="font-semibold text-indigo-300">Explanation:</span> ${q.explanation || 'No explanation provided.'}</p>
                             </div>
                         `;
                         feedbackDiv.classList.remove('hidden');
-
-                        // Show the next button
                         document.getElementById('next-question-btn').classList.remove('hidden');
 
                     } else {
-                        // DEFERRED FEEDBACK LOGIC (Test Mode)
                         opts.forEach(b => {
                             b.classList.remove('selected-option');
                         });
@@ -661,7 +728,9 @@
                     }
                 }
 
+                // --- MODIFIED: Restructured result and review layout ---
                 function renderResult() {
+                    if (timerInterval) clearInterval(timerInterval);
                     clearContainer();
                     
                     let score = 0;
@@ -675,9 +744,9 @@
                     const percentage = chosenQuestions.length > 0 ? ((score / chosenQuestions.length) * 100).toFixed(1) : 0;
                     const isPass = percentage >= 60;
                     
-                    const out = document.createElement("div");
-                    out.className = "bg-gray-800 p-8 rounded-xl text-center shadow-2xl";
-                    out.innerHTML = `
+                    const summaryDiv = document.createElement("div");
+                    summaryDiv.className = "bg-gray-900/50 p-8 rounded-xl text-center shadow-2xl w-full";
+                    summaryDiv.innerHTML = `
                         <h2 class="text-3xl font-extrabold mb-4 ${isPass ? 'text-green-400' : 'text-yellow-400'}">
                             ${isPass ? '🌟 Excellent Work! Quiz Completed' : '📚 Good Effort! Quiz Completed'}
                         </h2>
@@ -690,15 +759,24 @@
                         <div class="mb-8 text-2xl font-bold">
                             Accuracy: <span class="${isPass ? 'text-green-400' : 'text-red-400'}">${percentage}%</span>
                         </div>
-                        <div class="space-x-4 flex justify-center flex-wrap">
-                            <button id="retryBtn" class="px-6 py-3 rounded-lg bg-purple-600 text-white font-semibold hover:bg-purple-700 transition-all shadow-md m-2">Restart Quiz</button>
-                            <button id="reviewBtn" class="px-6 py-3 rounded-lg bg-gray-700 text-white font-semibold hover:bg-gray-600 transition-all shadow-md m-2">Review All Questions</button>
-                            <a href="index.html#resources" class="px-6 py-3 rounded-lg bg-yellow-600 text-white font-semibold hover:bg-yellow-700 transition-all shadow-md m-2">View Resources</a>
+                        <div class="flex justify-center flex-wrap gap-4">
+                            <button id="retryBtn" class="px-6 py-3 rounded-lg bg-purple-600 text-white font-semibold hover:bg-purple-700 transition-all shadow-md">Restart Quiz</button>
+                            <a href="index.html#resources" class="px-6 py-3 rounded-lg bg-yellow-600 text-white font-semibold hover:bg-yellow-700 transition-all shadow-md">View Resources</a>
                         </div>
-                        <div id="reviewArea" class="mt-8 text-left border-t border-gray-700 pt-6"></div>
                     `;
-                    container.appendChild(out);
-                    
+                    container.appendChild(summaryDiv);
+
+                    const reviewBtn = document.createElement("button");
+                    reviewBtn.id = "reviewBtn";
+                    reviewBtn.className = "w-full mt-6 px-6 py-3 rounded-lg bg-gray-700 text-white font-semibold hover:bg-gray-600 transition-all shadow-md";
+                    reviewBtn.textContent = "Review All Questions";
+                    container.appendChild(reviewBtn);
+
+                    const reviewArea = document.createElement('div');
+                    reviewArea.id = "reviewArea";
+                    reviewArea.className = "mt-6 w-full text-left";
+                    container.appendChild(reviewArea);
+
                     quizTitle.textContent = "Quiz Results";
                     
                     isQuizActive = false;
@@ -708,13 +786,14 @@
                         startBtn.click();
                     };
 
-                    document.getElementById("reviewBtn").onclick = () => {
+                    reviewBtn.onclick = () => {
                         showReview();
+                        reviewBtn.classList.add('hidden');
                     };
 
                     function showReview() {
                         const area = document.getElementById("reviewArea");
-                        area.innerHTML = `<h3 class="text-xl font-bold mb-4 text-white">Detailed Review</h3>`;
+                        area.innerHTML = `<h3 class="text-2xl font-bold mb-4 text-white text-center border-b border-gray-600 pb-2">Detailed Review</h3>`;
                         
                         chosenQuestions.forEach((qItem, i) => {
                             const userAnswer = userAnswers[i];
@@ -724,14 +803,14 @@
                             qDiv.className = `mb-4 p-4 rounded-lg shadow-lg ${isCorrect ? 'bg-green-900/30' : 'bg-red-900/30'} border ${isCorrect ? 'border-green-700' : 'border-red-700'}`;
                             
                             qDiv.innerHTML = `
-                                <div class="font-bold mb-2 text-white">Q${i + 1}. ${qItem.question}</div>
+                                <div class="font-bold mb-2 text-white whitespace-pre-line">Q${i + 1}. ${qItem.question}</div>
                                 <div class="text-sm">
                                     <span class="font-semibold ${isCorrect ? 'text-green-400' : 'text-red-400'}">Your Answer:</span> ${userAnswer || '<span class="italic">Skipped/Unanswered</span>'}
                                 </div>
                                 ${!isCorrect ? `<div class="text-sm mt-1">
                                     <span class="font-semibold text-yellow-400">Correct Answer:</span> ${qItem.answer}
                                 </div>` : ''}
-                                <div class="mt-3 text-gray-300 text-sm border-t border-gray-700 pt-3">
+                                <div class="mt-3 text-gray-300 text-sm border-t border-gray-700 pt-3 whitespace-pre-line">
                                     <span class="font-semibold text-indigo-300">Explanation:</span> ${qItem.explanation || "No explanation provided."}
                                 </div>
                             `;
