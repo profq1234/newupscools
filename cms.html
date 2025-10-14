@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CMS Dashboard | upscools</title>
-    <meta name="robots" content="noindex, nofollow"> <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" type="image/png" href="https://placehold.co/32x32/1e3a8a/facc15?text=U">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+
     <style>
         body { font-family: 'Inter', sans-serif; }
-        /* Reusing your animated background styles */
         .animated-bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; z-index: 0; }
         .animated-bg li { position: absolute; display: block; list-style: none; width: 20px; height: 20px; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); animation: animate 25s linear infinite; bottom: -150px; border-radius: 50%; }
         .animated-bg li:nth-child(1) { left: 25%; width: 80px; height: 80px; animation-delay: 0s; }
@@ -28,13 +31,16 @@
             0% { transform: translateY(0) rotate(0deg); opacity: 1; }
             100% { transform: translateY(-100vh) rotate(720deg); opacity: 0; }
         }
-        /* Style for the form inputs */
         .form-input {
             width: 100%; padding: 0.75rem 1rem; background-color: rgba(17, 24, 39, 0.8); border: 1px solid #374151; color: white; border-radius: 0.5rem; transition: all 0.2s;
         }
-        .form-input:focus {
-            outline: none; ring: 2px; ring-offset: 2px; ring-offset-color: #111827; border-color: #6366f1; ring-color: #6366f1;
+        .form-input:focus, .ql-container.ql-snow:focus-within {
+            outline: none; border-color: #6366f1; box-shadow: 0 0 0 2px #111827, 0 0 0 4px #6366f1;
         }
+        /* Quill Editor Styling */
+        .ql-toolbar.ql-snow { border-color: #374151; border-top-left-radius: 0.5rem; border-top-right-radius: 0.5rem; }
+        .ql-container.ql-snow { border-color: #374151; background-color: rgba(17, 24, 39, 0.8); color: white; border-bottom-left-radius: 0.5rem; border-bottom-right-radius: 0.5rem; }
+        .ql-editor { min-height: 200px; }
     </style>
 </head>
 <body class="bg-blue-900 text-gray-200">
@@ -75,49 +81,70 @@
                 </nav>
             </header>
             <main class="container mx-auto p-4 md:p-6">
-                <div class="flex justify-between items-center mb-6">
-                    <h2 class="text-2xl font-bold text-white">Your Blog Posts</h2>
-                    <button id="add-new-post-btn" class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-5 py-2 rounded-lg shadow-md font-semibold hover:from-purple-600 hover:to-pink-600 transition-all">
+                <div class="flex flex-col sm:flex-row justify-between items-center mb-6 gap-4">
+                    <form id="search-form" class="w-full sm:w-auto sm:max-w-xs">
+                        <input type="search" id="search-input" class="form-input" placeholder="Search by title...">
+                    </form>
+                    <button id="add-new-post-btn" class="w-full sm:w-auto bg-gradient-to-r from-purple-500 to-pink-500 text-white px-5 py-2 rounded-lg shadow-md font-semibold hover:from-purple-600 hover:to-pink-600 transition-all flex-shrink-0">
                         &#43; Add New Post
                     </button>
                 </div>
                 <div id="post-list-container" class="space-y-4">
                     <p class="text-center py-8 text-gray-400">Loading posts...</p>
                 </div>
+                <div id="pagination-controls" class="flex justify-center items-center mt-8 gap-4">
+                    <button id="prev-btn" class="bg-gray-700 text-white px-4 py-2 rounded-lg font-medium hover:bg-gray-600 disabled:opacity-50 disabled:cursor-not-allowed transition-all">&larr; Previous</button>
+                    <button id="next-btn" class="bg-gray-700 text-white px-4 py-2 rounded-lg font-medium hover:bg-gray-600 disabled:opacity-50 disabled:cursor-not-allowed transition-all">Next &rarr;</button>
+                </div>
             </main>
         </div>
 
         <div id="post-form-modal" class="hidden fixed inset-0 bg-black/70 backdrop-blur-sm z-30 flex items-start justify-center p-4 overflow-y-auto">
-            <div class="bg-gray-900 border border-gray-700 w-full max-w-2xl rounded-xl shadow-2xl my-8">
+            <div class="bg-gray-900 border border-gray-700 w-full max-w-3xl rounded-xl shadow-2xl my-8">
                 <div class="flex justify-between items-center p-4 border-b border-gray-700">
                     <h2 id="form-title" class="text-xl font-bold text-white">Add New Post</h2>
                     <button id="close-form-btn" class="text-2xl text-gray-400 hover:text-white">&times;</button>
                 </div>
                 <form id="post-form" class="p-6 space-y-4">
                     <input type="hidden" id="post-id">
-                    <div>
-                        <label for="title" class="block mb-1 font-medium">Title</label>
-                        <input type="text" id="title" class="form-input" required>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="title" class="block mb-1 font-medium">Title</label>
+                            <input type="text" id="title" class="form-input" required>
+                        </div>
+                         <div>
+                            <label for="status" class="block mb-1 font-medium">Status</label>
+                            <select id="status" class="form-input" required>
+                                <option value="published">Published</option>
+                                <option value="draft">Draft</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="category" class="block mb-1 font-medium">Category</label>
+                            <input type="text" id="category" class="form-input" placeholder="e.g., Strategy, History" required>
+                        </div>
+                        <div>
+                            <label for="author" class="block mb-1 font-medium">Author</label>
+                            <input type="text" id="author" class="form-input" required>
+                        </div>
                     </div>
                     <div>
-                        <label for="category" class="block mb-1 font-medium">Category</label>
-                        <input type="text" id="category" class="form-input" placeholder="e.g., Strategy, History" required>
-                    </div>
-                    <div>
-                        <label for="author" class="block mb-1 font-medium">Author</label>
-                        <input type="text" id="author" class="form-input" required>
-                    </div>
-                    <div>
-                        <label for="image" class="block mb-1 font-medium">Image URL</label>
-                        <input type="text" id="image" class="form-input" placeholder="Paste full URL from Firebase Storage">
+                        <label class="block mb-1 font-medium">Featured Image</label>
+                        <div class="flex items-center gap-4">
+                            <input type="file" id="image-upload" class="hidden" accept="image/*">
+                            <button type="button" onclick="document.getElementById('image-upload').click()" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700">Choose File</button>
+                            <span id="file-name" class="text-sm text-gray-400">No file chosen</span>
+                        </div>
+                        <progress id="upload-progress" value="0" max="100" class="w-full mt-2 hidden"></progress>
+                        <input type="text" id="image" class="form-input mt-2" placeholder="Image URL will appear here after upload">
                     </div>
                     <div>
                         <label for="excerpt" class="block mb-1 font-medium">Excerpt (Short Summary)</label>
                         <textarea id="excerpt" rows="3" class="form-input" required></textarea>
                     </div>
                     <div>
-                        <label for="content" class="block mb-1 font-medium">Full Content (HTML allowed)</label>
-                        <textarea id="content" rows="10" class="form-input" placeholder="<p>Start your post here...</p> <h2>A Subheading</h2>"></textarea>
+                        <label class="block mb-1 font-medium">Full Content</label>
+                        <div id="editor"></div>
                     </div>
                     <div class="flex justify-end pt-4">
                         <button type="submit" class="bg-yellow-500 text-blue-900 px-6 py-2 rounded-lg font-semibold hover:bg-yellow-400 transition-all">Save Post</button>
@@ -126,31 +153,45 @@
                 </form>
             </div>
         </div>
+
+        <div id="delete-modal" class="hidden fixed inset-0 bg-black/60 backdrop-blur-sm z-40 flex items-center justify-center">
+            <div class="bg-gray-800 border border-gray-700 rounded-lg p-8 shadow-2xl text-center max-w-sm mx-4">
+                <h3 class="text-xl font-bold text-white mb-3">Confirm Deletion</h3>
+                <p class="text-gray-300 mb-6">Are you sure you want to delete this post? This action cannot be undone.</p>
+                <div class="flex justify-center gap-4">
+                    <button id="cancel-delete-btn" class="bg-gray-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-gray-700 transition-all">Cancel</button>
+                    <button id="confirm-delete-btn" class="bg-red-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-red-700 transition-all">Delete</button>
+                </div>
+            </div>
+        </div>
     </div>
     
     <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-storage-compat.js"></script>
+
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            // Your Firebase config (copied from your homepage script)
+            // --- FIREBASE INITIALIZATION ---
             const firebaseConfig = {
                 apiKey: "AIzaSyAxJkhBjBAqs6Tl_XZKnNWOn92gI9LhlGc",
                 authDomain: "upsc-blog.firebaseapp.com",
                 projectId: "upsc-blog",
-                storageBucket: "upsc-blog.firebasestorage.app",
+                storageBucket: "upsc-blog.appspot.com",
                 messagingSenderId: "164094491571",
                 appId: "1:164094491571:web:f73c61341a666b44d869c6"
             };
 
-            // Initialize Firebase
             firebase.initializeApp(firebaseConfig);
             const auth = firebase.auth();
             const db = firebase.firestore();
+            const storage = firebase.storage();
             const blogsCollection = db.collection('blogs');
 
-            // DOM Elements
+            // --- DOM ELEMENTS ---
             const authContainer = document.getElementById('auth-container');
             const cmsDashboard = document.getElementById('cms-dashboard');
             const loginForm = document.getElementById('login-form');
@@ -164,17 +205,43 @@
             const addNewPostBtn = document.getElementById('add-new-post-btn');
             const formTitle = document.getElementById('form-title');
             const formFeedback = document.getElementById('form-feedback');
+            const searchForm = document.getElementById('search-form');
+            const searchInput = document.getElementById('search-input');
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+            const deleteModal = document.getElementById('delete-modal');
+            const cancelDeleteBtn = document.getElementById('cancel-delete-btn');
+            const confirmDeleteBtn = document.getElementById('confirm-delete-btn');
+
+            // --- STATE MANAGEMENT ---
+            let lastVisible = null;
+            let firstVisible = null;
+            let pageHistory = []; // Stack to keep track of firstVisible docs for pagination
+            let postToDeleteId = null;
+            const POSTS_PER_PAGE = 10;
+
+            // --- QUILL EDITOR INITIALIZATION ---
+            const quill = new Quill('#editor', {
+                theme: 'snow',
+                modules: {
+                    toolbar: [
+                        [{ 'header': [1, 2, 3, false] }],
+                        ['bold', 'italic', 'underline'],
+                        ['link', 'blockquote', 'code-block'],
+                        [{ 'list': 'ordered'}, { 'list': 'bullet' }],
+                        ['clean']
+                    ]
+                }
+            });
 
             // --- AUTHENTICATION ---
             auth.onAuthStateChanged(user => {
                 if (user) {
-                    // User is signed in
                     authContainer.classList.add('hidden');
                     cmsDashboard.classList.remove('hidden');
                     userEmailEl.textContent = user.email;
-                    loadPosts();
+                    loadPosts(); // Initial load
                 } else {
-                    // User is signed out
                     authContainer.classList.remove('hidden');
                     cmsDashboard.classList.add('hidden');
                 }
@@ -185,37 +252,67 @@
                 const email = document.getElementById('login-email').value;
                 const password = document.getElementById('login-password').value;
                 loginError.textContent = '';
-                auth.signInWithEmailAndPassword(email, password)
-                    .catch(error => {
-                        loginError.textContent = error.message;
-                    });
+                auth.signInWithEmailAndPassword(email, password).catch(error => {
+                    loginError.textContent = error.message;
+                });
             });
 
-            logoutButton.addEventListener('click', () => {
-                auth.signOut();
-            });
+            logoutButton.addEventListener('click', () => auth.signOut());
 
-            // --- CRUD OPERATIONS ---
+            // --- CRUD & DATA HANDLING ---
 
-            // READ Posts
-            const loadPosts = async () => {
+            const loadPosts = async (direction = 'initial', searchTerm = '') => {
                 postListContainer.innerHTML = '<p class="text-center py-8 text-gray-400">Loading posts...</p>';
+                let query = blogsCollection.orderBy('date', 'desc');
+
+                if (searchTerm) {
+                    query = query.where('title', '>=', searchTerm).where('title', '<=', searchTerm + '\uf8ff');
+                }
+
+                if (direction === 'next' && lastVisible) {
+                    pageHistory.push(firstVisible);
+                    query = query.startAfter(lastVisible).limit(POSTS_PER_PAGE);
+                } else if (direction === 'prev') {
+                    const lastFirstVisible = pageHistory.pop();
+                    query = query.startAt(lastFirstVisible).limit(POSTS_PER_PAGE);
+                } else { // initial or search
+                    pageHistory = [];
+                    query = query.limit(POSTS_PER_PAGE);
+                }
+                
                 try {
-                    const snapshot = await blogsCollection.orderBy('date', 'desc').get();
+                    // *** THIS IS THE CORRECTED LINE ***
+                    const snapshot = await query.get();
+
                     if (snapshot.empty) {
-                        postListContainer.innerHTML = '<p class="text-center py-8 text-gray-400">No blog posts found. Add one to get started!</p>';
+                        if (direction === 'initial') {
+                            postListContainer.innerHTML = `<p class="text-center py-8 text-gray-400">No posts found. Add one to get started!</p>`;
+                        } else {
+                            postListContainer.innerHTML = `<p class="text-center py-8 text-gray-400">No more posts found.</p>`;
+                        }
+                        nextBtn.disabled = true;
+                        prevBtn.disabled = pageHistory.length === 0;
                         return;
                     }
+
+                    firstVisible = snapshot.docs[0];
+                    lastVisible = snapshot.docs[snapshot.docs.length - 1];
 
                     let postsHTML = '';
                     snapshot.forEach(doc => {
                         const post = doc.data();
                         const postDate = post.date ? post.date.toDate().toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }) : 'No date';
+                        const statusClass = post.status === 'draft' ? 'bg-yellow-600 text-yellow-100' : 'bg-green-600 text-green-100';
+                        const statusText = post.status ? post.status.charAt(0).toUpperCase() + post.status.slice(1) : 'Published';
+
                         postsHTML += `
                             <div class="bg-gray-900/50 border border-gray-700 p-4 rounded-lg flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                                 <div>
                                     <h3 class="font-bold text-lg text-white">${post.title || 'Untitled Post'}</h3>
-                                    <p class="text-sm text-gray-400">${post.author || 'Unknown'} &bull; ${postDate}</p>
+                                    <div class="flex items-center gap-2 text-sm text-gray-400 mt-1">
+                                        <span>${post.author || 'Unknown'} &bull; ${postDate}</span>
+                                        <span class="px-2 py-0.5 rounded-full text-xs font-medium ${statusClass}">${statusText}</span>
+                                    </div>
                                 </div>
                                 <div class="flex items-center gap-3 flex-shrink-0">
                                     <button class="edit-btn text-yellow-400 hover:text-yellow-300 font-semibold" data-id="${doc.id}">Edit</button>
@@ -225,72 +322,129 @@
                         `;
                     });
                     postListContainer.innerHTML = postsHTML;
+                    
+                    prevBtn.disabled = pageHistory.length === 0;
+
+                    // Check if there is a next page
+                    const nextQuery = blogsCollection.orderBy('date', 'desc').startAfter(lastVisible).limit(1);
+                    const nextSnapshot = await nextQuery.get();
+                    nextBtn.disabled = nextSnapshot.empty;
+
                 } catch (err) {
                     console.error("Error loading posts: ", err);
-                    postListContainer.innerHTML = '<p class="text-center py-8 text-red-400">Failed to load posts.</p>';
+                    postListContainer.innerHTML = '<p class="text-center py-8 text-red-400">Failed to load posts. Check console for errors.</p>';
                 }
             };
+            
+            searchForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                loadPosts('initial', searchInput.value.trim());
+            });
 
-            // CREATE and UPDATE Post
+            searchInput.addEventListener('input', (e) => {
+                if (e.target.value.trim() === '') {
+                    loadPosts('initial', '');
+                }
+            });
+
+            nextBtn.addEventListener('click', () => loadPosts('next', searchInput.value.trim()));
+            prevBtn.addEventListener('click', () => loadPosts('prev', searchInput.value.trim()));
+
             postForm.addEventListener('submit', async (e) => {
                 e.preventDefault();
                 const postId = document.getElementById('post-id').value;
                 const postData = {
                     title: document.getElementById('title').value,
+                    status: document.getElementById('status').value,
                     category: document.getElementById('category').value,
                     author: document.getElementById('author').value,
                     image: document.getElementById('image').value,
                     excerpt: document.getElementById('excerpt').value,
-                    content: document.getElementById('content').value,
-                    date: firebase.firestore.FieldValue.serverTimestamp() // Always update date on save
+                    content: quill.root.innerHTML,
+                    date: firebase.firestore.FieldValue.serverTimestamp() // Always update date
                 };
                 
                 formFeedback.textContent = 'Saving...';
                 try {
                     if (postId) {
-                        // Update existing post
                         await blogsCollection.doc(postId).update(postData);
                     } else {
-                        // Add new post
                         await blogsCollection.add(postData);
                     }
                     closeFormModal();
-                    loadPosts();
+                    loadPosts('initial', searchInput.value.trim()); // Go back to first page after saving
                 } catch(err) {
                     console.error("Error saving post: ", err);
                     formFeedback.textContent = 'Error saving post. Check console.';
                 }
             });
 
-            // DELETE Post
-            postListContainer.addEventListener('click', async (e) => {
-                if (e.target.classList.contains('delete-btn')) {
-                    const postId = e.target.dataset.id;
-                    if (confirm('Are you sure you want to delete this post? This cannot be undone.')) {
-                        try {
-                            await blogsCollection.doc(postId).delete();
-                            loadPosts();
-                        } catch(err) {
-                            console.error("Error deleting post: ", err);
-                            alert('Failed to delete post.');
-                        }
+            document.getElementById('image-upload').addEventListener('change', (e) => {
+                const file = e.target.files[0];
+                if (!file) return;
+
+                const fileNameEl = document.getElementById('file-name');
+                const progressEl = document.getElementById('upload-progress');
+                fileNameEl.textContent = file.name;
+                progressEl.classList.remove('hidden');
+
+                const storageRef = storage.ref(`blog_images/${Date.now()}_${file.name}`);
+                const uploadTask = storageRef.put(file);
+
+                uploadTask.on('state_changed', 
+                    (snapshot) => {
+                        const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+                        progressEl.value = progress;
+                    }, 
+                    (error) => {
+                        console.error("Upload failed: ", error);
+                        fileNameEl.textContent = "Upload failed. Try again.";
+                    }, 
+                    () => {
+                        uploadTask.snapshot.ref.getDownloadURL().then((downloadURL) => {
+                            document.getElementById('image').value = downloadURL;
+                            fileNameEl.textContent = "Upload complete!";
+                        });
                     }
+                );
+            });
+
+            postListContainer.addEventListener('click', (e) => {
+                if (e.target.classList.contains('delete-btn')) {
+                    postToDeleteId = e.target.dataset.id;
+                    deleteModal.classList.remove('hidden');
                 }
-                
                 if (e.target.classList.contains('edit-btn')) {
-                    const postId = e.target.dataset.id;
-                    openFormModal(postId);
+                    openFormModal(e.target.dataset.id);
                 }
             });
 
-            // --- MODAL HANDLING ---
+            confirmDeleteBtn.addEventListener('click', async () => {
+                if (!postToDeleteId) return;
+                try {
+                    await blogsCollection.doc(postToDeleteId).delete();
+                    loadPosts('initial', searchInput.value.trim());
+                } catch(err) {
+                    console.error("Error deleting post: ", err);
+                } finally {
+                    postToDeleteId = null;
+                    deleteModal.classList.add('hidden');
+                }
+            });
+            cancelDeleteBtn.addEventListener('click', () => {
+                postToDeleteId = null;
+                deleteModal.classList.add('hidden');
+            });
+
             const openFormModal = async (postId = null) => {
                 postForm.reset();
+                quill.setText('');
+                document.getElementById('file-name').textContent = 'No file chosen';
+                document.getElementById('upload-progress').classList.add('hidden');
                 formFeedback.textContent = '';
                 document.getElementById('post-id').value = '';
 
                 if (postId) {
-                    // Editing existing post
                     formTitle.textContent = 'Edit Post';
                     try {
                         const doc = await blogsCollection.doc(postId).get();
@@ -298,28 +452,24 @@
                             const post = doc.data();
                             document.getElementById('post-id').value = doc.id;
                             document.getElementById('title').value = post.title || '';
+                            document.getElementById('status').value = post.status || 'published';
                             document.getElementById('category').value = post.category || '';
                             document.getElementById('author').value = post.author || '';
                             document.getElementById('image').value = post.image || '';
                             document.getElementById('excerpt').value = post.excerpt || '';
-                            document.getElementById('content').value = post.content || '';
+                            quill.root.innerHTML = post.content || '';
                         }
                     } catch (err) {
                         console.error("Error fetching post for edit: ", err);
-                        alert('Could not load post data.');
-                        return;
+                        formFeedback.textContent = 'Could not load post data.';
                     }
                 } else {
-                    // Adding new post
                     formTitle.textContent = 'Add New Post';
                 }
                 postFormModal.classList.remove('hidden');
             };
 
-            const closeFormModal = () => {
-                postFormModal.classList.add('hidden');
-            };
-
+            const closeFormModal = () => postFormModal.classList.add('hidden');
             addNewPostBtn.addEventListener('click', () => openFormModal());
             closeFormBtn.addEventListener('click', closeFormModal);
         });
