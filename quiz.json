@@ -601,6 +601,1446 @@
       ],
       "answer": "A. Sovereignty",
       "explanation": "The term 'Sovereignty' implies that India is an independent state with no authority above it. It is free to conduct its own internal and external affairs."
+    },
+   {
+      "id": 51,
+      "question": "With reference to legal philosophy of the Constitution, consider the following statements:\n\n1. 'Modernism' demands that the constitution should be interpreted as it was understood at the time when it was ratified.\n2. 'Originalism' demands that the constitution should be updated with times to encompass changing societal needs.\n\nWhich of the above statement(s) is/are correct?",
+      "options": [
+        "A. 1 only",
+        "B. 2 only",
+        "C. Both 1 and 2",
+        "D. Neither 1 nor 2"
+      ],
+      "answer": "D. Neither 1 nor 2",
+      "explanation": "Statement 1 is incorrect: This describes 'Originalism', not 'Modernism'. Originalism is the theory that the Constitution should be interpreted based on its original meaning at the time of ratification.\n\nStatement 2 is incorrect: This describes 'Modernism' or the 'Living Constitution' theory, not 'Originalism'. This philosophy holds that the constitution should be interpreted in light of contemporary society's needs."
+    },
+    {
+      "id": 52,
+      "question": "Indian brand of socialism is called as 'Democratic Socialism'.\nWhich one of the following options best describe 'democratic socialism' of India?",
+      "options": [
+        "A. It involves nationalization of all means of production and distribution and abolition of private properties.",
+        "B. It follows the ideals of market economy and pursues the path of globalization towards economic integration of domestic markets.",
+        "C. It holds faith in a 'mixed economy' where both public and private sectors co-exist side by side.",
+        "D. It tends to lean heavily towards public sector to create economic equality within the capitalist setup."
+      ],
+      "answer": "C. It holds faith in a 'mixed economy' where both public and private sectors co-exist side by side.",
+      "explanation": "Indian 'Democratic Socialism' is not the same as 'Communistic Socialism' (which involves nationalization of all production). Instead, it is characterized by a 'mixed economy' model.\n\nThis model allows both the public and private sectors to co-exist, with the aim of ending poverty, ignorance, and inequality of opportunity, blending Marxist and Gandhian ideals."
+    },
+    {
+      "id": 53,
+      "question": "Consider the following statements with regard to the idea of liberty:\n\n1. Negative Liberty is concerned with the recognition of a minimum area in which the individual can act unobstructed by others.\n2. Positive Liberty recognizes that an individual can be free only in society and not outside of it.\n\nWhich of the statements given above is/are correct?",
+      "options": [
+        "A. 1 only",
+        "B. 2 only",
+        "C. Both 1 and 2",
+        "D. Neither 1 nor 2"
+      ],
+      "answer": "C. Both 1 and 2",
+      "explanation": "Statement 1 is correct: 'Negative liberty' defines an inviolable area of non-interference where an individual can act without external obstruction.\n\nStatement 2 is correct: 'Positive liberty' argues that true freedom is only possible within a society that enables the development of the individual."
+    },
+    {
+      "id": 54,
+      "question": "The main advantage of the parliamentary form of governments is that",
+      "options": [
+        "A. The executive and legislature work independently.",
+        "B. It provides continuity of policy and is more efficient.",
+        "C. The executive remains responsible to the legislature.",
+        "D. The head of the government cannot be changed without election."
+      ],
+      "answer": "C. The executive remains responsible to the legislature.",
+      "explanation": "The defining characteristic and main advantage of a parliamentary system is the principle of collective responsibility. The executive (the Council of Ministers) is directly responsible to the legislature (the Parliament) and can be removed by a vote of no confidence. This ensures accountability."
+    },
+    {
+      "id": 55,
+      "question": "Which of the following features ensures constitutionalism in India?\n\n1. Rule of law\n2. Separation of power\n3. Judicial review\n\nSelect the correct answer using the code given below:",
+      "options": [
+        "A. 1 and 2 only",
+        "B. 2 and 3 only",
+        "C. 1 and 3 only",
+        "D. 1, 2 and 3"
+      ],
+      "answer": "D. 1, 2 and 3",
+      "explanation": "Constitutionalism means a government limited by law. All three features contribute to this:\n\n1. Rule of Law ensures that the state is governed by law, not by arbitrary decisions of rulers.\n2. Separation of Power divides government functions to prevent concentration of power.\n3. Judicial Review allows courts to strike down laws that violate the Constitution, acting as a check on legislative and executive power."
+    },
+    {
+      "id": 56,
+      "question": "Which among the following constitutional provision form the basis of India being a welfare state?\n\n1. Fundamental Rights\n2. Directive Principles of State Policy\n3. Fundamental Duties\n4. Preamble\n\nSelect the correct answer using the codes given below.",
+      "options": [
+        "A. 1, 2 and 4 only",
+        "B. 1 and 4 only",
+        "C. 1, 2 and 3 only",
+        "D. 2 and 3 only"
+      ],
+      "answer": "A. 1, 2 and 4 only",
+      "explanation": "The concept of a welfare state is promoted by:\n\n1. The Preamble: Secures social, economic, and political justice.\n2. Fundamental Rights: Ensure non-discrimination and provide for positive discrimination to uplift weaker sections.\n3. Directive Principles of State Policy: Explicitly guide the state to promote the welfare of the people through social and economic democracy.\n\nFundamental Duties are reminders to citizens and do not directly form the basis of a welfare state."
+    },
+    {
+      "id": 57,
+      "question": "Consider the following statements:\n\n1. The power of Judicial review of the Supreme Court in India is narrower than that of the Supreme Court in the United States.\n2. The American constitution provides for procedure established by law against that of due process of law provided by the Indian constitution.\n\nWhich of the above statement(s) is/are correct?",
+      "options": [
+        "A. 1 only",
+        "B. 2 only",
+        "C. Both 1 and 2",
+        "D. Neither 1 nor 2"
+      ],
+      "answer": "A. 1 only",
+      "explanation": "Statement 1 is correct: The Indian Supreme Court generally follows 'Procedure Established by Law', which has a narrower scope than the American 'Due Process of Law'. While the Indian scope has expanded, it is traditionally considered narrower.\n\nStatement 2 is incorrect: It reverses the concepts. The American Constitution provides for 'Due Process of Law,' while the Indian Constitution (Article 21) explicitly mentions 'Procedure Established by Law'."
+    },
+    {
+      "id": 58,
+      "question": "Consider the following pairs of features borrowed and the sources, with reference to the Constitution of India:\n\n1. Concurrent list: Canadian Constitution\n2. Method of election of the president: Irish Constitution\n3. Procedure established by law: Australian Constitution\n4. Procedure for amendment of the Constitution: South African Constitution\n\nHow many statements given above are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. Only three",
+        "D. All four"
+      ],
+      "answer": "B. Only two",
+      "explanation": "Pair 1 is incorrect: The Concurrent list was borrowed from the Australian Constitution.\n\nPair 2 is correct: The method of election of the President was borrowed from the Irish Constitution.\n\nPair 3 is incorrect: 'Procedure established by law' was borrowed from the Japanese Constitution.\n\nPair 4 is correct: The procedure for Constitutional amendment was borrowed from the South African Constitution."
+    },
+    {
+      "id": 59,
+      "question": "Which of the following features of the Constitution of India are borrowed from the Constitution of the United States?\n\n1. Fundamental rights.\n2. Judicial review.\n3. Ideal of justice in the Preamble.\n4. Federation with a strong Centre.\n\nSelect the correct answer using the code given below:",
+      "options": [
+        "A. 1 and 2 only",
+        "B. 3 and 4 only",
+        "C. 1, 2 and 3 only",
+        "D. 1, 2, 3 and 4"
+      ],
+      "answer": "A. 1 and 2 only",
+      "explanation": "Statement 1 is correct: Fundamental Rights were borrowed from the US Constitution.\n\nStatement 2 is correct: The concept of Judicial Review was borrowed from the US Constitution.\n\nStatement 3 is incorrect: The ideal of justice (social, economic, and political) in the Preamble was inspired by the USSR (Soviet) Constitution.\n\nStatement 4 is incorrect: The feature of a Federation with a strong Centre was borrowed from the Canadian Constitution."
+    },
+    {
+      "id": 60,
+      "question": "Match the following pairs:\n\n1. Office of the Governor: A. Canadian constitution\n2. Advisory jurisdiction of Supreme court: B. South African constitution\n3. Joint sitting of two houses of Parliament: C. Australian constitution\n4. Election of members of Rajya sabha: D. Government of India Act 1935\n\nSelect the correct answer using the code given below.",
+      "options": [
+        "A. 1-A, 2-C, 3-B, 4-D",
+        "B. 1-D, 2-A, 3-C, 4-B",
+        "C. 1-B, 2-D, 3-A, 4-C",
+        "D. 1-C, 2-B, 3-D, 4-A"
+      ],
+      "answer": "B. 1-D, 2-A, 3-C, 4-B",
+      "explanation": "The correct matches are:\n\n1. Office of the Governor is from the Government of India Act 1935 (1-D).\n2. Advisory jurisdiction of the Supreme Court is from the Canadian Constitution (2-A).\n3. Joint sitting of two houses of Parliament is from the Australian Constitution (3-C).\n4. Election of members of Rajya Sabha is from the South African Constitution (4-B)."
+    },
+    {
+      "id": 61,
+      "question": "Consider the following pairs of Schedules of the Constitution of India and its subject matter:\n\n1. Second Schedule: Provisions for emoluments, allowances, privileges\n2. Fourth Schedule: Forms of Oaths or Affirmations\n3. Seventh Schedule: Division of powers between the Union and the States\n4. Eleventh Schedule: Powers, authority and responsibilities of Municipalities\n\nHow many pairs given above are correctly matched?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. Only three",
+        "D. All four"
+      ],
+      "answer": "B. Only two",
+      "explanation": "Pair 1 is correct: The Second Schedule deals with emoluments and allowances.\n\nPair 2 is incorrect: The Fourth Schedule deals with the allocation of seats in the Rajya Sabha. The Third Schedule contains the forms of Oaths.\n\nPair 3 is correct: The Seventh Schedule deals with the division of powers (Union, State, and Concurrent lists).\n\nPair 4 is incorrect: The Eleventh Schedule deals with Panchayats. The Twelfth Schedule deals with Municipalities."
+    },
+    {
+      "id": 62,
+      "question": "Which of the following offices is/are included in the both second and third schedule of the Constitution?\n\n1. The Judges of the High Courts\n2. The Judges of the Supreme Court\n3. The Comptroller and Auditor-General of India\n4. The Prime Minister's Office\n\nSelect the correct answer using the code given below:",
+      "options": [
+        "A. 1 and 2 only",
+        "B. 1, 2 and 3 only",
+        "C. 2, 3 and 4 only",
+        "D. 1, 2, 3 and 4"
+      ],
+      "answer": "B. 1, 2 and 3 only",
+      "explanation": "The Second Schedule (emoluments) and the Third Schedule (oaths) both contain provisions for:\n\n1. The Judges of the High Courts\n2. The Judges of the Supreme Court\n3. The Comptroller and Auditor-General of India\n\nThe Prime Minister's Office is not mentioned in either schedule. The Prime Minister as a Union Minister takes an oath mentioned in the Third Schedule."
+    },
+    {
+      "id": 63,
+      "question": "Which of the following statements are incorrect regarding Ninth Schedule of the Constitution?\n\n1. It was added to the constitution by the first Amendment.\n2. Currently the laws placed under it are outside the purview of judicial review.\n3. Acts of the State legislatures cannot be put under it by the Parliament.\n\nSelect the correct answer using the code given below.",
+      "options": [
+        "A. 1 and 2 only",
+        "B. 2 and 3 only",
+        "C. 1 and 3 only",
+        "D. 1, 2 and 3"
+      ],
+      "answer": "B. 2 and 3 only",
+      "explanation": "Statement 1 is correct: The Ninth Schedule was added by the 1st Constitutional Amendment Act, 1951.\n\nStatement 2 is incorrect: Following the I.R. Coelho case (2007), laws placed in the Ninth Schedule after April 24, 1973, are open to judicial review if they violate the basic structure of the Constitution.\n\nStatement 3 is incorrect: The Parliament can place both central and state laws in the Ninth Schedule."
+    },
+    {
+      "id": 64,
+      "question": "With reference to the constitution, consider the following statements:\n\n1. Constitutions are required only in democratic countries.\n2. Constitution is a legal document that does not deal with ideals and values.\n3. A constitution gives its citizens a moral identity.\n\nHow many statements given above are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. All three",
+        "D. None"
+      ],
+      "answer": "A. Only one",
+      "explanation": "Statement 1 is incorrect: Constitutions exist in various forms of government, including non-democratic ones, although their nature and function differ.\n\nStatement 2 is incorrect: A constitution is not just a legal document; it also embodies the fundamental values and ideals of a nation, often reflected in its Preamble.\n\nStatement 3 is correct: By setting forth a framework of fundamental principles and values, a constitution helps shape a collective political and moral identity for its citizens."
+    },
+    {
+      "id": 65,
+      "question": "With reference to Indian form of secularism, consider the following statements:\n\n1. Indian secularism deals only with religious freedom of individual and not of community.\n2. Indian secularism allows the state-supported religious reform.\n3. Indian secularism focuses on both inter and intra religious equality.\n4. Under Indian secularism the state cannot aid any religious institution.\n\nHow many statements given above are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. Only three",
+        "D. All four"
+      ],
+      "answer": "B. Only two",
+      "explanation": "Statement 1 is incorrect: Indian secularism protects the religious freedom of both individuals and minority communities.\n\nStatement 2 is correct: The Indian state can intervene in religious matters to bring about social reform (e.g., banning untouchability).\n\nStatement 3 is correct: Indian secularism addresses both inter-religious domination (between different religions) and intra-religious domination (within a single religion).\n\nStatement 4 is incorrect: The Indian state can provide financial aid to religious institutions, but it cannot use tax money for the promotion of any particular religion."
+    },
+    {
+      "id": 66,
+      "question": "With reference to the role of constitution/ government in promoting equality among Indian citizens, which of the following statements is incorrect?",
+      "options": [
+        "A. The constitution allows for differentiating between people to ensure equity.",
+        "B. The constitution has given more preference to Equality in comparison to liberty.",
+        "C. The government can violate Article 14 of the Constitution for implementing some of the Directive Principles of State Policy.",
+        "D. Special assistance in the form of affirmative action helps in promoting equality."
+      ],
+      "answer": "B. The constitution has given more preference to Equality in comparison to liberty.",
+      "explanation": "Statement A is correct: The principle of 'reasonable classification' under Article 14 allows for differentiation to achieve equity.\n\nStatement B is incorrect: The Constitution seeks a balance between Liberty and Equality; it does not give preference to one over the other. Both are fundamental to its structure.\n\nStatement C is correct: Article 31-C allows laws made to implement certain Directive Principles (Article 39(b) and 39(c)) to be protected from challenge on grounds of violating Article 14.\n\nStatement D is correct: Affirmative action policies are designed to correct historical inequalities and promote equality."
+    },
+    {
+      "id": 67,
+      "question": "Which of the following functions are served by the Constitution of India?\n\n1. It serves as guide to the state to institute laws and policies to reduce poverty.\n2. It provides a set of basic rules for coordination amongst members of a society.\n3. It helps judiciary to decide the legality of the laws framed by the legislatures.\n4. It helps in ensuring that people with good morals and values reach to power.\n\nSelect the correct answer using the code given below:",
+      "options": [
+        "A. 1, 3 and 4 only",
+        "B. 1 and 3 only",
+        "C. 2, 3 and 4 only",
+        "D. 1, 2 and 3 only"
+      ],
+      "answer": "D. 1, 2 and 3 only",
+      "explanation": "Statement 1 is correct: The Directive Principles of State Policy guide the state in policy-making for social and economic reforms.\n\nStatement 2 is correct: A key function of a constitution is to provide a basic set of rules that all members of a society can agree upon, enabling coordination.\n\nStatement 3 is correct: The Constitution is the supreme law, and the judiciary uses it as the benchmark to determine the constitutional validity of laws (judicial review).\n\nStatement 4 is incorrect: A constitution sets up the procedures for electing representatives but cannot guarantee their personal morals or values."
+    },
+    {
+      "id": 68,
+      "question": "Which of the following statements is/are correct about the Constitution of India?\n\n1. It sets limits on the power of the government.\n2. It provides an enabling framework for the government to take steps for fulfilling the aspirations and goals of society.\n\nSelect the correct answer using the code given below:",
+      "options": [
+        "A. 1 only",
+        "B. 2 only",
+        "C. Both 1 and 2",
+        "D. Neither 1 nor 2"
+      ],
+      "answer": "C. Both 1 and 2",
+      "explanation": "Statement 1 is correct: The Constitution limits government power, primarily through Fundamental Rights, which the government cannot trespass.\n\nStatement 2 is correct: The Constitution also empowers the government to act positively to achieve societal goals, particularly through the Directive Principles of State Policy, which enable welfare measures."
+    },
+    {
+      "id": 69,
+      "question": "Which of the following factors make the Indian Constitution more acceptable to the people at large?\n\n1. National leaders proposed the subjection of constitution to referendum of people.\n2. It was supported by popular leaders who enjoyed immense credibility.\n3. Constitution was framed by representatives from all sections of Indian society.\n\nSelect the correct answer using the code given below:",
+      "options": [
+        "A. 1 and 2 only",
+        "B. 2 and 3 only",
+        "C. 1 and 3 only",
+        "D. 1, 2 and 3"
+      ],
+      "answer": "B. 2 and 3 only",
+      "explanation": "Statement 1 is incorrect: The Indian Constitution was never subjected to a referendum.\n\nStatement 2 is correct: The fact that the Constitution was drafted by leaders of the freedom struggle who had immense public credibility gave it legitimacy.\n\nStatement 3 is correct: Although not directly elected, the Constituent Assembly was broadly representative, comprising members from almost all sections of Indian society, which enhanced its acceptability."
+    },
+    {
+      "id": 70,
+      "question": "Consider the following statements:\n\n1. The original Constitution was handwritten in Hindi and English.\n2. The 58th Constitutional Amendment Act provided for the translation of the Constitution in Hindi language to be published under the authority of President.\n\nWhich of the statements given above is/are correct?",
+      "options": [
+        "A. 1 only",
+        "B. 2 only",
+        "C. Both 1 and 2",
+        "D. Neither 1 nor 2"
+      ],
+      "answer": "C. Both 1 and 2",
+      "explanation": "Statement 1 is correct: The original Constitution of India was handwritten in both Hindi and English with beautiful calligraphy by Prem Behari Narain Raizada.\n\nStatement 2 is correct: The 58th Amendment Act of 1987 added Article 394-A, which authorized the President to publish an authoritative text of the Constitution in Hindi."
+    },
+    {
+      "id": 71,
+      "question": "Consider the following Pairs:\n\n1. Third Schedule: Allocation of seats in the Rajya Sabha to the states.\n2. Fifth Schedule: Provisions relating to the administration of tribal areas like in the states of Meghalaya.\n3. Eight Schedule: Division of powers between the Union and the States.\n4. Twelfth Schedule: Specific the powers, authority and responsibilities of Panchayats.\n\nHow many pairs given above are incorrectly matched?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. Only three",
+        "D. All four"
+      ],
+      "answer": "D. All four",
+      "explanation": "All four pairs are incorrectly matched:\n\n1. The Third Schedule contains Forms of Oaths and Affirmations. The Fourth Schedule deals with the allocation of seats in the Rajya Sabha.\n2. The Fifth Schedule deals with administration of Scheduled Areas and Scheduled Tribes. The Sixth Schedule deals with tribal areas in Assam, Meghalaya, Tripura, and Mizoram.\n3. The Eighth Schedule lists the officially recognized languages. The Seventh Schedule deals with the division of powers.\n4. The Twelfth Schedule specifies the powers of Municipalities. The Eleventh Schedule deals with Panchayats."
+    },
+    {
+      "id": 72,
+      "question": "Which of the following statement(s) correctly portray the secular features of Indian state as mentioned in the Constitution?\n\n1. Freedom of transmission and dissemination of one's religious beliefs to others is guaranteed under Indian Constitution.\n2. Indian state cannot spend the money collected by way of tax for the promotion of any particular religion.\n3. Constitution prohibits imparting of religious instruction by any educational institutions in India.\n\nSelect the correct answer using the codes given below:",
+      "options": [
+        "A. 1 only",
+        "B. 1 and 2 only",
+        "C. 2 and 3 only",
+        "D. 1, 2 and 3"
+      ],
+      "answer": "B. 1 and 2 only",
+      "explanation": "Statement 1 is correct: Article 25 guarantees the right to propagate religion, which includes disseminating one's religious beliefs.\n\nStatement 2 is correct: Article 27 states that no person shall be compelled to pay taxes for the promotion of any particular religion.\n\nStatement 3 is incorrect: Article 28 prohibits religious instruction only in educational institutions wholly maintained out of State funds. It does not apply to institutions administered by the State but established under an endowment or trust."
+    },
+    {
+      "id": 73,
+      "question": "Which of the following features of Indian Constitution is/are borrowed from Australian Constitution?\n\n1. Concurrent List\n2. Procedure for amendment of the Constitution\n3. Federation with a strong Centre\n4. Joint sitting of the two Houses of Parliament\n5. Freedom of trade and commerce\n\nSelect the correct answer using the codes given below:",
+      "options": [
+        "A. 1, 2 and 4 only",
+        "B. 1, 4 and 5 only",
+        "C. 2, 3 and 5 only",
+        "D. 2, 3, 4 and 5 only"
+      ],
+      "answer": "B. 1, 4 and 5 only",
+      "explanation": "The features borrowed from the Australian Constitution are:\n\n1. Concurrent List\n4. Joint sitting of the two Houses of Parliament\n5. Freedom of trade, commerce and intercourse\n\nProcedure for amendment is from South Africa, and Federation with a strong Centre is from Canada."
+    },
+    {
+      "id": 74,
+      "question": "Which of the following is/are salient features of the Constitution of India?\n\n1. Three-tier Governance model\n2. Judicial Supremacy over parliamentary sovereignty\n3. Blend of Rigidity and Flexibility\n4. Larger dependence on Conventions\n5. Single Citizenship\n\nHow many statements given above are correct?",
+      "options": [
+        "A. Only two",
+        "B. Only three",
+        "C. Only four",
+        "D. All five"
+      ],
+      "answer": "B. Only three",
+      "explanation": "The correct salient features are:\n\n1. Three-tier Government: The 73rd and 74th Amendments added a third tier of local government.\n3. Blend of Rigidity and Flexibility: The Constitution can be amended by both simple and special procedures.\n5. Single Citizenship: Unlike federal states like the USA, India provides for only a single, national citizenship.\n\nStatement 2 is incorrect as India follows a synthesis of Parliamentary Sovereignty and Judicial Supremacy. Statement 4 is incorrect as India has a very detailed written constitution, reducing dependence on conventions."
+    },
+    {
+      "id": 75,
+      "question": "Which of the following statements is/are correct about the concept of 'Police State'?\n\n1. It puts forward that the state can perform various functions of social welfare.\n2. It is concerned with the maintenance of law and order and defense of the country against external aggression.\n3. Laissez faire is the fundamental economic system and policy necessarily followed by all Police states.\n\nSelect the correct answer using the code given below.",
+      "options": [
+        "A. 1 and 2 only",
+        "B. 1 and 3 only",
+        "C. 2 only",
+        "D. 1, 2 and 3"
+      ],
+      "answer": "C. 2 only",
+      "explanation": "Statement 1 is incorrect: This describes a 'Welfare State', which is the opposite of a 'Police State'.\n\nStatement 2 is correct: A 'Police State' (or minimal state) is one whose functions are limited to the essential tasks of maintaining law and order, justice, and defense.\n\nStatement 3 is incorrect: While the concept of a police state is associated with laissez-faire economics, it is not a necessary policy for all such states."
+    },
+    {
+      "id": 76,
+      "question": "Which of the following statements proves that the authority of Indian Constitution is higher than that of Parliament?",
+      "options": [
+        "A. The Constitution makers were more eminent leaders than the Members of Parliament.",
+        "B. The Constitution of India was framed before the Parliament came into existence.",
+        "C. Indian Constitution provides for powers and formation of the Parliament.",
+        "D. The Constitution gives the power to Parliament to alter its Basic Structure."
+      ],
+      "answer": "C. Indian Constitution provides for powers and formation of the Parliament.",
+      "explanation": "The Constitution is the source from which the Parliament derives its existence, powers, and procedures. The Parliament is a creation of the Constitution and must operate within the limits set by it. This hierarchical relationship establishes the supremacy of the Constitution."
+    },
+    {
+      "id": 77,
+      "question": "Which one of the following is a reason why Indian Constitution is described as the blend of rigidity and flexibility?",
+      "options": [
+        "A. Both the Central and the state governments can initiate the amendment to the Constitution",
+        "B. Ordinary Legislative power of the Parliament is superior to its Constituent power.",
+        "C. Amendments to the Constitution can be made both through a special procedure and through the manner in which ordinary laws are enacted.",
+        "D. Private members cannot introduce constitutional amendment bill."
+      ],
+      "answer": "C. Amendments to the Constitution can be made both through a special procedure and through the manner in which ordinary laws are enacted.",
+      "explanation": "The Indian Constitution's blend of rigidity and flexibility is evident in its amendment procedures. Some provisions can be amended by a simple majority of Parliament (like an ordinary law), making it flexible. Other provisions require a special majority of Parliament (and sometimes ratification by states), making it rigid."
+    },
+    {
+      "id": 78,
+      "question": "Consider the following pairs of features of the Indian Constitution and the countries from which they were borrowed:\n\n1. Cabinet system: United States Constitution\n2. Vesting of residual powers with the Centre: Canadian Constitution\n3. Advisory jurisdictions of the Supreme court: French Constitution\n4. Freedom of trade, commerce and inter-course: Japanese Constitution\n\nHow many pairs given above are correctly matched?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. Only three",
+        "D. All four"
+      ],
+      "answer": "A. Only one",
+      "explanation": "Pair 1 is incorrect: The Cabinet system is borrowed from the British Constitution.\n\nPair 2 is correct: Vesting of residual powers with the Centre is borrowed from the Canadian Constitution.\n\nPair 3 is incorrect: Advisory jurisdiction of the Supreme Court is borrowed from the Canadian Constitution.\n\nPair 4 is incorrect: Freedom of trade, commerce, and intercourse is borrowed from the Australian Constitution."
+    },
+    {
+      "id": 79,
+      "question": "Which of the following provisions of the Indian Constitution shows that India is a Secular State?\n\n1. The State shall endeavor to secure for all the citizens a Uniform Civil Code.\n2. Religious instructions shall be provided in educational institutions maintained by the State.\n3. Religious denomination shall have the right to manage its own religious affairs.\n4. Citizens shall not be discriminated on the grounds of religion in respect of employment under the State.\n\nSelect the correct answer using the code given below:",
+      "options": [
+        "A. 1, 2 and 3 only",
+        "B. 3 and 4 only",
+        "C. 1, 3 and 4 only",
+        "D. 1 and 4 only"
+      ],
+      "answer": "C. 1, 3 and 4 only",
+      "explanation": "Statement 1 is a secular feature: A Uniform Civil Code (Article 44) aims to separate religion from personal civil law.\n\nStatement 2 is incorrect: Article 28 prohibits religious instruction in state-funded educational institutions, which is a secular feature.\n\nStatement 3 is a secular feature: Article 26 guarantees religious denominations the right to manage their own affairs.\n\nStatement 4 is a secular feature: Article 16 prohibits discrimination based on religion in public employment."
+    },
+    {
+      "id": 80,
+      "question": "With reference to the Constitution and its framework, consider the following statements:\n\n1. A written, or unwritten constitution needs to exist for a country to be called a nation.\n2. A constitution specifies who has the power to make decisions in a society.\n3. A constitution provides a set of basic rules that allow for minimal coordination amongst members of a society.\n4. A constitution provides an identity to its citizens.\n\nHow many of the above given statements are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. Only three",
+        "D. All four"
+      ],
+      "answer": "C. Only three",
+      "explanation": "Statement 1 is incorrect: A nation is a socio-cultural entity and can exist without a formal constitution.\n\nStatement 2 is correct: A key function of a constitution is to define the structure of the government and allocate powers.\n\nStatement 3 is correct: It provides the fundamental principles and rules for social coordination.\n\nStatement 4 is correct: It helps in forming a collective political identity for the people as citizens of a particular state."
+    },
+    {
+      "id": 81,
+      "question": "What is the primary objective of including the feature of Separation of Power in the Constitution of India?",
+      "options": [
+        "A. To help the judiciary in providing complete justice to the weaker sections of society.",
+        "B. To improve the division of Labor and Functional specialization of skills.",
+        "C. To provide Checks and Balances to prevent the misuse of power.",
+        "D. To promote fast decision making by limiting the encroachment of powers between the branches."
+      ],
+      "answer": "C. To provide Checks and Balances to prevent the misuse of power.",
+      "explanation": "The primary objective of the separation of powers is to create a system of checks and balances.\n\nThis system ensures that each organ of the government (legislature, executive, judiciary) can limit the powers of the others, which helps prevent the concentration and misuse of power by any single branch."
+    },
+    {
+      "id": 82,
+      "question": "Which of the following explains the reason behind inclusion of emergency powers in the Indian constitution?\n\n1. To safeguard federal character of constitution\n2. To safeguard unity and integrity of country\n3. To safeguard Fundamental rights of citizens\n4. To safeguard democratic political system\n\nSelect the correct answer using the code given below:",
+      "options": [
+        "A. 1, 2, 3 and 4",
+        "B. 2 and 4 only",
+        "C. 1, 2 and 3 only",
+        "D. 2, 3 and 4 only"
+      ],
+      "answer": "B. 2 and 4 only",
+      "explanation": "The emergency provisions were included in the Constitution to handle abnormal situations effectively.\n\nThe main reasons are:\n\n2. To safeguard the sovereignty, unity, integrity, and security of the country.\n4. To safeguard the democratic political system and the Constitution.\n\nDuring an emergency, the federal structure becomes unitary and some Fundamental Rights can be suspended, so statements 1 and 3 are incorrect."
+    },
+    {
+      "id": 83,
+      "question": "Consider the following statements regarding Federalism in India:\n\n1. The new economic policy of 1991 helped in strengthening federalism in India.\n2. Judicial Supremacy forms an essential part of federal polity.\n3. Indian model of federalism is \"Coming together\", unlike US model which is \"Holding together\".\n\nHow many of the above given statements are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. All three",
+        "D. None"
+      ],
+      "answer": "A. Only one",
+      "explanation": "Statement 1 is correct: The 1991 economic reforms led to greater fiscal autonomy for states, thereby strengthening federalism.\n\nStatement 2 is incorrect: An independent judiciary is essential for a federal polity, but 'judicial supremacy' is not a necessary feature.\n\nStatement 3 is incorrect: The Indian model of federalism is 'Holding together' (a large country divides its power), while the US model is 'Coming together' (independent states come together to form a larger unit)."
+    },
+    {
+      "id": 84,
+      "question": "Consider the following statements with reference to the concept of 'Separation of Powers':\n\n1. It is an organizational structure where responsibilities and powers are divided between groups rather than being centrally held.\n2. The doctrine of Separation of Powers is the basis of the American Presidential system.\n3. Separation of Powers between the legislature, executive and judiciary is an element of basic structure of Indian Constitution.\n\nHow many of the above given statements are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. All three",
+        "D. None"
+      ],
+      "answer": "C. All three",
+      "explanation": "Statement 1 is correct: This is the fundamental definition of separation of powers, where powers are divided among different branches of government.\n\nStatement 2 is correct: The US presidential system is a classic example of a strict separation of powers between the legislative, executive, and judicial branches.\n\nStatement 3 is correct: The Supreme Court of India has held that the separation of powers is a part of the 'basic structure' of the Constitution."
+    },
+    {
+      "id": 85,
+      "question": "Why Indian judiciary has been described as an integrated judiciary system?",
+      "options": [
+        "A. High court enforces only state laws of concerned respective states.",
+        "B. The laws of concurrent list are only enforced by the Supreme court.",
+        "C. Supreme Court has replaced the British Privy Council as the highest court of appeal.",
+        "D. The decisions made by higher courts are binding on the lower courts."
+      ],
+      "answer": "D. The decisions made by higher courts are binding on the lower courts.",
+      "explanation": "India has an integrated judicial system because there is a single, hierarchical structure of courts with the Supreme Court at the top.\n\nThis integration means that the decisions of higher courts are binding on the lower courts, and this single system enforces both central and state laws."
+    },
+    {
+      "id": 86,
+      "question": "With reference to 'Source of Indian Constitution', consider the following pairs:\n\n1. Irish Constitution: Fundamental duties and the ideal of justice\n2. Canadian Constitution: Suspension of Fundamental Rights during Emergency\n3. Australian Constitution: Joint sitting of the two Houses of Parliament\n4. Soviet Constitution: Directive Principles of State Policy\n\nHow many of the above given pairs are correctly matched?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. Only three",
+        "D. All four"
+      ],
+      "answer": "A. Only one",
+      "explanation": "Pair 1 is incorrect: Fundamental Duties and the ideal of justice are from the Soviet Constitution.\n\nPair 2 is incorrect: Suspension of Fundamental Rights during Emergency is from the Weimar Constitution of Germany.\n\nPair 3 is correct: Joint sitting of the two Houses of Parliament is borrowed from the Australian Constitution.\n\nPair 4 is incorrect: Directive Principles of State Policy are from the Irish Constitution."
+    },
+    {
+      "id": 87,
+      "question": "With reference to Judiciary in India and United States of America, consider the following statements:\n\n1. Unlike Indian Supreme Court, the Original Jurisdiction of American Supreme Court is confined to Centre-state disputes only.\n2. Unlike the Supreme Court of India, the American Supreme Court does not have advisory jurisdiction.\n3. Unlike American Supreme Court, the appellate jurisdiction of Indian Supreme Court is confined to constitutional cases only.\n4. Unlike Indian Supreme Court, American Supreme Court has a wide discretion to grant special leave to appeal in any matter.\n\nHow many of the above given statements are not correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. Only three",
+        "D. All four"
+      ],
+      "answer": "C. Only three",
+      "explanation": "Statement 1 is not correct: The American Supreme Court's original jurisdiction is wider, covering cases involving ambassadors, maritime issues, etc., not just federal disputes.\n\nStatement 2 is correct: The Indian Supreme Court has advisory jurisdiction (Article 143), which the American Supreme Court does not have.\n\nStatement 3 is not correct: The Indian Supreme Court's appellate jurisdiction is wide and covers constitutional, civil, and criminal cases, unlike the American Supreme Court's which is confined to constitutional cases.\n\nStatement 4 is not correct: The Indian Supreme Court, not the American one, has wide discretion to grant special leave to appeal."
+    },
+    {
+      "id": 88,
+      "question": "Consider the following statements regarding the Second Schedule and the Third Schedule of Indian Constitution:\n\n1. Both the second and third schedules contains provision related to Vice President.\n2. The President and the Governor of states are included only in Second Schedule and not in the Third Schedule.\n3. The Comptroller and Auditor General of India is included in both the Schedules.\n4. Both the Schedules can be amended by a simple majority of Parliament.\n\nHow many of the above given statements are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. Only three",
+        "D. All four"
+      ],
+      "answer": "C. Only three",
+      "explanation": "Statement 1 is incorrect: The Second Schedule mentions emoluments for the Chairman of Rajya Sabha (who is the Vice-President), but the Third Schedule (Oaths) does not contain the oath for the Vice-President.\n\nStatement 2 is correct: The President and Governors are in the Second Schedule (emoluments), but their oaths are separate articles (Art 60 and 159), not in the Third Schedule.\n\nStatement 3 is correct: The CAG is included in both the Second (emoluments) and Third (oath) Schedules.\n\nStatement 4 is correct: Amendments to these schedules do not require a special majority under Article 368 and can be done by a simple majority."
+    },
+    {
+      "id": 89,
+      "question": "Consider the following statements regarding the term 'Asymmetric Federalism':\n\n1. In Asymmetric Federalism, a particular state can have greater executive powers than other states.\n2. It overlooks the diverse cultural, linguistic, and historical differences among constituent units.\n3. Indian Constitution provides for the Asymmetric federalism.\n\nHow many of the above given statements are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. All three",
+        "D. None"
+      ],
+      "answer": "B. Only two",
+      "explanation": "Statement 1 is correct: Asymmetric federalism means that different constituent states may have different powers.\n\nStatement 2 is incorrect: It does not overlook diversity; rather, it is a mechanism to accommodate and recognize such differences by granting special status or powers.\n\nStatement 3 is correct: The Indian Constitution provides for asymmetric federalism, for instance, through Article 371, which grants special provisions to some states."
+    },
+    {
+      "id": 90,
+      "question": "With reference to the Indian and British Parliamentary System, consider the following statements:\n\n1. Both the Indian and British Parliamentary systems are based on Doctrine of the Sovereignty of Parliament.\n2. In both the systems, the Prime Minister must be from the lower house of Parliament.\n3. Britain has the system of legal responsibility of the ministers, while India has no such system.\n4. Both the systems have an elected Head of the State.\n\nHow many of the above given statements are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. All three",
+        "D. None"
+      ],
+      "answer": "A. Only one",
+      "explanation": "Statement 1 is incorrect: The British system is based on parliamentary sovereignty, but the Indian Parliament is not sovereign; its powers are limited by the written Constitution.\n\nStatement 2 is incorrect: In Britain, the PM must be from the Lower House. In India, the PM can be from either House of Parliament.\n\nStatement 3 is correct: Britain has a system of legal responsibility where the minister must countersign official acts of the Head of State. India does not have this system.\n\nStatement 4 is incorrect: India has an elected head of state (President), making it a republic. Britain has a hereditary head of state (Monarch)."
+    },
+    {
+      "id": 91,
+      "question": "The Supreme court of India can declare certain laws/executive actions as unconstitutional under which of the following conditions?\n\n1. If the law enacted by parliament violates a provision of the constitution.\n2. Any laws that are against the federal provisions of the constitution.\n3. Any legislative/executive actions that contravenes the Directive Principles of State Policy (DPSP).\n\nSelect the correct answer using the code given below:",
+      "options": [
+        "A. 1 and 2 only",
+        "B. 2 and 3 only",
+        "C. 1 only",
+        "D. 1 and 3 only"
+      ],
+      "answer": "A. 1 and 2 only",
+      "explanation": "Statement 1 is correct: The Supreme Court can strike down any law that violates any provision of the Constitution, especially Fundamental Rights.\n\nStatement 2 is correct: Federalism is part of the basic structure, and any law against federal provisions can be declared unconstitutional.\n\nStatement 3 is incorrect: DPSPs are non-justiciable, meaning they are not enforceable by the courts. Therefore, a law cannot be declared unconstitutional solely for contravening a DPSP."
+    },
+    {
+      "id": 92,
+      "question": "Why India is sometimes referred to as a 'quasi-federal' polity?",
+      "options": [
+        "A. In India, executive is responsible to the legislature for all its acts and policies.",
+        "B. Indian constitution provides a Bicameral legislature for the Centre and the states.",
+        "C. India is a federal country with balance of power tilted towards Centre.",
+        "D. Indian constitution provides for division of power between the Centre and the states."
+      ],
+      "answer": "C. India is a federal country with balance of power tilted towards Centre.",
+      "explanation": "The term 'quasi-federal' is used because while India has federal features (like division of powers), it also has strong unitary or non-federal features.\n\nThe balance of power is significantly tilted in favor of the Central government (e.g., emergency provisions, appointment of governors), which distinguishes it from a true federation."
+    },
+    {
+      "id": 93,
+      "question": "Which of the following are the reasons for the inclusion of emergency provisions in the Indian constitution?\n\n1. To safeguard the sovereignty, unity, integrity and security of the country.\n2. To vest wide powers to centre so as to handle special situations.\n3. To prevent maladministration or corruption in the country.\n4. To sort out intra-party problems of the ruling party.\n\nSelect the correct answer using the code given below:",
+      "options": [
+        "A. 1 and 2 only",
+        "B. 1, 2 and 3 only",
+        "C. 1, 3 and 4 only",
+        "D. 2 and 3 only"
+      ],
+      "answer": "A. 1 and 2 only",
+      "explanation": "Statement 1 is a primary reason: The provisions are meant to protect the nation's sovereignty and integrity during crises.\n\nStatement 2 is a primary reason: They enable the Central government to become all-powerful to effectively manage abnormal situations.\n\nStatements 3 and 4 are not the intended constitutional reasons for these provisions. President's Rule (Art. 356) can address a breakdown of constitutional machinery but 'maladministration' is too broad, and intra-party problems are political matters, not constitutional crises."
+    },
+    {
+      "id": 94,
+      "question": "Indian Constitution is considered as one of the lengthiest in the world, which one of the following is not the reason for it?",
+      "options": [
+        "A. A major part of it is based on the Government of India Act, 1935, which was a bulky document.",
+        "B. It accommodates provisions related to government mechanisms of both center and states.",
+        "C. Fundamental principles of governance and matters of administration are given in great detail.",
+        "D. Procedures related to preparation of electoral rolls and registration of political parties are included in the Constitution."
+      ],
+      "answer": "D. Procedures related to preparation of electoral rolls and registration of political parties are included in the Constitution.",
+      "explanation": "Options A, B, and C are valid reasons for the bulkiness of the Indian Constitution. It incorporates the vast administrative details from the GoI Act 1935 and contains provisions for both Central and state governments in one document.\n\nOption D is not a reason. While the Constitution deals with elections (Part XV), detailed procedures like preparing electoral rolls and registering political parties are largely governed by laws enacted by Parliament, such as the Representation of the People Act."
+    },
+    {
+      "id": 95,
+      "question": "Consider the following statements:\n\n1. Indian parliament is a sovereign body similar to British parliament.\n2. Indian state has an elected head while the Britain state has hereditary head.\n3. Political sovereignty in India is with the people and not in a single individual.\n\nHow many statements given above are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. All three",
+        "D. None"
+      ],
+      "answer": "B. Only two",
+      "explanation": "Statement 1 is incorrect: The Indian Parliament is not sovereign; its powers are limited by the written Constitution, judicial review, and the federal structure. The British Parliament is sovereign.\n\nStatement 2 is correct: India is a republic with an elected President. Britain is a constitutional monarchy with a hereditary monarch.\n\nStatement 3 is correct: The Preamble ('We, the People of India...') indicates that political sovereignty vests in the people of India."
+    },
+    {
+      "id": 96,
+      "question": "Which one of the following would you accept as the most appropriate definition of 'justice'?",
+      "options": [
+        "A. It means providing opportunities for the development of individual personalities.",
+        "B. It means provision of adequate opportunities for all individuals without any discrimination.",
+        "C. It means equal treatment of all citizens without any social, economic and political distinction.",
+        "D. It means assuring the dignity of the individual and the unity and integrity of the nation."
+      ],
+      "answer": "C. It means equal treatment of all citizens without any social, economic and political distinction.",
+      "explanation": "The Preamble uses the term 'Justice' to encompass three distinct forms: social, economic, and political.\n\nThis implies the absence of discrimination on grounds like caste, colour, race, religion, sex (social justice), wealth (economic justice), and ensuring equal political rights for all (political justice). Option C best captures this comprehensive meaning."
+    },
+    {
+      "id": 97,
+      "question": "Which of the following statements is/are correct with reference to the idea of Indian secularism?\n\n1. The doctrine of essentiality is used by the Judiciary to check if any practice is integral to a religion.\n2. The term 'Secular' was added to the preamble by the Forty Fourth Amendment Act.\n3. A policy of the State cannot have an exclusively religious rationale.\n\nSelect the correct answer using the code below:",
+      "options": [
+        "A. 1 and 2 only",
+        "B. 3 only",
+        "C. 1 only",
+        "D. 1 and 3 only"
+      ],
+      "answer": "C. 1 only",
+      "explanation": "Statement 1 is correct: The Supreme Court developed the 'doctrine of essential religious practices' to determine which religious practices are protected under the Constitution.\n\nStatement 2 is incorrect: The term 'Secular' was added to the Preamble by the 42nd Constitutional Amendment Act, 1976.\n\nStatement 3 is incorrect: This is a feature of the Western model of secularism (strict separation). Indian secularism allows for 'principled intervention' by the state in religious affairs, for example, for social reform."
+    },
+    {
+      "id": 98,
+      "question": "This term from the Constitution indicates that India has an elected head of the state.\nIt supports vesting of political sovereignty in the people of the country.\nIt also indicates the absence of any privileged class and all public offices being opened to every citizen without any discrimination.\n\nWhich of the following terms best defines this attribute of India as a Nation-State?",
+      "options": [
+        "A. Equality",
+        "B. Republic",
+        "C. Parliamentary Democracy",
+        "D. Liberty"
+      ],
+      "answer": "B. Republic",
+      "explanation": "The term 'Republic' in the Indian context means three things:\n\n1. The head of the state (the President) is elected, not a hereditary monarch.\n2. Political sovereignty is vested in the people.\n3. There are no privileged classes, and all public offices are open to all citizens."
+    },
+    {
+      "id": 99,
+      "question": "With reference to the Preamble of the Constitution of India, which one of the following statements is correct?",
+      "options": [
+        "A. As a sovereign state, India cannot cede a part of its territory in favour of a foreign state.",
+        "B. In Indian democratic system supreme power is vested in the parliament.",
+        "C. Liberty ensures the absence of special privileges to any section of society.",
+        "D. In India, the ideal of fraternity is to secure the unity and integrity of the nation."
+      ],
+      "answer": "D. In India, the ideal of fraternity is to secure the unity and integrity of the nation.",
+      "explanation": "Option A is incorrect: Being sovereign means India *can* cede a part of its territory to a foreign state.\n\nOption B is incorrect: Supreme power (sovereignty) is vested in the people of India, not the Parliament.\n\nOption C is incorrect: 'Equality' ensures the absence of special privileges, not 'Liberty'.\n\nOption D is correct: The Preamble states that fraternity must assure two things: the dignity of the individual and the unity and integrity of the nation."
+    },
+    {
+      "id": 100,
+      "question": "Which one of the following statements correctly describes the term 'socialism' with Indian characteristics?",
+      "options": [
+        "A. It involves the nationalization of all key industries.",
+        "B. It means complete state ownership of material resources of the nation.",
+        "C. It is a 'state socialism' where the government plays major role.",
+        "D. It provides for individual freedom with centralized-social control of the economy."
+      ],
+      "answer": "D. It provides for individual freedom with centralized-social control of the economy.",
+      "explanation": "Indian socialism is 'democratic socialism', not 'state socialism'.\n\nIt is a blend of Marxism and Gandhism, holding faith in a 'mixed economy'. It allows for individual freedom and private sectors to co-exist with social control and public planning of the economy, aiming to reduce poverty and inequality."
+    },
+    {
+      "id": 101,
+      "question": "With reference to the Secular character of the Constitution of India, which one of the following statements is incorrect?",
+      "options": [
+        "A. All citizens are equally entitled to liberty of belief, faith and worship.",
+        "B. All minorities have the right to establish and administer educational institutions of their choice.",
+        "C. All people are equally required to pay taxes for the promotion of their religion.",
+        "D. The State shall not deny any person equality before the law or equal protection of the laws."
+      ],
+      "answer": "C. All people are equally required to pay taxes for the promotion of their religion.",
+      "explanation": "Statements A, B, and D reflect the secular character of the Indian state, as guaranteed by the Preamble, Articles 30, and 14 respectively.\n\nStatement C is incorrect. In fact, Article 27 states that 'no person shall be compelled to pay any taxes for the promotion of a particular religion', which is a key secular provision."
+    },
+    {
+      "id": 102,
+      "question": "Consider the following statements:\n\n1. The Preamble was enacted after the entire Constitution was already enacted.\n2. All the provisions of the Constitution of India came into force from 26th Nov, 1949.\n3. The date mentioned in the preamble is the date when the Constitution was adopted, enacted and enforced.\n\nHow many statements given above are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. All three",
+        "D. None"
+      ],
+      "answer": "A. Only one",
+      "explanation": "Statement 1 is correct: The Preamble was adopted by the Constituent Assembly after the rest of the Constitution was passed.\n\nStatement 2 is incorrect: Only some provisions (like those on citizenship and elections) came into force on Nov 26, 1949. The majority of the Constitution came into force on Jan 26, 1950.\n\nStatement 3 is incorrect: The date in the Preamble (Nov 26, 1949) is the date of adoption and enactment, but the date of enforcement for the bulk of the Constitution was Jan 26, 1950."
+    },
+    {
+      "id": 103,
+      "question": "The word 'fraternity' in the preamble of the Constitution of India promotes\n\n1. Equal status and opportunity for the people\n2. Dignity of the individual\n3. Unity and integrity of the nation\n\nSelect the correct answer using the code given below:",
+      "options": [
+        "A. 1 and 2 only",
+        "B. 2 only",
+        "C. 2 and 3 only",
+        "D. 1, 2 and 3"
+      ],
+      "answer": "C. 2 and 3 only",
+      "explanation": "The Preamble explicitly states that 'fraternity' assures two things:\n\n2. The dignity of the individual\n3. The unity and integrity of the nation\n\n'Equal status and opportunity' is promoted by the ideal of 'Equality', not 'Fraternity'."
+    },
+    {
+      "id": 104,
+      "question": "Which one of the following would you accept as the most appropriate definition of 'distributive justice'?",
+      "options": [
+        "A. Social ownership of the means of production.",
+        "B. Just allocation of resources in the society.",
+        "C. Punishment in proportion to the crime.",
+        "D. Absence of special privileges among the citizens."
+      ],
+      "answer": "B. Just allocation of resources in the society.",
+      "explanation": "'Distributive justice' is concerned with the fair and just allocation of resources, wealth, and opportunities within a society.\n\nIt is a combination of social and economic justice, aiming to ensure that members of society receive a 'fair share'."
+    },
+    {
+      "id": 105,
+      "question": "Which of the following parts of the Constitution provides for equality among the citizens of India?\n\n1. Fundamental rights under Part III.\n2. Directive Principles of State Policy under Part IV.\n3. Elections under Part XV\n\nSelect the correct answer using the code given below:",
+      "options": [
+        "A. 1 only",
+        "B. 1 and 2 only",
+        "C. 3 only",
+        "D. 1, 2 and 3"
+      ],
+      "answer": "D. 1, 2 and 3",
+      "explanation": "All three parts provide for different dimensions of equality:\n\n1. Part III (Fundamental Rights): Ensures civic equality (e.g., Articles 14, 15, 16).\n2. Part IV (DPSP): Secures economic equality (e.g., Article 39 on equal pay for equal work).\n3. Part XV (Elections): Secures political equality (e.g., Articles 325 and 326 on universal adult suffrage without discrimination)."
+    },
+    {
+      "id": 106,
+      "question": "Consider the following statements regarding Constitutional secularism in the Indian context:\n\n1. It is based on the principle of the strict separation of state and religion.\n2. The Supreme court considers it to be the part of the basic structure of the Constitution.\n\nWhich of the statements given above is/are correct?",
+      "options": [
+        "A. 1 only",
+        "B. 2 only",
+        "C. Both 1 and 2",
+        "D. Neither 1 nor 2"
+      ],
+      "answer": "B. 2 only",
+      "explanation": "Statement 1 is incorrect: Indian secularism is not based on a strict separation of state and religion (like the Western model). It is a 'positive' concept that allows for principled intervention by the state in religious affairs.\n\nStatement 2 is correct: The Supreme Court, in the S.R. Bommai case (1994), held that secularism is a part of the 'basic structure' of the Constitution."
+    },
+    {
+      "id": 107,
+      "question": "Which one of the following reflects the most appropriate relationship between law and liberty",
+      "options": [
+        "A. If there are more laws, there is less liberty.",
+        "B. If there are no laws, there is no liberty.",
+        "C. If there are liberty laws have to be made by the people.",
+        "D. If laws are changed too often, liberty is in danger."
+      ],
+      "answer": "B. If there are no laws, there is no liberty.",
+      "explanation": "This reflects the concept of 'positive liberty'.\n\nThe absence of law leads to 'anarchy' or 'might is right', where the strong can impinge on the liberty of the weak.\n\nReasonable laws are necessary to protect and preserve liberty for all members of society. As John Locke said, 'where there is no law, there is no freedom'."
+    },
+    {
+      "id": 108,
+      "question": "With reference to the Constitution of India, which of the following advocate social justice and empowerment?\n\n1. Preamble\n2. Fundamental Rights\n3. Directive Principle of State policy\n\nSelect the correct answer using the code given below:",
+      "options": [
+        "A. 1 and 2 only",
+        "B. 2 and 3 only",
+        "C. 1 and 3 only",
+        "D. 1, 2 and 3"
+      ],
+      "answer": "D. 1, 2 and 3",
+      "explanation": "All three advocate for social justice and empowerment:\n\n1. The Preamble explicitly seeks to secure for all citizens 'JUSTICE, social, economic and political'.\n2. Fundamental Rights, such as the prohibition of untouchability (Art 17) and forced labour (Art 23), directly promote social justice.\n3. Directive Principles guide the state to secure a social order for the promotion of the welfare of the people."
+    },
+    {
+      "id": 109,
+      "question": "Which of the following statements is/are correct regarding the Objective Resolution?\n\n1. It provided for the establishment of socialist, secular, Independent, sovereign, republic of India.\n2. It provided to make contributions to promote world peace.\n3. It provided the freedom of speech, expression and association to the people of India.\n4. Territory of India shall comprise of British India, Indian States and territories which are outside India but willing to join India.\n\nSelect the correct answer using the code given below:",
+      "options": [
+        "A. 1, 2 and 3 only",
+        "B. 3 and 4 only",
+        "C. 2, 3 and 4 only",
+        "D. 4 only"
+      ],
+      "answer": "C. 2, 3 and 4 only",
+      "explanation": "Statement 1 is incorrect: The Objective Resolution declared India as an 'Independent Sovereign Republic'. The words 'socialist' and 'secular' were added to the Preamble much later, in 1976.\n\nStatements 2, 3, and 4 are all correct provisions that were part of the Objective Resolution moved by Jawaharlal Nehru in 1946."
+    },
+    {
+      "id": 110,
+      "question": "Consider the following statements:\n\n1. The Preamble of India has been amended just twice so far.\n2. The Preamble as a preface to the Indian Constitution was written by Ν.Α. Palkhivala.\n\nWhich of the statements given above is/are correct?",
+      "options": [
+        "A. 1 only",
+        "B. 2 only",
+        "C. Both 1 and 2",
+        "D. Neither 1 nor 2"
+      ],
+      "answer": "D. Neither 1 nor 2",
+      "explanation": "Statement 1 is incorrect: The Preamble has been amended only once, by the 42nd Constitutional Amendment Act of 1976, which added the words 'Socialist', 'Secular', and 'Integrity'.\n\nStatement 2 is incorrect: The Preamble is based on the 'Objectives Resolution' drafted and moved by Jawaharlal Nehru. N.A. Palkhivala famously called the Preamble the 'identity card of the Constitution'; he did not write it."
+    },
+     {
+      "id": 111,
+      "question": "With reference to the views and ideals of liberty, consider the following questions:\n\n1. Positive Liberty recognizes that one can be free only in the society and not outside it.\n2. For JS Mill, minor harm in the society should be dealt by force of laws.\n3. The focus of Modern liberalism is on community development only.\n\nHow many statements given above are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. All three",
+        "D. None"
+      ],
+      "answer": "A. Only one",
+      "explanation": "Statement 1 is correct: Positive Liberty is the idea that freedom is realized within a social context that enables individual development.\n\nStatement 2 is incorrect: J.S. Mill's 'harm principle' suggests that law should only intervene to prevent serious harm to others; minor harms should be addressed by social disapproval, not legal force.\n\nStatement 3 is incorrect: Modern liberalism focuses on both individual rights and social justice/community development, not just the latter."
+    },
+    {
+      "id": 112,
+      "question": "Which of the following Constitutional provisions deals with the 'socialist' principles?\n\n1. Encouraging equitable distribution of resources among citizens.\n2. Creation of welfare state.\n3. Minimising inequality in opportunities.\n4. Prohibition on taxation for maintenance of any particular religion.\n\nSelect the correct option using the code given below:",
+      "options": [
+        "A. 1, 2 and 3 only",
+        "B. 2, 3 and 4 only",
+        "C. 1 and 2 only",
+        "D. 1, 2, 3 and 4"
+      ],
+      "answer": "A. 1, 2 and 3 only",
+      "explanation": "Statements 1, 2, and 3 are all socialist principles, primarily reflected in the Directive Principles of State Policy (DPSP).\n\nThey aim to achieve a welfare state by ensuring equitable resource distribution and minimizing inequalities.\n\nStatement 4 is a 'secular' principle (Article 27), not a socialist one."
+    },
+    {
+      "id": 113,
+      "question": "Consider the following statements regarding the features of Indian Secularism:\n\n1. It advocates mutual exclusion of state and religion in order to protect individual freedom.\n2. It forbids state from providing any type of financial aid to any specific religious community.\n3. A single standard civil law is employed in delivering justice regardless of religious affiliation.\n4. It prevents the State from discriminating against any citizen on the grounds of religion.\n\nHow many of the above given statements are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. Only three",
+        "D. All four"
+      ],
+      "answer": "A. Only one",
+      "explanation": "Statement 1 is incorrect: This describes Western secularism. Indian secularism allows for principled state intervention in religion.\n\nStatement 2 is incorrect: The state can provide financial aid to religious institutions but not for the promotion of a particular religion.\n\nStatement 3 is incorrect: India does not have a Uniform Civil Code; personal matters are often governed by different religious laws.\n\nStatement 4 is correct: A core feature of Indian secularism, enshrined in articles like 15 and 16, is the prohibition of discrimination by the State on the grounds of religion."
+    },
+    {
+      "id": 114,
+      "question": "With reference to Indian Polity, the concept of 'Principled Distance' is related to:",
+      "options": [
+        "A. Judicial Activism and Parliamentary Approval",
+        "B. Dual Polity Federal Structure",
+        "C. Separation between religion and state",
+        "D. Indestructible nature of States"
+      ],
+      "answer": "C. Separation between religion and state",
+      "explanation": "The concept of 'Principled Distance' is central to Indian secularism.\n\nIt means the state maintains a distance from all religions but can intervene in a principled manner when necessary, for instance, to uphold constitutional values or ensure social reform. This is different from the strict wall of separation in the Western model."
+    },
+    {
+      "id": 115,
+      "question": "Which of the following correctly outlines the principles of Indian socialism?\n\n1. Nationalization of all means of production\n2. Creation of no-class social system\n3. Emphasis on welfare policies\n4. No use of force to implement socialist ideas\n5. Abolition of Private property through peaceful means\n\nSelect the correct answer using the codes given below:",
+      "options": [
+        "A. 1, 2 and 3 only",
+        "B. 3 and 4 only",
+        "C. 2, 3 and 4 only",
+        "D. 1, 2, 3 and 5 only"
+      ],
+      "answer": "B. 3 and 4 only",
+      "explanation": "Indian socialism is 'democratic socialism', not 'communistic socialism'.\n\nIt does not advocate for nationalization of all production (1) or the abolition of private property (5).\n\nIt is characterized by an emphasis on welfare policies (3) to reduce inequality and a commitment to democratic and non-violent means (4)."
+    },
+    {
+      "id": 116,
+      "question": "India is described as a Republic because:\n\n1. political sovereignty of India is vested in the people of the country.\n2. India has accepted the British Crown as the head of the Commonwealth.\n3. head of the state is always an elected individual.\n4. Indian Constitution provides for only a single citizenship.\n\nHow many of the above given statements are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. Only three",
+        "D. All four"
+      ],
+      "answer": "B. Only two",
+      "explanation": "Statement 1 is correct: A republic implies that sovereignty vests in the people.\n\nStatement 2 is incorrect: India's membership in the Commonwealth does not compromise its republican status; the British Crown is not the head of the Indian state.\n\nStatement 3 is correct: The head of the Indian state, the President, is an elected individual, not a hereditary monarch.\n\nStatement 4 is incorrect: Single citizenship is a feature of the Indian state but is not a defining characteristic of a republic."
+    },
+    {
+      "id": 117,
+      "question": "Consider the following statements regarding the 'Preamble of India':\n\n1. It cannot be amended as it enjoys protection under Basic Structure doctrine.\n2. It is a source of restriction on the powers of the Government of the country.\n3. Both the preamble of the Constitution of the USA and India starts with 'We the people'.\n\nHow many of the above given statements are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. All three",
+        "D. None"
+      ],
+      "answer": "A. Only one",
+      "explanation": "Statement 1 is incorrect: The Preamble can be amended (as it was in 1976), but its basic features cannot be altered as they are part of the 'basic structure'.\n\nStatement 2 is incorrect: The Preamble is non-justiciable and is neither a source of power nor a restriction on the powers of the legislature or executive.\n\nStatement 3 is correct: Both preambles begin with the phrase 'We the People', signifying that the constitution derives its authority from the people."
+    },
+    {
+      "id": 118,
+      "question": "In the context of Preamble of India, what does the term 'Democratic' indicates?",
+      "options": [
+        "A. A form of government where each organ of governance respects the powers and jurisdiction of the others.",
+        "B. A political unit where supreme power of governance is vested in the people.",
+        "C. A type of government where the regional units derive their power and authority from the national government.",
+        "D. A system characterized by the absence of restraints and special privileges on the activities of individuals."
+      ],
+      "answer": "B. A political unit where supreme power of governance is vested in the people.",
+      "explanation": "The term 'Democratic' in the Preamble is based on the doctrine of popular sovereignty.\n\nIt indicates that the supreme power of governance is held by the people, who exercise it through their elected representatives."
+    },
+    {
+      "id": 119,
+      "question": "Preamble describe India as a sovereign nation. What does this mean?\n\n1. No internal groups or any external authority could undermine the authority of the Indian government.\n2. The laws made in India are only limited by the international laws set by United Nations Organization.\n3. India can neither acquire a foreign territory nor cede a part of its territory in favour of a foreign state.\n\nSelect the correct answer using the code given below:",
+      "options": [
+        "A. 1 only",
+        "B. 2 and 3 only",
+        "C. 1 and 2 only",
+        "D. 3 only"
+      ],
+      "answer": "A. 1 only",
+      "explanation": "Statement 1 is correct: Sovereignty means India is an independent state, free from the control of any foreign power or internal group.\n\nStatement 2 is incorrect: While India respects international law, it is not legally bound or limited by it in making its own laws.\n\nStatement 3 is incorrect: A key attribute of sovereignty is the power to acquire foreign territory or cede its own territory to another state."
+    },
+    {
+      "id": 120,
+      "question": "With reference to the Preamble of Indian constitution, consider the following statements:\n\n1. It is a source of power for the legislature and the executive.\n2. It can be used by the Judiciary for a legal interpretation of the constitution.\n3. It has no legal effect independently of other parts of the Constitution.\n4. It shall be enforceable by the courts in India.\n\nHow many of the above given statements are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. Only three",
+        "D. All four"
+      ],
+      "answer": "B. Only two",
+      "explanation": "Statement 1 is incorrect: The Preamble is not a source of power for any organ of the state.\n\nStatement 2 is correct: The Supreme Court has held that the Preamble can be used to interpret ambiguous parts of the Constitution.\n\nStatement 3 is correct: The Preamble is not independently enforceable and derives its significance from the main body of the Constitution.\n\nStatement 4 is incorrect: The Preamble is non-justiciable, meaning its provisions are not enforceable in a court of law."
+    },
+    {
+      "id": 121,
+      "question": "Consider the following pairs regarding the various types of instruments in Direct Democracy and their description:\n\n1. Referendum: A procedure whereby a proposed legislation is referred to the electorate for settlement by their direct votes.\n2. Initiative: A method by means of which the people can propose a bill to the legislature for enactment.\n3. Recall: A method by means of which the voters can remove an officer before the expiry of his term.\n4. Plebiscite: A method of obtaining the opinion of people on any issue of public importance.\n\nHow many of the above given pairs are correctly matched?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. Only three",
+        "D. All four"
+      ],
+      "answer": "D. All four",
+      "explanation": "All four pairs are correctly matched and accurately describe the instruments of direct democracy:\n\n1. Referendum is voting on a proposed law.\n2. Initiative allows citizens to propose a law.\n3. Recall allows voters to remove an elected official.\n4. Plebiscite is used to obtain public opinion on an issue of general importance, often related to territory or sovereignty."
+    },
+    {
+      "id": 122,
+      "question": "With reference to the distinct forms of Justice, consider the following statements:\n\n1. Social Justice implies that all citizens are treated equally irrespective of their status in society.\n2. Economic justice is considered as part of liberty without which equality of status and dignity of a person is not possible.\n3. Political justice proposes that the citizens of a country should have equal access to political offices.\n\nHow many of the above given statements are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. All three",
+        "D. None"
+      ],
+      "answer": "B. Only two",
+      "explanation": "Statement 1 is correct: Social justice means equal treatment of all citizens without any social distinction based on caste, colour, race, religion, sex, etc.\n\nStatement 2 is incorrect: Economic justice means non-discrimination on economic factors and reducing wealth inequalities. It is distinct from liberty, though related.\n\nStatement 3 is correct: Political justice implies that all citizens have equal political rights, equal access to political offices, and an equal voice in government."
+    },
+    {
+      "id": 123,
+      "question": "With reference to Indian Constitution, consider the following statements:\n\n1. India being a Sovereign country can cede its territory in favor of a foreign state.\n2. Before addition of \"socialist\" to preamble, constitution already had elements of socialism.\n\nWhich of the statements given above is/are correct?",
+      "options": [
+        "A. 1 only",
+        "B. 2 only",
+        "C. Both 1 and 2",
+        "D. Neither 1 nor 2"
+      ],
+      "answer": "C. Both 1 and 2",
+      "explanation": "Statement 1 is correct: A key attribute of sovereignty is the power to cede territory, though in India's case, this requires a constitutional amendment under Article 368.\n\nStatement 2 is correct: Even before the word 'socialist' was added in 1976, the socialist character was implicit in the Constitution, particularly in the Directive Principles of State Policy, which aim for equitable distribution of resources."
+    },
+    {
+      "id": 124,
+      "question": "\"It is a minimum area that is sacred and in which whatever the individual does, is not to be interfered with. The existence of the 'minimum area of non-interference' is the recognition that human nature and human dignity need an area where the person can act unobstructed by others.\"\n\nWhich of the following ideals is referred to in the above paragraph?",
+      "options": [
+        "A. Positive liberty",
+        "B. Equality",
+        "C. Distributive Justice",
+        "D. Negative liberty"
+      ],
+      "answer": "D. Negative liberty",
+      "explanation": "The paragraph describes the core idea of 'Negative Liberty'.\n\nIt focuses on the absence of external constraints and defines a 'minimum area of non-interference' where an individual is free to act without being obstructed by others."
+    },
+    {
+      "id": 125,
+      "question": "Which of the following principles constitute the components of 'social justice'?\n\n1. Principle of treating equals equally\n2. Rewarding people in proportion to their effort\n3. Recognizing special needs of people while distributing rewards\n\nSelect the correct answer using the code given below:",
+      "options": [
+        "A. 1 only",
+        "B. 1 and 2 only",
+        "C. 2 and 3 only",
+        "D. 1, 2 and 3"
+      ],
+      "answer": "D. 1, 2 and 3",
+      "explanation": "Social justice is a multifaceted concept that includes all three principles:\n\n1. Treating equals equally is a foundational principle of justice.\n2. Proportionality, or rewarding effort, is another aspect of fairness.\n3. Recognizing special needs (e.g., through affirmative action) is crucial for achieving substantive justice in a society with existing inequalities."
+    },
+    {
+      "id": 126,
+      "question": "Consider the following statements:\n\n1. Article 3 provides for the admission of new states that are not part of the Union of India.\n2. Settlement of an international boundary dispute does not require a constitutional amendment.\n3. The 100th Constitutional Amendment Act of 2015 was enacted to give effect transfer of territories between India and Bangladesh.\n\nHow many statements given above are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. All three",
+        "D. None"
+      ],
+      "answer": "B. Only two",
+      "explanation": "Statement 1 is incorrect: Article 2 deals with the admission or establishment of new states that are not part of the Union. Article 3 deals with forming new states by altering the boundaries of existing states within the Union.\n\nStatement 2 is correct: The Supreme Court has ruled that settling a boundary dispute does not involve ceding territory and can be done by an executive action, without a constitutional amendment.\n\nStatement 3 is correct: The 100th Amendment was enacted to ratify the Land Boundary Agreement between India and Bangladesh, which involved the transfer of enclaves."
+    },
+    {
+      "id": 127,
+      "question": "Consider the following statements:\n\n1. With reference to the Constitution, the term 'Union of India' does not include Union territories.\n2. The acquired territories are directly administered by the Central government.\n\nWhich of the statements given above is/are correct?",
+      "options": [
+        "A. 1 only",
+        "B. 2 only",
+        "C. Both 1 and 2",
+        "D. Neither 1 nor 2"
+      ],
+      "answer": "C. Both 1 and 2",
+      "explanation": "Statement 1 is correct: The term 'Union of India' includes only the states. The term 'Territory of India' is a wider expression that includes the states, Union Territories, and any territories that may be acquired.\n\nStatement 2 is correct: Both Union Territories and acquired territories are directly administered by the Central government."
+    },
+    {
+      "id": 128,
+      "question": "If the name of a state in India needs to be changed, then:\n\n1. Prior recommendation of the President is not necessary to introduce such a bill in the parliament.\n2. Consent of the state legislature concerned is not required for such a bill.\n3. The bill can be passed by a simple majority of the parliament.\n\nHow many statements given above are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. All three",
+        "D. None"
+      ],
+      "answer": "B. Only two",
+      "explanation": "Statement 1 is incorrect: A bill for altering the name or boundary of a state can be introduced in Parliament only with the prior recommendation of the President.\n\nStatement 2 is correct: The President must refer the bill to the state legislature for its views, but Parliament is not bound by these views. The consent of the state is not required.\n\nStatement 3 is correct: Such laws under Article 3 can be passed by a simple majority and are not considered constitutional amendments under Article 368."
+    },
+    {
+      "id": 129,
+      "question": "With reference to the reorganization of states in India after independence, consider the following statements:\n\n1. Dhar Commission recommended the reorganization of states on the basis of administrative convenience.\n2. Fazl Ali Commission rejected the theory of 'one language-one state'.\n3. Fazl Ali Commission recommended financial, economic and administrative considerations as a factor for reorganizing states.\n\nHow many statements given above are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. All three",
+        "D. None"
+      ],
+      "answer": "C. All three",
+      "explanation": "Statement 1 is correct: The Dhar Commission (1948) recommended reorganizing states based on administrative convenience rather than on a linguistic basis.\n\nStatement 2 is correct: The Fazl Ali Commission (1953) broadly accepted language as a basis but rejected the rigid 'one language-one state' theory, advocating for a balanced approach.\n\nStatement 3 is correct: The Fazl Ali Commission stated that financial, economic, and administrative considerations should be key factors in any scheme of state reorganization."
+    },
+    {
+      "id": 130,
+      "question": "Consider the following statements regarding Protected Area Permit:\n\n1. It is required for domestic tourists to visit certain areas in India.\n2. Both the Inner line permit and Protected area permit derive statutory power under the Foreigners act 1946.\n3. Ministry of Home Affairs is the main authority to administer the provisions related to Protected Area Permit.\n\nHow many statements given above are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. All three",
+        "D. None"
+      ],
+      "answer": "A. Only one",
+      "explanation": "Statement 1 is incorrect: A Protected Area Permit (PAP) is required for foreign nationals, not domestic tourists. Domestic tourists require an Inner Line Permit (ILP) for some of these areas.\n\nStatement 2 is incorrect: The PAP is issued under the Foreigners (Protected Areas) Order, 1958 (under the Foreigners Act, 1946). The ILP is based on the Bengal Eastern Frontier Regulation, 1873.\n\nStatement 3 is correct: The Ministry of Home Affairs (MHA) is the primary authority for administering the PAP regime."
+    },
+    {
+      "id": 131,
+      "question": "With reference to the Article 2 and Article 3 of the Constitution, consider the following statements:\n\n1. Article 2 relates to the admission or establishment of new states that are not part of the Union of India.\n2. Article 3 deals with the internal re-adjustment of the territories of the constituent states of the Union of India.\n\nWhich of the statements given above is/are correct?",
+      "options": [
+        "A. 1 only",
+        "B. 2 only",
+        "C. Both 1 and 2",
+        "D. Neither 1 nor 2"
+      ],
+      "answer": "C. Both 1 and 2",
+      "explanation": "Statement 1 is correct: Article 2 empowers Parliament to admit new states into the Union of India (e.g., admitting an existing political entity) or establish new states (e.g., creating a state from territory not previously part of any state).\n\nStatement 2 is correct: Article 3 empowers Parliament to reorganize the existing states of India by altering their areas, boundaries, or names."
+    },
+    {
+      "id": 132,
+      "question": "With reference to states reorganization in India, arrange the following mentioned States/Union Territories (UTs) in the chronological order of their formation:\n\n1. Sikkim\n2. Himachal Pradesh\n3. Manipur\n4. Mizoram\n\nSelect the correct answer using the code given below:",
+      "options": [
+        "A. 1-2-3-4",
+        "B. 2-3-1-4",
+        "C. 3-4-1-2",
+        "D. 4-2-3-1"
+      ],
+      "answer": "B. 2-3-1-4",
+      "explanation": "The correct chronological order of achieving statehood is:\n\n2. Himachal Pradesh (1971)\n3. Manipur (1972)\n1. Sikkim (1975)\n4. Mizoram (1987)"
+    },
+    {
+      "id": 133,
+      "question": "With reference to Indian constitution, what do you understand by the term 'State'?",
+      "options": [
+        "A. It refers to a political institution that represents a sovereign government who govern a set of people.",
+        "B. It refers to a type of government which protects and promotes the economic and social well-being of its citizens.",
+        "C. It refers to an institution which exercises its functions independently.",
+        "D. It refers to a political institution that represents a sovereign people who occupy a definite territory."
+      ],
+      "answer": "D. It refers to a political institution that represents a sovereign people who occupy a definite territory.",
+      "explanation": "In political science, the term 'State' refers to a political institution with four key elements: people (population), a definite territory, a government, and sovereignty.\n\nOption D best captures this comprehensive definition, distinguishing the 'State' from the 'government', which is just one element of the State."
+    },
+    {
+      "id": 134,
+      "question": "Which of the following statements is the most appropriate description of the term \"Nation\"?",
+      "options": [
+        "A. It is a legal political entity that fulfills the security and welfare need of its people.",
+        "B. It is a political entity that necessarily consists of four elements-population, territory, government, and sovereignty.",
+        "C. It is defined as an area of a land that is controlled by its own government.",
+        "D. It is a community of people naturally linked together by certain collective beliefs, aspirations and imaginations of its members."
+      ],
+      "answer": "D. It is a community of people naturally linked together by certain collective beliefs, aspirations and imaginations of its members.",
+      "explanation": "While 'State' is a legal-political entity (as described in options A and B), a 'Nation' is primarily a socio-cultural concept.\n\nIt refers to a group of people who feel a sense of unity based on shared elements like history, language, culture, and collective aspirations."
+    },
+    {
+      "id": 135,
+      "question": "With reference to 'Indian Federation', which one of the following statements correctly describe the difference between the \"Territory of India' and 'Union of India'?",
+      "options": [
+        "A. 'Territory of India' implies the power of Union to amend its borders, while 'Union of India' describe the destructible nature of Indian state.",
+        "B. 'Union of India' has no formal existence under Indian Constitution, while 'Territory of India' is recognized under the Constitution.",
+        "C. 'Union of India' is a wider expression than 'Territory of India'.",
+        "D. 'Union of India' implies federal relationship between Union and only states, while 'Territory of India' include not only the states but all other units like the Union Territories."
+      ],
+      "answer": "D. 'Union of India' implies federal relationship between Union and only states, while 'Territory of India' include not only the states but all other units like the Union Territories.",
+      "explanation": "The correct distinction is:\n\n'Union of India' consists of only the states, which share federal powers with the Centre.\n\n'Territory of India' is a broader term that includes the states, the Union Territories, and any other territories that may be acquired by India. Therefore, Option D is the correct description."
+    },
+    {
+      "id": 136,
+      "question": "Which of the following provisions are reflected under 'Article 1' of Indian Constitution?\n\n1. Establishment of New States\n2. Name of Country\n3. Definition of State\n4. Type of Polity\n\nSelect the correct answer using the codes given below:",
+      "options": [
+        "A. 1 and 2 only",
+        "B. 1, 2 and 4 only",
+        "C. 2 and 4 only",
+        "D. 3 and 4 only"
+      ],
+      "answer": "C. 2 and 4 only",
+      "explanation": "Article 1 of the Constitution deals with two main things:\n\n2. Name of the Country: It states, 'India, that is, Bharat...'\n4. Type of Polity: It describes India as a 'Union of States'.\n\nEstablishment of new states is covered under Article 2, and the definition of 'State' for fundamental rights is in Article 12."
+    },
+    {
+      "id": 137,
+      "question": "Consider the following statements with reference to the reorganization of states of India since Independence:\n\n1. The 7th Constitutional Amendment removed the distinction between Part A and Part B states and Part C states were abolished.\n2. The States Reorganization Act (1956) established the new state of Kerala.\n3. In the States Reorganization Act 1956, the state of Bombay was divided into two separate states of Maharashtra and Gujarat.\n\nSelect the correct answer using the code given below:",
+      "options": [
+        "A. 3 only",
+        "B. 2 and 3 only",
+        "C. 1 and 2 only",
+        "D. 1, 2 and 3"
+      ],
+      "answer": "C. 1 and 2 only",
+      "explanation": "Statement 1 is correct: The States Reorganisation Act and the 7th Amendment of 1956 abolished the four-fold classification of states and territories.\n\nStatement 2 is correct: The state of Kerala was formed by merging the Travancore-Cochin state with the Malabar district of Madras state.\n\nStatement 3 is incorrect: The state of Bombay was bifurcated into Maharashtra and Gujarat in 1960 by the Bombay Reorganisation Act, not the States Reorganization Act of 1956."
+    },
+    {
+      "id": 138,
+      "question": "Consider the following statements:\n\n1. The President is entitled to declare war or conclude a treaty.\n2. The President appoints the chiefs of the service branches of the armed forces.\n3. International treaties and agreements which are negotiated and concluded by the President does not need approval of the Parliament.\n\nHow many statements given above are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. All three",
+        "D. None"
+      ],
+      "answer": "B. Only two",
+      "explanation": "Statement 1 is correct: The President, as the supreme commander of the armed forces, can declare war or conclude peace, on the advice of the council of ministers.\n\nStatement 2 is correct: The President appoints the chiefs of the Army, Navy, and Air Force.\n\nStatement 3 is incorrect: While treaties are negotiated and concluded in the name of the President, they are subject to the approval of the Parliament to be legally binding."
+    },
+    {
+      "id": 139,
+      "question": "Consider the following statements with reference to 'States Reorganisation Act of 1956':\n\n1. The States Reorganisation Act of 1956 divided the country into 6 zones for the constitution of Zonal Councils.\n2. While forming zones, factors like the river systems and means of communication were taken into consideration.\n\nWhich of the above statements is/are correct?",
+      "options": [
+        "A. 1 only",
+        "B. 2 only",
+        "C. Both 1 and 2",
+        "D. Neither 1 nor 2"
+      ],
+      "answer": "B. 2 only",
+      "explanation": "Statement 1 is incorrect: The States Reorganisation Act of 1956 divided the country into five zones (Northern, Central, Eastern, Western, and Southern) and established a zonal council for each.\n\nStatement 2 is correct: The factors considered while creating these zones included natural divisions, river systems, communication means, cultural affinity, and economic development requirements."
+    },
+    {
+      "id": 140,
+      "question": "Which one of the following statements is correct regarding the process to create a new district in our country?",
+      "options": [
+        "A. States can create new district after the resolution by state legislative assembly and subsequent ratification by the President of India.",
+        "B. In order to create a new district in a state, legislation is made by the Parliament of India.",
+        "C. States can create new districts by executive action or passing a law in the State Assembly.",
+        "D. It is mandatory to seek approval of the union Home Ministry for creation of new district in any state in India."
+      ],
+      "answer": "C. States can create new districts by executive action or passing a law in the State Assembly.",
+      "explanation": "The power to create, abolish, or alter the boundaries of districts lies exclusively with the State governments.\n\nThey can do so either by issuing an executive order or by passing a law in the state legislative assembly. The central government has no role in this process, although its approval is required if the name of a district is to be changed."
+    },
+    {
+      "id": 141,
+      "question": "With reference to Regionalism, consider the following statements:\n\n1. Regionalism refers to sub-nationalism and sub-territorial loyalty.\n2. Demand of people of certain Union Territories for full-fledged statehood is an example of regionalism.\n3. Regionalism is a manifestation of mostly those elements which are very dominant in the national polity and national culture.\n\nHow many statements given above are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. All three",
+        "D. None"
+      ],
+      "answer": "B. Only two",
+      "explanation": "Statement 1 is correct: Regionalism is the love for a particular region in preference to the country as a whole.\n\nStatement 2 is correct: The demand for statehood (e.g., Delhi, Puducherry) is a clear manifestation of regional aspirations.\n\nStatement 3 is incorrect: Regionalism is typically a manifestation of elements that are *not* dominant and do not find expression in the national polity, leading to feelings of exclusion."
+    },
+    {
+      "id": 142,
+      "question": "With reference to the Integration of Princely States, which of the following statements is/ are correct?\n\n1. Manipur became part of India by signing Instrument of Accession.\n2. Manipur was the first state of India to hold an election based on universal adult franchise.\n\nSelect the correct answer using the codes given below:",
+      "options": [
+        "A. 1 only",
+        "B. 2 only",
+        "C. Both 1 and 2",
+        "D. Neither 1 nor 2"
+      ],
+      "answer": "C. Both 1 and 2",
+      "explanation": "Statement 1 is correct: The Maharaja of Manipur signed the Instrument of Accession with the Indian government just before independence.\n\nStatement 2 is correct: Following public pressure, the Maharaja held elections in June 1948, making Manipur the first part of India to hold an election based on universal adult franchise."
+    },
+    {
+      "id": 143,
+      "question": "With reference to the separatist movements in North Eastern India in post-Independence era, consider the following statements:\n\n1. In Assam, the non-Assamese demanded a tribal State to be carved out of Assam.\n2. People in Mizo hills demanded independence as they believe they were never a part of British India.\n3. The Naga movement was led by Laldenga.\n\nHow many statements given above are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. All three",
+        "D. None"
+      ],
+      "answer": "B. Only two",
+      "explanation": "Statement 1 is correct: Leaders of major tribal communities, feeling that the Assamese language was being imposed on them, demanded separate states to be carved out of Assam.\n\nStatement 2 is correct: The Mizo National Front (MNF) began an armed campaign for independence, with some Mizos believing they were never part of British India.\n\nStatement 3 is incorrect: The Naga movement was led by Angami Zapu Phizo. Laldenga was the leader of the Mizo National Front."
+    },
+    {
+      "id": 144,
+      "question": "In the question given below, there are two statements marked as Assertion (A) and Reason (R).\nMark your answer as per the codes provided:\n\nAssertion (A): The Constitution has described India as a 'Union of states', and not a Federation.\nReason (R): Indian polity is a result of agreement between states to form an indestructible Union.\n\nWhich of the options given below is/are correct?",
+      "options": [
+        "A. Both A and R are true and R is the correct explanation for A.",
+        "B. Both A and R are true but R is not the correct explanation for A.",
+        "C. A is true, while R is false.",
+        "D. A is false, while R is true."
+      ],
+      "answer": "C. A is true, while R is false.",
+      "explanation": "Assertion (A) is true: Article 1 of the Constitution describes India as a 'Union of States'.\n\nReason (R) is false: The Indian Federation is not the result of an agreement among the states (unlike the USA). States have no right to secede from the Union."
+    },
+    {
+      "id": 145,
+      "question": "With reference to the changes in the territory of states/Union Territories in India, consider the following statements:\n\n1. The Indian Constitution requires Parliament to get the consent of all state(s) involved in creation/ merger of states.\n2. A Parliamentary bill providing for alteration in the boundaries of a Union Territory must be referred to the legislature of the concerned Union Territory.\n\nWhich of the statements given above is/ are correct?",
+      "options": [
+        "A. 1 only",
+        "B. 2 only",
+        "C. Both 1 and 2",
+        "D. Neither 1 nor 2"
+      ],
+      "answer": "D. Neither 1 nor 2",
+      "explanation": "Statement 1 is incorrect: The Parliament does not need the consent of the state. It only needs to refer the bill to the state legislature for expressing its views, and Parliament is not bound by these views.\n\nStatement 2 is incorrect: In the case of a Union Territory, the Parliament can alter its boundaries without making any reference to the concerned legislature."
+    },
+    {
+      "id": 146,
+      "question": "According to the Constitution of India, the expression 'Territory of India' includes which among the following?\n\n1. The territories of the states\n2. The Union territories\n3. The territories that may be acquired by the government of India at any time.\n\nSelect the correct answer using the codes given below:",
+      "options": [
+        "A. 1 and 2 only",
+        "B. 1 only",
+        "C. 2 and 3 only",
+        "D. 1, 2 and 3"
+      ],
+      "answer": "D. 1, 2 and 3",
+      "explanation": "Article 1(3) of the Constitution specifies that the 'Territory of India' comprises all three:\n\n1. The territories of the states.\n2. The Union territories specified in the First Schedule.\n3. Such other territories as may be acquired."
+    },
+    {
+      "id": 147,
+      "question": "Consider the following statements about the procedure for reorganisation of states in India:\n\n1. States in India can be reorganised by the Parliament only by amending the Constitution under article 368.\n2. A bill for the reorganisation of states can be introduced in the Parliament only on the recommendation of the President.\n3. The President before giving his recommendation shall refer the state reorganisation bill to the respective state legislature for expressing its view.\n4. The President is bound by the views of state legislature regarding the state reorganisation bill.\n\nHow many of the above given statements are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. Only three",
+        "D. All four"
+      ],
+      "answer": "B. Only two",
+      "explanation": "Statement 1 is incorrect: Such laws are passed by a simple majority and are explicitly kept outside the purview of Article 368.\n\nStatement 2 is correct: A state reorganisation bill requires the prior recommendation of the President to be introduced in Parliament.\n\nStatement 3 is correct: The President must refer the bill to the concerned state legislature for its views within a specified period.\n\nStatement 4 is incorrect: The President (or Parliament) is not bound by the views of the state legislature."
+    },
+    {
+      "id": 148,
+      "question": "If, in any case, India needs to cede some parts of its territory to any country, then it can be done through:",
+      "options": [
+        "A. The executive action of Government of India.",
+        "B. The Amendment of Constitution under Article 368.",
+        "C. The Legislative action of the Parliament",
+        "D. Judicial Action under the purview of Supreme Court."
+      ],
+      "answer": "B. The Amendment of Constitution under Article 368.",
+      "explanation": "The Supreme Court held in the Berubari Union case (1960) that ceding Indian territory to a foreign state is not covered under Article 3.\n\nIt requires a formal amendment of the Constitution under Article 368."
+    },
+    {
+      "id": 149,
+      "question": "Consider the following commissions and acts regarding the reorganisation of states in India:\n\n1. Fazl Ali Commission\n2. Dhar Commission\n3. State Reorganisation Act\n4. JVP Committee\n\nArrange the above in the correct chronological order of their establishment/passage:",
+      "options": [
+        "A. 2-4-1-3",
+        "B. 1-3-4-2",
+        "C. 2-1-4-3",
+        "D. 3-2-4-1"
+      ],
+      "answer": "A. 2-4-1-3",
+      "explanation": "The correct chronological order is:\n\n2. Dhar Commission (June 1948)\n4. JVP Committee (December 1948)\n1. Fazl Ali Commission (December 1953)\n3. State Reorganisation Act (Passed in 1956)"
+    },
+    {
+      "id": 150,
+      "question": "Consider the following statements with reference to the territorial integrity of the states in India:\n\n1. The Parliament can redraw the political map of India according to its will.\n2. The State Legislature can enlarge its territorial jurisdiction and possess the power of 'extra-territorial legislation' in some circumstances.\n\nWhich of the above statements is/are correct?",
+      "options": [
+        "A. 1 only",
+        "B. 2 only",
+        "C. Both 1 and 2",
+        "D. Neither 1 nor 2"
+      ],
+      "answer": "A. 1 only",
+      "explanation": "Statement 1 is correct: The Constitution empowers the Parliament to alter the boundaries or names of existing states without their consent, which is why India is described as 'an indestructible Union of destructible states'.\n\nStatement 2 is incorrect: The power of extra-territorial legislation is exclusively with the Union Parliament (Article 245), not with the State Legislatures."
+    },
+    {
+      "id": 151,
+      "question": "Arrange the following states in a chronological order according to the year of formation as a state:\n\n1. Nagaland\n2. Tripura\n3. Himachal Pradesh\n4. Mizoram\n\nSelect the answer from the code given below:",
+      "options": [
+        "A. 1-2-3-4",
+        "B. 1-3-2-4",
+        "C. 3-1-2-4",
+        "D. 3-2-1-4"
+      ],
+      "answer": "B. 1-3-2-4",
+      "explanation": "The correct chronological order of achieving statehood is:\n\n1. Nagaland (1963)\n3. Himachal Pradesh (1971)\n2. Tripura (1972)\n4. Mizoram (1987)"
+    },
+    {
+      "id": 152,
+      "question": "Why the phrase 'Union of States' is preferred over 'Federation of States' for India in the Constitution?\n\n1. Unlike American Federation, the Indian Federation is not the result of an agreement among the states.\n2. Indian states have no right to secede from the federation.\n3. In order to ensure the territorial integrity of the Indian states.\n\nSelect the correct answer using the code given below:",
+      "options": [
+        "A. 1 and 2 only",
+        "B. 1 and 3 only",
+        "C. 2 and 3 only",
+        "D. 1, 2 and 3"
+      ],
+      "answer": "A. 1 and 2 only",
+      "explanation": "According to Dr. B.R. Ambedkar, the phrase 'Union of States' was preferred for two reasons:\n\n1. The Indian Federation is not the result of an agreement among states.\n2. The states have no right to secede from the federation.\n\nStatement 3 is incorrect because the territorial integrity of Indian states is not guaranteed; they are destructible."
+    },
+    {
+      "id": 153,
+      "question": "Using the powers enshrined in Articles 2 and 3 of the Constitution of India, the Parliament can do which of the following?\n\n1. Admit new territories as new state of India.\n2. Split or merge existing Indian states.\n3. Transfer and exchange of territories to neighboring countries.\n4. Alter the names and boundaries of existing Indian States.\n\nSelect the correct answer using the code given below:",
+      "options": [
+        "A. 1, 2 and 3 only",
+        "B. 1, 2 and 4 only",
+        "C. 1, 3 and 4 only",
+        "D. 1, 2, 3 and 4"
+      ],
+      "answer": "B. 1, 2 and 4 only",
+      "explanation": "Parliament's powers under Articles 2 and 3 include:\n\n1. Admitting new states (Article 2).\n2. Splitting, merging, altering names, and altering boundaries of existing states (Article 3).\n\nTransferring territory to a foreign country (3) is not covered under these articles and requires a constitutional amendment under Article 368."
+    },
+    {
+      "id": 154,
+      "question": "Consider the following statements with reference to the Territories Acquired by the Government of India:\n\n1. A Constitutional Amendment Bill needs to be introduced in the Parliament to enable India to acquire any territories.\n2. The constitutional provisions for the administration of union territories de facto apply to the acquired territories.\n\nWhich of the statements given above is/are correct?",
+      "options": [
+        "A. 1 only",
+        "B. 2 only",
+        "C. Both 1 and 2",
+        "D. Neither 1 nor 2"
+      ],
+      "answer": "B. 2 only",
+      "explanation": "Statement 1 is incorrect: India can acquire foreign territories through various modes recognized by international law (e.g., treaty, purchase, conquest). This does not require a constitutional amendment.\n\nStatement 2 is correct: As there are no separate provisions for administering acquired territories, the provisions related to the administration of Union Territories are applied to them."
+    },
+    {
+      "id": 155,
+      "question": "Among the following candidates, who will acquire Indian Citizenship?",
+      "options": [
+        "A. A non-domiciled person born in India after 15 august 1947 but before 26 January 1950.",
+        "B. A person of Indian origin (PIO) residing in India for 5 years before making application for registration.",
+        "C. A person who is married to a citizen of India without residing in India.",
+        "D. A PIO who came to Assam before January 1, 1966 from Bangladesh."
+      ],
+      "answer": "D. A PIO who came to Assam before January 1, 1966 from Bangladesh.",
+      "explanation": "Option A is incorrect: The date range is not as specified for citizenship by birth.\n\nOption B is incorrect: A PIO needs to be ordinarily resident in India for seven years, not five, before applying for registration.\n\nOption C is incorrect: A person married to an Indian citizen must also be ordinarily resident in India for seven years before applying.\n\nOption D is correct: This is a special provision added by the Citizenship (Amendment) Act, 1985, as part of the Assam Accord."
+    },
+    {
+      "id": 156,
+      "question": "With reference to the National Population Register (NPR) and Census, consider the following statements:\n\n1. The Census is conducted under the Census Act 1948 whereas NPR is created under the provisions of the Citizenship Act.\n2. The NPR will have only demographic information and no biometric data of individuals will be collected.\n3. NPR database is used for better targeting of the benefits and services under the government schemes.\n4. All information collected under the Census is confidential and will not be shared with any Government or private agency.\n\nHow many statements given above are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. Only three",
+        "D. All four"
+      ],
+      "answer": "C. Only three",
+      "explanation": "Statement 1 is correct: Census is governed by the Census Act, 1948, while the NPR is created under the Citizenship Act, 1955 and its rules.\n\nStatement 2 is incorrect: The NPR database is designed to contain both demographic and biometric particulars of every usual resident.\n\nStatement 3 is correct: A key purpose of the NPR is to create a comprehensive identity database to improve the delivery of government schemes and benefits.\n\nStatement 4 is correct: The Census Act guarantees the confidentiality of the information collected, and it cannot be used as evidence in any court."
+    },
+    {
+      "id": 157,
+      "question": "Consider the following statement with regard to Indian citizenship?\n\n1. The Constitution of India provides detailed criteria for acquisition and loss of citizenship.\n2. A person loses Indian citizenship if the person voluntarily acquires the citizenship of the enemy country during war.\n3. Only the parliament has the power to make any provision related to citizenship.\n\nHow many statements given above are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. All three",
+        "D. None"
+      ],
+      "answer": "A. Only one",
+      "explanation": "Statement 1 is incorrect: The Constitution only identifies who became citizens at its commencement. The detailed laws for acquisition and loss were made by Parliament via the Citizenship Act, 1955.\n\nStatement 2 is incorrect: The provision for automatic termination of citizenship on voluntarily acquiring another country's citizenship does not apply during a war in which India is engaged.\n\nStatement 3 is correct: Article 11 of the Constitution gives Parliament the exclusive power to make any provision with respect to citizenship."
+    },
+    {
+      "id": 158,
+      "question": "A person is born outside India, has either of his parents a citizen of India at the time of his birth, and his birth is registered at an Indian consulate within one year of the date of birth.\nSuch a person is entitled to citizenship of India by way of:",
+      "options": [
+        "A. Birth",
+        "B. Descent",
+        "C. Registration",
+        "D. Naturalisation"
+      ],
+      "answer": "B. Descent",
+      "explanation": "This scenario describes the conditions for acquiring Indian citizenship by 'descent'.\n\nCitizenship by birth applies to those born in India, while registration and naturalisation have different sets of conditions."
+    },
+    {
+      "id": 159,
+      "question": "Which of the following statements is correct with respect to \"Citizenship\"?",
+      "options": [
+        "A. Citizenship can be defined as a full and equal membership of a political community.",
+        "B. Citizenship indicates the relationship between a community and a nation state.",
+        "C. In modern times, citizenship is given to a homogeneous group of people who have shared history and a unique culture.",
+        "D. Citizenship is solely a certificate for equality of status."
+      ],
+      "answer": "A. Citizenship can be defined as a full and equal membership of a political community.",
+      "explanation": "Option A provides the most widely accepted and comprehensive definition of citizenship.\n\nIt is about being a full and equal member of a state, which confers certain rights and entails certain duties.\n\nOption B is incorrect as it's a relationship between an individual and the state. Option C is incorrect as many modern states are heterogeneous. Option D is incorrect as citizenship includes rights and duties, not just status."
+    },
+    {
+      "id": 160,
+      "question": "Which of the following is/are the grounds on which citizenship can be acquired in India?\n\n1. Birth\n2. Naturalisation\n3. Inclusion of Territory\n4. Descent\n\nSelect the correct answer using the code given below.",
+      "options": [
+        "A. 1, 2 and 3 only",
+        "B. 1, 3 and 4 only",
+        "C. 1 and 4 only",
+        "D. 1, 2, 3 and 4"
+      ],
+      "answer": "D. 1, 2, 3 and 4",
+      "explanation": "The Citizenship Act, 1955 prescribes five ways of acquiring Indian citizenship:\n\n1. By Birth\n2. By Descent\n3. By Registration\n4. By Naturalisation\n5. By Incorporation of territory"
+    },
+    {
+      "id": 161,
+      "question": "Which one of the following is incorrect about constitutional provisions with respect to citizenship?",
+      "options": [
+        "A. There is no provision for separate state citizenship.",
+        "B. It empowers the Parliament to enact a law on matters related to citizenship.",
+        "C. It only identifies the persons who became citizens of India on 26th January 1950.",
+        "D. It deals with the problem of acquisition or loss of citizenship subsequent to its commencement."
+      ],
+      "answer": "D. It deals with the problem of acquisition or loss of citizenship subsequent to its commencement.",
+      "explanation": "Statement D is incorrect. The Constitution (Articles 5-11) does not deal with the acquisition or loss of citizenship after its commencement on January 26, 1950.\n\nIt only identifies who became a citizen on that date and empowers Parliament to make laws for all subsequent matters related to citizenship."
+    },
+    {
+      "id": 162,
+      "question": "Which of the following rights are available to an Indian citizen only?\n\n1. Protection of language, script and culture of minorities\n2. Protection in respect of conviction for offences\n3. Equality of opportunity in matters of public employment\n4. Protection against arrest and detention in certain cases\n5. Right of minorities to establish and administer educational institutions\n6. Freedom to manage religious affairs\n\nSelect the correct answer using the code given below:",
+      "options": [
+        "A. 1, 2, 3 and 4 only",
+        "B. 3, 5 and 6 only",
+        "C. 1, 3 and 5 only",
+        "D. 2, 4 and 5 only"
+      ],
+      "answer": "C. 1, 3 and 5 only",
+      "explanation": "The Fundamental Rights available only to citizens are:\n\n1. Article 29: Protection of language, script, and culture of minorities.\n3. Article 16: Equality of opportunity in public employment.\n5. Article 30: Right of minorities to establish and administer educational institutions.\n\nArticles 20 (protection against conviction), 22 (protection against arrest), and 26 (freedom to manage religious affairs) are available to both citizens and non-citizens."
+    },
+    {
+      "id": 163,
+      "question": "Which of the following provisions is/ are provided in the Constitution of India regarding citizenship?\n\n1. If an Indian citizen acquires the citizenship by fraud, his Indian citizenship will be terminated.\n2. Any provision with respect to the acquisition and termination of citizenship will be decided by President.\n3. A person of Indian origin residing outside India and whose parents or grandparents were born in an undivided India can acquire Indian citizenship.\n\nSelect the correct answer using the code given below:",
+      "options": [
+        "A. 1 and 3 only",
+        "B. 1 and 2 only",
+        "C. 2 and 3 only",
+        "D. 3 only"
+      ],
+      "answer": "D. 3 only",
+      "explanation": "Statement 1 is incorrect: This provision is in the Citizenship Act, 1955, not in the original Constitution.\n\nStatement 2 is incorrect: The Constitution (Article 11) empowers the Parliament, not the President, to make laws regarding citizenship.\n\nStatement 3 is correct: This provision is contained in Article 8 of the Constitution, which deals with the citizenship of persons of Indian origin residing outside India."
+    },
+    {
+      "id": 164,
+      "question": "Which of the following statements is/are correct regarding acquisition of citizenship through naturalization?\n\n1. Parliament has power to grant certification of naturalisation to any person.\n2. The person has to renounce the citizenship of another country in the event of their Indian citizenship application is accepted.\n3. Any person can acquire citizenship by naturalisation if he/she is ordinarily resident of India for 5 years.\n\nSelect the correct answer using the code given below:",
+      "options": [
+        "A. 1 and 2 only",
+        "B. 2 only",
+        "C. 2 and 3 only",
+        "D. 3 only"
+      ],
+      "answer": "B. 2 only",
+      "explanation": "Statement 1 is incorrect: The Central Government, not the Parliament, grants the certificate of naturalisation.\n\nStatement 2 is correct: A key condition for naturalisation is that the applicant must renounce the citizenship of any other country.\n\nStatement 3 is incorrect: The residency requirement is much longer. The person must have resided in India for 11 out of the 14 years preceding the application, including continuously for the 12 months immediately before applying."
+    },
+    {
+      "id": 165,
+      "question": "Which among the following group of persons are eligible for Indian citizenship?\n\n1. A person born in India on or after December 3, 2004 irrespective of the nationality of his/her parents.\n2. A person born outside India on or after December 3, 2004 and having one of the parents as citizen of India.\n3. A person of Indian origin who is ordinarily resident in India for seven years before making an application for registration.\n4. A person resided in India for not less than eleven years during the last fourteen years.\n\nSelect the correct answer form the code given below:",
+      "options": [
+        "A. 1 and 2 only",
+        "B. 2 and 3 only",
+        "C. 1 and 4 only",
+        "D. 3 and 4 only"
+      ],
+      "answer": "D. 3 and 4 only",
+      "explanation": "Statement 1 is incorrect: After Dec 3, 2004, a person born in India is a citizen only if both parents are citizens, or one is a citizen and the other is not an illegal migrant.\n\nStatement 2 is incorrect: For citizenship by descent after Dec 3, 2004, the birth must also be registered at an Indian consulate.\n\nStatement 3 is correct: This is a valid condition for acquiring citizenship by registration.\n\nStatement 4 is correct: This is part of the residency requirement for acquiring citizenship by naturalisation."
+    },
+    {
+      "id": 166,
+      "question": "In which of the following cases, there would be a compulsory termination of Indian citizenship?\n\n1. When the citizen has obtained the citizenship by fraud\n2. When the citizen has shown disloyalty to the Constitution of India.\n3. When the citizen has been ordinarily resident out of India for seven years continuously.\n\nSelect the correct answer from the code given below:",
+      "options": [
+        "A. 1 and 2 only",
+        "B. 2 and 3 only",
+        "C. 1 and 3 only",
+        "D. 1, 2 and 3"
+      ],
+      "answer": "D. 1, 2 and 3",
+      "explanation": "The Citizenship Act, 1955, allows the Central Government to deprive a person of citizenship (compulsory termination) under several conditions, including all three listed:\n\n1. Obtaining citizenship by fraud.\n2. Showing disloyalty to the Constitution.\n3. Being ordinarily resident out of India for seven years continuously (unless they are a student or in government service)."
+    },
+    {
+      "id": 167,
+      "question": "For which of the following reasons, the Constitution of India provided for a single citizenship?",
+      "options": [
+        "A. To provide continuity to the federal provisions, which existed during British Colonial period.",
+        "B. To avoid confusion between different rights enjoyed under State and Central units.",
+        "C. To Save the financial resources required for separate Constitutions.",
+        "D. To provide citizens with the same political and civil rights all over the country."
+      ],
+      "answer": "D. To provide citizens with the same political and civil rights all over the country.",
+      "explanation": "The primary reason for providing single citizenship was to promote a sense of unity, fraternity, and an integrated Indian nation.\n\nIt ensures that all citizens, irrespective of their state of birth or residence, enjoy the same political and civil rights throughout the country, thereby preventing discriminatory practices that could arise from dual citizenship."
+    },
+    {
+      "id": 168,
+      "question": "Which of the following is the correct description of the term 'citizen' in the context of India?",
+      "options": [
+        "A. A person enjoying full and equal membership of the Indian state.",
+        "B. Every person living and working in India.",
+        "C. A person enjoying rights under the Constitution of India.",
+        "D. A person who took birth in the territory of India."
+      ],
+      "answer": "A. A person enjoying full and equal membership of the Indian state.",
+      "explanation": "A citizen is a full and equal member of a political community (the state).\n\nThis status confers a political identity and comes with a set of rights and responsibilities. Options B, C, and D are incorrect as they could include non-citizens (foreigners) or exclude certain citizens."
+    },
+    {
+      "id": 169,
+      "question": "With reference to the 'Overseas Citizen of India Cardholders', consider the following statements:\n\n1. They are not eligible for election as the President of India.\n2. They can undertake any type of research activity within India without any permission.\n3. A citizen of Bangladesh cannot be registered as an Overseas Citizen of India Cardholder.\n\nHow many of the above given statements are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. All three",
+        "D. None"
+      ],
+      "answer": "B. Only two",
+      "explanation": "Statement 1 is correct: OCI cardholders are not eligible for constitutional posts like President, Vice-President, or Judge of the Supreme Court.\n\nStatement 2 is incorrect: They require special permission from the relevant authorities to undertake research activities in India.\n\nStatement 3 is correct: Individuals who have ever been a citizen of Pakistan or Bangladesh are not eligible for an OCI card."
+    },
+    {
+      "id": 170,
+      "question": "Consider the following statements:\n\n1. The Constitution explicitly empowers only the President of India to notify rules for all the matters relating to citizenship.\n2. The Freedoms under Article 19 of the Constitution are available only to citizens and not to non-citizens.\n3. Only an Indian citizen can become a Judge of the Supreme Court.\n4. A person is not eligible to be appointed as the President of India if he has acquired citizenship by naturalization.\n\nHow many of the above given statements are correct?",
+      "options": [
+        "A. Only one",
+        "B. Only two",
+        "C. Only three",
+        "D. All four"
+      ],
+      "answer": "B. Only two",
+      "explanation": "Statement 1 is incorrect: The Constitution (Article 11) empowers the Parliament, not the President, to make laws regarding citizenship.\n\nStatement 2 is correct: The six freedoms guaranteed under Article 19 are available only to citizens of India.\n\nStatement 3 is correct: Article 124(3) specifies that a person must be a citizen of India to be appointed as a Judge of the Supreme Court.\n\nStatement 4 is incorrect: Unlike the USA, India allows both a citizen by birth and a naturalized citizen to be eligible for the office of the President."
     }
   ]
 }
