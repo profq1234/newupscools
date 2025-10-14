@@ -1,0 +1,28 @@
+# ===============================
+# Robots.txt for upscools.com
+# Optimized for fast and efficient crawling
+# ===============================
+
+User-agent: *
+# Allow all main pages
+Allow: /
+
+# Disallow unnecessary or sensitive folders/files
+Disallow: /admin/
+Disallow: /scripts/
+Disallow: /temp/
+Disallow: /private/
+Disallow: /node_modules/
+Disallow: /*.pdf$
+Disallow: /*.zip$
+Disallow: /*.exe$
+
+# Sitemap location
+Sitemap: https://upscools.com/sitemap.xml
+
+# Crawl-delay (optional, prevents server overload)
+# Crawl-delay: 1
+
+# Notes for SEO bots
+# Googlebot will crawl frequently updated pages more often
+# Other bots should respect disallowed paths
