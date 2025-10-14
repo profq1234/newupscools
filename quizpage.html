@@ -429,11 +429,51 @@
             const container = document.getElementById("quiz-container");
             const quizTitle = document.getElementById("quiz-title");
             let isQuizActive = false; 
+            
+            // --- NEW: Functions to manage Quiz Schema in <head> ---
+            function removeQuizSchema() {
+                const existingSchema = document.getElementById('quiz-schema');
+                if (existingSchema) {
+                    existingSchema.remove();
+                }
+            }
 
-            // Initial Quiz State Message Function (Unchanged)
+            function injectQuizSchema(title, questions) {
+                removeQuizSchema(); // Remove old schema first
+
+                const schema = {
+                    "@context": "https://schema.org",
+                    "@type": "Quiz",
+                    "name": title,
+                    "hasPart": questions.map(q => {
+                        return {
+                            "@type": "Question",
+                            "name": q.question,
+                            "suggestedAnswer": q.options.map(opt => ({
+                                "@type": "Answer",
+                                "text": opt
+                            })),
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": `${q.answer}. ${q.explanation}`
+                            }
+                        };
+                    })
+                };
+
+                const script = document.createElement('script');
+                script.type = 'application/ld+json';
+                script.id = 'quiz-schema';
+                script.textContent = JSON.stringify(schema);
+                document.head.appendChild(script);
+            }
+
+
+            // --- MODIFIED: Added schema removal to the initial message function ---
             function showInitialMessage() {
                  isQuizActive = false;
                  startBtn.classList.remove('hidden');
+                 removeQuizSchema(); // Clean up schema when quiz is not active
                  
                  container.innerHTML = `
                     <div class="max-w-md mx-auto p-6 md:p-8 bg-gray-900/50 border-t-4 border-yellow-500 rounded-xl shadow-lg transition-all duration-500 text-center">
@@ -479,15 +519,13 @@
                  container.classList.add('flex', 'items-center', 'justify-center');
             }
             
-            // --- MODIFIED: Added timer cleanup to quitQuiz ---
-            let timerInterval = null; // Moved to a higher scope
+            let timerInterval = null;
             function quitQuiz() {
                  if (timerInterval) clearInterval(timerInterval);
                  showCustomModal("Quiz Ended", "You have ended the quiz session.", false);
                  showInitialMessage();
             }
 
-            // *** startBtn event listener (Unchanged) ***
             startBtn.addEventListener("click", async function (e) {
                 e.preventDefault();
                 if (isQuizActive) return;
@@ -515,7 +553,7 @@
                 }
             });
 
-            // --- MODIFIED: Integrated timer logic into startQuiz ---
+            // --- MODIFIED: Added call to inject the Quiz schema ---
             async function startQuiz(mode, numQuestions = 0) {
                 isQuizActive = true;
                 startBtn.classList.add('hidden'); 
@@ -549,12 +587,13 @@
                     chosenQuestions = shuffle(allQuestions).slice(0, take);
                 }
 
+                // --- NEW: Inject the schema for Google here ---
+                injectQuizSchema(data.title, chosenQuestions);
+
                 let index = 0;
                 let userAnswers = new Array(chosenQuestions.length).fill(null);
                 
-                // --- NEW: Timer start logic for Test Mode ---
                 if (mode === 'number') {
-                    // You can adjust the time per question here (in seconds)
                     const timePerQuestion = 90; 
                     const quizDuration = chosenQuestions.length * timePerQuestion;
                     startTimer(quizDuration);
@@ -605,7 +644,6 @@
                     renderQuestion();
                 }
 
-                // --- MODIFIED: Added a span for the timer display ---
                 function renderQuestion() {
                     clearContainer();
                     const q = chosenQuestions[index];
@@ -690,7 +728,6 @@
                     rightActions.appendChild(nextBtn);
                 }
                 
-                // *** selectOption (Unchanged) ***
                 function selectOption(buttonElem) {
                     const selectedValue = buttonElem.dataset.value;
                     userAnswers[index] = selectedValue;
@@ -728,7 +765,6 @@
                     }
                 }
 
-                // --- MODIFIED: Restructured result and review layout ---
                 function renderResult() {
                     if (timerInterval) clearInterval(timerInterval);
                     clearContainer();
