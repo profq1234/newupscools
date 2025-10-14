@@ -342,7 +342,6 @@
             </section>
 
        
-<!-- Blog Section -->
 <section id="blog" class="py-16 md:py-20">
   <div class="container mx-auto px-6">
     <div class="text-center mb-12">
@@ -350,13 +349,10 @@
       <p class="text-blue-200 mt-4 max-w-2xl mx-auto">Get the latest insights, tips, and stories from our team of experts to boost your UPSC preparation.</p>
     </div>
 
-    <!-- Dynamic Blog Container -->
     <div id="blog-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
   </div>
 </section>
 
-<!-- Firebase SDK + Dynamic Blog Script -->
-	
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
   import { getFirestore, collection, getDocs, query, orderBy } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore.js";
@@ -389,17 +385,17 @@
         return;
       }
 
-      // ✅ IMPROVEMENT: Build the HTML string first
       let blogsHTML = ""; 
 
       snapshot.forEach((doc, index) => {
         const blog = doc.data();
         const delay = index * 150;
+        
+        // --- CHANGE 1: Get the unique ID for the blog post ---
+        const blogId = doc.id;
 
-        // ✅ IMPROVEMENT: Use the modern .toDate() method
         const blogDate = blog.date ? blog.date.toDate() : null;
         
-        // Use ?? (nullish coalescing operator) for cleaner fallbacks
         const title = blog.title ?? 'Untitled Blog';
         const image = blog.image ?? 'https://placehold.co/600x400/2d3748/ffffff?text=No+Image';
         const category = blog.category ?? 'General';
@@ -409,9 +405,9 @@
           ? blogDate.toLocaleDateString('en-US', { month: 'short', day: '2-digit', year: 'numeric' }) 
           : 'No Date';
 
-        // Append the new card's HTML to the string variable
+        // --- CHANGE 2: Wrap the card in an <a> tag with a dynamic href ---
         blogsHTML += `
-          <div class="bg-gray-900/30 backdrop-blur-sm border border-gray-700 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow transform hover:-translate-y-1 fade-in-up" style="animation-delay: ${delay}ms;">
+          <a href="blog-post.html?id=${blogId}" class="block bg-gray-900/30 backdrop-blur-sm border border-gray-700 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow transform hover:-translate-y-1 fade-in-up" style="animation-delay: ${delay}ms;">
             <img src="${image}" alt="${title}" class="w-full h-48 object-cover">
             <div class="p-6">
               <span class="text-sm font-semibold text-indigo-400">${category}</span>
@@ -423,21 +419,19 @@
                 <span class="blog-date">${formattedDate}</span>
               </div>
             </div>
-          </div>
+          </a>
         `;
       });
 
-      // ✅ IMPROVEMENT: Update the DOM only once
       blogContainer.innerHTML = blogsHTML;
 
     } catch (err) {
       console.error("Error fetching blogs:", err);
-      // Provide a more helpful error message to the user
       blogContainer.innerHTML = `<p class="text-red-400 col-span-3 text-center">Failed to load blogs. Check the console for details. (Hint: Have you set up your Firestore security rules?)</p>`;
     }
   }
 
-  // Add a simple fade-in animation CSS rule if you don't have one
+  // Add a simple fade-in animation CSS rule
   const style = document.createElement('style');
   style.innerHTML = `
     @keyframes fadeInUp {
@@ -455,6 +449,7 @@
   // Load blogs on page load
   loadBlogs();
 </script>
+
 
             <!-- Contact Section -->
             <section id="contact" class="py-16 md:py-20">
