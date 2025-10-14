@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Blog | upscools</title>
+    <meta name="description" content="Explore articles, expert analysis, and preparation strategies for the UPSC Civil Services Exam on the upscools blog.">
+    <meta name="keywords" content="UPSC Blog, IAS Articles, CSE Strategy, UPSC Preparation Tips">
+    <link rel="canonical" href="https://www.upscools.com/blog.html">
+    <link rel="icon" type="image/png" href="https://placehold.co/32x32/1e3a8a/facc15?text=U">
+
+    <meta property="og:title" content="Blog | upscools">
+    <meta property="twitter:title" content="Blog | upscools">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .fade-in-up { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+        .fade-in-up.visible { opacity: 1; transform: translateY(0); }
+        .animated-bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; z-index: 0; }
+        .animated-bg li { position: absolute; display: block; list-style: none; width: 20px; height: 20px; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); animation: animate 25s linear infinite; bottom: -150px; border-radius: 50%; box-shadow: 0 0 10px rgba(168, 85, 247, 0.3), 0 0 20px rgba(168, 85, 247, 0.2); }
+        .animated-bg li:nth-child(1) { left: 25%; width: 80px; height: 80px; animation-delay: 0s; background-color: rgba(168, 85, 247, 0.2); }
+        .animated-bg li:nth-child(2) { left: 10%; width: 20px; height: 20px; animation-delay: 2s; animation-duration: 12s; background-color: rgba(236, 72, 153, 0.2); }
+        .animated-bg li:nth-child(3) { left: 70%; width: 20px; height: 20px; animation-delay: 4s; background-color: rgba(250, 204, 21, 0.2); }
+        .animated-bg li:nth-child(4) { left: 40%; width: 60px; height: 60px; animation-delay: 0s; animation-duration: 18s; background-color: rgba(236, 72, 153, 0.2); }
+        .animated-bg li:nth-child(5) { left: 65%; width: 20px; height: 20px; animation-delay: 0s; background-color: rgba(168, 85, 247, 0.2); }
+        .animated-bg li:nth-child(6) { left: 75%; width: 110px; height: 110px; animation-delay: 3s; background-color: rgba(250, 204, 21, 0.15); }
+        @keyframes animate { 0% { transform: translateY(0) rotate(0deg); opacity: 1; } 100% { transform: translateY(-1000px) rotate(720deg); opacity: 0; } }
+    </style>
+</head>
+<body class="bg-blue-900 text-gray-200">
+
+    <ul class="animated-bg"><li></li><li></li><li></li><li></li><li></li><li></li></ul>
+
+    <div class="relative z-10">
+   <!-- Header -->
+        <header id="header" class="bg-blue-900/80 backdrop-blur-sm shadow-md sticky top-0 z-50 transition-all duration-300 border-b border-blue-800">
+            <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+         <a href="./index.html" class="text-2xl md:text-3xl font-extrabold text-yellow-300 tracking-tight">
+                    upscools
+                </a>
+                <div class="flex items-center space-x-4 md:space-x-8">
+                  
+                    <div class="hidden sm:flex items-center space-x-4 md:space-x-6">
+                            <a href="#quiz" class="text-gray-300 hover:text-yellow-400 font-medium transition-colors">Quiz</a>
+                            <a href="#blog" class="text-gray-300 hover:text-yellow-400 font-medium transition-colors">Blog</a>
+                    </div>
+                </div>
+
+                <!-- Right side: Original links + Auth buttons -->
+                <div class="hidden md:flex items-center">
+                    <!-- Main nav links -->
+                    <div class="flex items-center space-x-6">
+                        <a href="#home" class="text-gray-300 hover:text-yellow-400 font-medium transition-colors">Home</a>
+                        <!-- Resources Dropdown -->
+                        <div class="relative group">
+                            <button class="flex items-center text-gray-300 hover:text-yellow-400 font-medium transition-colors">
+                                Resources
+                                <svg class="w-4 h-4 ml-1 transform group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </button>
+                            <div class="absolute -left-8 mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
+                                <a href="./polity.html" class="block px-4 py-2 text-gray-700 hover:bg-purple-50 hover:text-purple-700 rounded-t-lg">Indian Polity</a>
+                                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-purple-50 hover:text-purple-700">Modern History</a>
+                                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-purple-50 hover:text-purple-700">Geography & Environment</a>
+                                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-purple-50 hover:text-purple-700">Indian Economy</a>
+                                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-purple-50 hover:text-purple-700">Art & Culture</a>
+                                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-purple-50 rounded-b-lg border-t mt-1 pt-2 font-semibold text-purple-600">All Resources</a>
+                            </div>
+                        </div>
+                        <a href="#about" class="text-gray-300 hover:text-yellow-400 font-medium transition-colors">About</a>
+                        <a href="#contact" class="text-gray-300 hover:text-yellow-400 font-medium transition-colors">Contact</a>
+                    </div>
+                    <!-- Clock and Auth buttons -->
+                    <div class="flex items-center ml-6 pl-6 border-l border-gray-700 space-x-4">
+                        <span id="live-clock" class="text-sm text-gray-400 font-mono"></span>
+                        <a href="#signin" class="text-gray-300 hover:text-yellow-400 font-medium transition-colors">Sign In</a>
+                        <a href="#signup" class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-5 py-2 rounded-lg shadow-md hover:from-purple-600 hover:to-pink-600 transition-all font-medium">Sign Up</a>
+                    </div>
+                </div>
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden p-2 rounded-md text-gray-300 hover:bg-blue-800 focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </nav>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2 bg-blue-900/95">
+                <a href="#home" class="block text-gray-300 hover:text-yellow-400 transition-colors py-2">Home</a>
+                    <a href="#quiz" class="block text-gray-300 hover:text-yellow-400 transition-colors py-2">Quiz</a>
+                    <a href="#blog" class="block text-gray-300 hover:text-yellow-400 transition-colors py-2">Blog</a>
+                <div>
+                    <button id="mobile-courses-button" class="w-full flex justify-between items-center text-gray-300 hover:text-yellow-400 transition-colors py-2">
+                        <span>Resources</span>
+                        <svg id="mobile-courses-arrow" class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div id="mobile-courses-menu" class="hidden pl-4 mt-2 space-y-2 border-l-2 border-purple-400">
+                        <a href="./polity.html" class="block text-gray-400 hover:text-purple-400">Indian Polity</a>
+                        <a href="#" class="block text-gray-400 hover:text-purple-400">Modern History</a>
+                        <a href="#" class="block text-gray-400 hover:text-purple-400">Geography & Environment</a>
+                        <a href="#" class="block text-gray-400 hover:text-purple-400">Indian Economy</a>
+                        <a href="#" class="block text-gray-400 hover:text-purple-400">Art & Culture</a>
+                        <a href="#resources" class="block text-purple-400 font-medium hover:text-purple-300">All Resources</a>
+                    </div>
+                </div>
+                <a href="#about" class="block text-gray-300 hover:text-yellow-400 transition-colors py-2">About</a>
+                <a href="#contact" class="block text-gray-300 hover:text-yellow-400 transition-colors py-2">Contact</a>
+                <div class="border-t border-gray-700 pt-4 mt-2 space-y-2">
+                        <a href="#signin" class="block text-center text-gray-300 bg-blue-800 hover:bg-blue-700 py-2 rounded-lg">Sign In</a>
+                    <a href="#signup" class="block text-center bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-lg shadow-md hover:from-purple-600 hover:to-pink-600 transition-all">Sign Up</a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section id="blog-page" class="py-20 md:py-28">
+              <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                  <h1 class="text-4xl md:text-5xl font-extrabold text-white">All Blog Posts</h1>
+                  <p class="text-blue-200 mt-4 max-w-2xl mx-auto">Browse our complete library of articles, guides, and preparation strategies.</p>
+                </div>
+
+                <div id="blog-posts-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <p class="col-span-3 text-center text-gray-400">Loading articles...</p>
+                </div>
+              </div>
+            </section>
+        </main>
+
+        <footer class="bg-gray-900/50 text-white">
+            <div class="container mx-auto px-6 py-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p>&copy; 2025 upscools. All Rights Reserved.</p>
+                    <div class="flex space-x-4 mt-4 md:mt-0">
+                        </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
+        // ✅ CORRECTED: 'where' is no longer imported
+        import { getFirestore, collection, getDocs, query, orderBy } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyAxJkhBjBAqs6Tl_XZKnNWOn92gI9LhlGc",
+            authDomain: "upsc-blog.firebaseapp.com",
+            projectId: "upsc-blog",
+            storageBucket: "upsc-blog.firebasestorage.app",
+            messagingSenderId: "164094491571",
+            appId: "1:164094491571:web:f73c61341a666b44d869c6"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+
+        const blogContainer = document.getElementById("blog-posts-container");
+
+        async function loadAllBlogs() {
+            try {
+                const blogsCol = collection(db, "blogs");
+                // ✅ CORRECTED: Using the simple query that doesn't cause an error
+                const q = query(blogsCol, orderBy("date", "desc"));
+                const snapshot = await getDocs(q);
+
+                if (snapshot.empty) {
+                    blogContainer.innerHTML = '<p class="text-gray-300 col-span-3 text-center">No blog posts have been published yet.</p>';
+                    return;
+                }
+
+                let blogsHTML = ""; 
+                snapshot.forEach((doc, index) => {
+                    const blog = doc.data();
+                    const blogId = doc.id;
+                    const slug = blog.slug || blogId; 
+
+                    const blogDate = blog.date ? blog.date.toDate() : null;
+                    const formattedDate = blogDate 
+                        ? blogDate.toLocaleDateString('en-US', { month: 'short', day: '2-digit', year: 'numeric' }) 
+                        : 'No Date';
+
+                    blogsHTML += `
+                        <a href="blog-post.html?id=${blogId}" class="block bg-gray-900/30 backdrop-blur-sm border border-gray-700 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow transform hover:-translate-y-1 fade-in-up" style="animation-delay: ${index * 100}ms;">
+                            <img src="${blog.image || 'https://placehold.co/600x400/2d3748/ffffff?text=No+Image'}" alt="${blog.title}" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <span class="text-sm font-semibold text-indigo-400">${blog.category || 'General'}</span>
+                                <h3 class="text-xl font-semibold my-2 text-white">${blog.title || 'Untitled Blog'}</h3>
+                                <p class="text-gray-300 text-sm mb-4">${blog.excerpt || ''}</p>
+                                <div class="flex items-center text-sm text-gray-400">
+                                    <span>By ${blog.author || 'Unknown'}</span>
+                                    <span class="mx-2">&bull;</span>
+                                    <span>${formattedDate}</span>
+                                </div>
+                            </div>
+                        </a>
+                    `;
+                });
+
+                blogContainer.innerHTML = blogsHTML;
+
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                        }
+                    });
+                }, { threshold: 0.1 });
+                document.querySelectorAll('.fade-in-up').forEach(el => observer.observe(el));
+
+            } catch (err) {
+                console.error("Error fetching blogs:", err);
+                blogContainer.innerHTML = `<p class="text-red-400 col-span-3 text-center">Failed to load blogs. Please check the console for details.</p>`;
+            }
+        }
+        
+        loadAllBlogs();
+    </script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if(mobileMenuButton) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
